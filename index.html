@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Architetture Sistemi</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .container-immagine {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+                text-align: center;
+            }
+
+            header {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                position: relative;
+            }
+            .testo-banner {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-family: "Ubuntu", sans-serif;
+                font-size: 6em;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img
+                src="banner.jpg"
+                class="banner"
+                style="height: auto; width: 100%; display: block"
+            />
+            <div class="testo-banner">
+                Le architetture dei Sistemi di elaborazione
+            </div>
+        </header>
+
+        <div
+            style="
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                padding: 20px;
+                justify-items: center;
+            "
+        >
+            <div class="container-immagine">
+                <img
+                    src="storia/img/eniac.jpg"
+                    style="width: 100%; height: 200px; object-fit: contain"
+                />
+                <p><a href="storia/html/lastoria.html">La Storia</a></p>
+            </div>
+            <div class="container-immagine">
+                <img
+                    src="2.jpg"
+                    style="width: 100%; height: 200px; object-fit: contain"
+                />
+                <p>Testo</p>
+            </div>
+            <div class="container-immagine">
+                <img
+                    src="3.jpg"
+                    style="width: 100%; height: 200px; object-fit: contain"
+                />
+                <p>Testo</p>
+            </div>
+            <div class="container-immagine">
+                <img
+                    src="4.jpg"
+                    style="width: 100%; height: 200px; object-fit: contain"
+                />
+                <p>Testo</p>
+            </div>
+            <div class="container-immagine">
+                <img
+                    src="5.jpg"
+                    style="width: 100%; height: 200px; object-fit: contain"
+                />
+                <p>Testo</p>
+            </div>
+            <div class="container-immagine">
+                <img
+                    src="6.jpg"
+                    style="width: 100%; height: 200px; object-fit: contain"
+                />
+                <p>Testo</p>
+            </div>
+        </div>
+    </body>
+</html>

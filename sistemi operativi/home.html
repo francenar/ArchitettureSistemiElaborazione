@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Home</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+            body {
+                background-color: #f0f8ff;
+            }
+
+            h1 {s
+                text-align: center;
+                font-family: "Quicksand", sans-serif;
+            }
+
+            .menu {
+                font-family: "Quicksand", sans-serif;
+                max-width: 600px;
+                margin: 20px auto;
+            }
+
+            .menu li {
+                margin: 10px 0;
+            }
+
+            .menu a {
+                text-decoration: none;
+                color: #333;
+                transition: transform 0.2s;
+                display: inline-block;
+            }
+
+            .menu a:hover {
+                color: #666;
+                transform: scale(1.1);
+            }
+
+            .image-container {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                margin-top: 130px;
+            }
+
+            .image-container img {
+                max-width: 500px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center">I sistemi operativi</h1>
+        <ol class="menu" style="font-size: larger">
+            <li><a href="storia.html">La storia dei sistemi operativi</a></li>
+            <li><a href="bsd.html">BSD</a></li>
+            <li><a href="linux.html">Linux</a></li>
+            <li><a href="windows.html">Windows</a></li>
+            <li><a href="interfaccie.html">Le Interfaccie</a></li>
+        </ol>
+        <div class="image-container">
+            <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQy0xzNtQV98pilC-RS6zci5s_yvviEVhe6zCTYnxD4QqksZLbgImMy2evWlaD6JtQnsD-UWPdRwgvyEgsoulwlrY0dKfPHPdZamtpaUsZOXgOfKcXRfFSLnV5nvgNVnRHr1sfuLJ1cZ7hK8_iCCKCqTj9TOHKd1xZznXTn_0QmCtPjWpkp6Z1t2380iXn/s1280/kde%20plasma%206%20rc1.jpg"
+                alt="KDE Plasma 6.0"
+                onmouseover="this.style.transform='scale(1.05)'"
+                onmouseout="this.style.transform='scale(1)'"
+            />
+            <img
+                src="https://www.ghacks.net/wp-content/uploads/2021/11/Windows-11-desktop-wallpaper.jpg"
+                alt="Windows 11"
+                onmouseover="this.style.transform='scale(1.05)'"
+                onmouseout="this.style.transform='scale(1)'"
+            />
+        </div>
+    </body>
+</html>

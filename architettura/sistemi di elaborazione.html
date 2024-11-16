@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtualizzazione e Architettura dei Sistemi di Elaborazione</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+            color: #333;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #666;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 1.5em;
+        }
+        p, ul {
+            font-size: 1.2em;
+            color: #333;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Virtualizzazione e Architettura dei Sistemi di Elaborazione</h1>
+    </header>
+    <main>
+        <section id="virtualizzazione">
+            <h2>Virtualizzazione e Sistemi di Elaborazione</h2>
+            <p>La virtualizzazione è una tecnologia che consente di utilizzare le risorse fisiche di un computer per creare ambienti virtuali indipendenti, chiamati macchine virtuali. Attraverso la virtualizzazione, un singolo hardware può ospitare più ambienti virtuali, ognuno con il proprio sistema operativo e le proprie applicazioni. Questa tecnologia è molto utile per testare applicazioni, eseguire software in sicurezza e ottimizzare l'uso delle risorse.</p>
+        </section>
+
+        <section id="emulazione">
+            <h2>Emulazione</h2>
+            <p>Un concetto legato alla virtualizzazione è l'emulazione, che permette di replicare l'ambiente di un sistema su un altro dispositivo tramite software o hardware dedicato. L'emulazione consente di simulare il funzionamento di dispositivi specifici, come telefoni o computer con un'architettura differente, senza la necessità di hardware specifico. Tuttavia, l'emulazione può risultare lenta e richiedere molta memoria.</p>
+        </section>
+
+        <section id="macchine-virtuali">
+            <h2>Le Macchine Virtuali</h2>
+            <p>Le macchine virtuali (VM) sono ambienti che simulano il comportamento di interi computer o dispositivi. Possono replicare sistemi operativi diversi o anche emulare l'uso di dispositivi mobili direttamente sul PC. Le VM funzionano contemporaneamente al sistema operativo del computer, creando una finestra in cui appare un ambiente isolato e autonomo, utile per testare programmi senza rischiare di compromettere il sistema reale.</p>
+            <p>Le VM possono essere di due tipi:</p>
+            <ul>
+                <li><strong>Macchine virtuali di sistema:</strong> emulano interi sistemi operativi, permettendo di avere diversi OS su un unico hardware.</li>
+                <li><strong>Macchine virtuali di processo:</strong> isolano un’applicazione specifica in un ambiente virtuale.</li>
+            </ul>
+            <p>Ogni macchina virtuale ha il vantaggio di poter testare configurazioni o applicazioni diverse senza doverle installare sull'ambiente reale, proteggendo il sistema da eventuali rischi.</p>
+        </section>
+
+        <section id="architettura-sistemi">
+            <h2>Architettura dei Sistemi di Elaborazione</h2>
+            <p>L’architettura dei sistemi di elaborazione si occupa dello studio e della progettazione di tutti i componenti fisici e logici di un computer, compresi hardware e software. In questo contesto, il firmware rappresenta uno strato intermedio: è costituito da programmi memorizzati direttamente nei circuiti elettronici (software cablato) e serve come ponte tra hardware e sistema operativo.</p>
+            <p>L'architettura ha come obiettivo l’ottimizzazione delle prestazioni del sistema, mentre l'elettronica si concentra sull'efficienza e sulla velocità dei singoli circuiti.</p>
+            <p>I componenti elettronici principali di un computer sono:</p>
+            <ul>
+                <li><strong>Porte logiche:</strong> realizzano le operazioni logiche di base e sono alla base dei circuiti digitali.</li>
+                <li><strong>Generatori di segnali:</strong> producono impulsi periodici, sincronizzando il funzionamento delle diverse componenti hardware.</li>
+            </ul>
+        </section>
+
+        <section id="porte-logiche">
+            <h2>Le Porte Logiche e i Generatori di Segnale</h2>
+            <p>Le porte logiche sono componenti fondamentali nei circuiti elettronici e svolgono operazioni basate sull'algebra booleana, utilizzando valori binari (0 e 1). Le principali porte logiche sono:</p>
+            <ul>
+                <li><strong>AND:</strong> restituisce 1 solo se entrambe le entrate sono 1.</li>
+                <li><strong>OR:</strong> restituisce 1 se almeno una delle entrate è 1.</li>
+                <li><strong>NOT:</strong> inverte il valore dell'input (da 1 a 0 o viceversa).</li>
+            </ul>
+            <p>Le porte logiche vengono assemblate per formare circuiti combinatori (dipendono solo dall'input attuale) e sequenziali (dipendono anche da input precedenti), che permettono di realizzare operazioni complesse.</p>
+            <p>I generatori di segnali, invece, producono segnali periodici, come impulsi di clock, che sincronizzano il funzionamento di CPU e altre componenti hardware, assicurando che le operazioni all'interno del sistema siano eseguite in modo coordinato e armonico.</p>
+        </section>
+
+        <section id="architettura-software">
+            <h2>Architettura Software</h2>
+            <p>Accanto all’architettura hardware, esiste anche un'architettura software. Questa comprende il sistema operativo, che gestisce l'uso delle risorse hardware (come memoria e processori) e coordina le informazioni. Grazie a un’organizzazione efficiente tra hardware e software, il sistema operativo garantisce che ogni processo o applicazione ottenga le risorse necessarie per funzionare al meglio.</p>
+        </section>
+    </main>
+</body>
+</html>
