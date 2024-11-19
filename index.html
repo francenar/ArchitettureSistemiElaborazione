@@ -37,6 +37,15 @@
                 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
                 text-align: center;
             }
+            img:not(.banner) {
+                width: 400px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+            }
+            img:not(.banner):hover {
+                transform: scale(1.04);
+            }
         </style>
     </head>
     <body>
@@ -61,10 +70,12 @@
             "
         >
             <div class="container-immagine">
-                <img
-                    src="storia/IMG/eniac.jpg"
-                    style="width: 100%; height: 200px; object-fit: contain"
-                />
+                <a href="storia/lastoria.html">
+                    <img
+                        src="storia/IMG/eniac.jpg"
+                        style="width: 100%; height: 200px; object-fit: contain"
+                    />
+                </a>
                 <p><a href="storia/lastoria.html">La Storia</a></p>
             </div>
             <div class="container-immagine">
@@ -75,24 +86,30 @@
                 <p>L'architettura</p>
             </div>
             <div class="container-immagine">
-                <img
-                    src="CPU/IMG/chipset.jpg"
-                    style="width: 100%; height: 200px; object-fit: contain"
-                />
+                <a href="CPU/indice.html">
+                    <img
+                        src="CPU/IMG/chipset.jpg"
+                        style="width: 100%; height: 200px; object-fit: contain"
+                    />
+                </a>
                 <p><a href="CPU/indice.html"> La CPU</a></p>
             </div>
             <div class="container-immagine">
-                <img
-                    src="Memorie/IMG/ram.jpg"
-                    style="width: 100%; height: 200px; object-fit: contain"
-                />
+                <a href="Memorie/Lememorie.html">
+                    <img
+                        src="Memorie/IMG/ram.jpg"
+                        style="width: 100%; height: 200px; object-fit: contain"
+                    />
+                </a>
                 <p><a href="Memorie/Lememorie.html">Le memorie</a></p>
             </div>
             <div class="container-immagine">
-                <img
-                    src="BUS/IMG/ARBITRAGGIO.png"
-                    style="width: 100%; height: 200px; object-fit: contain"
-                />
+                <a href="BUS/home.html">
+                    <img
+                        src="BUS/IMG/ARBITRAGGIO.png"
+                        style="width: 100%; height: 200px; object-fit: contain"
+                    />
+                </a>
                 <p>
                     <a href="BUS/home.html">
                         La comunicazione tramite i BUS e Le architetture non von
@@ -101,10 +118,12 @@
                 </p>
             </div>
             <div class="container-immagine">
-                <img
-                    src="SO/IMG/sistemi.jpg"
-                    style="width: 100%; height: 200px; object-fit: contain"
-                />
+                <a href="SO/home.html">
+                    <img
+                        src="SO/IMG/sistemi.jpg"
+                        style="width: 100%; height: 200px; object-fit: contain"
+                    />
+                </a>
                 <p>
                     <a href="SO/home.html">I Sistemi Operativi</a>
                 </p>
