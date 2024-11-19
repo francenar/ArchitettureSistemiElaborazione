@@ -10,6 +10,7 @@
             body {
                 margin: 0;
                 padding: 0;
+                overflow-x: hidden;
             }
 
             .container-immagine {
@@ -33,12 +34,15 @@
                 transform: translate(-50%, -50%);
                 color: white;
                 font-family: "Ubuntu", sans-serif;
-                font-size: 5em;
+                font-size: 5vw;
                 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
                 text-align: center;
+                width: 90%;
+                overflow-wrap: break-word;
             }
             img:not(.banner) {
-                width: 400px;
+                width: 100%;
+                max-width: 400px;
                 border-radius: 8px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                 transition: transform 0.3s ease;

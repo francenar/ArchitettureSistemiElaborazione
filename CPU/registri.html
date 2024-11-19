@@ -1,24 +1,91 @@
-<!DOCTYPE html>
-<html>
-<head>
-<body>
-<h1 align="center"><font size="15">I registri</font></h1>
-<font face="Verdana" size "5">
-I registri della CPU sono piccole memorie super veloci super veloci dentro al processore.<br>
-Servono a memorizzare temporaneamente i dati e le istruzioni che la CPU sta usando, cosi da lavorare più velocemente. Ecco i tipi principali:<br>
-<br>
-1.ACCUMULATORE:dove si fanno i calcoli.<br>
-2.CONTATORE DI PROGRAMMA:indica alla CPU dove andare per l'istruzione successiva<br>
-3.REGISTRO DI ISTRUZIONE:contiene l'istruzione che la CPU sta eseguendo.<br>
-4.REGISTRI GENERICI:piccoli "cassetti" per tenere i dati temporanei.<br>
-5.REGISTRO DI STATO:segnala alla CPU condizioni particolari,come errori.<br>
-6.STACK POINTER:indica l'ultimo dato nello "stack",in una zona di memoria speciale per le funzioni.<br>
-7.BASE POINTER:aiutaa trovare facilmente i dati nello stack.<br>
-<br>
-In breve, questi registri aiutano la CPU a lavorare rapidamente e senza interruzioni. <br>
-<img src="IMG/registri.jpg"></img>
+<!doctype html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>I registri della CPU</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 20px;
+                background-color: #adf7b6;
+            }
+            h1 {
+                text-align: center;
+                font-size: 2em;
+                margin-bottom: 20px;
+            }
+            .content {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 30px;
+            }
+            .text {
+                flex: 1;
+                max-width: 600px;
+                font-size: 1.1em;
+                line-height: 1.8;
+            }
+            .image {
+                flex: 1;
+                max-width: 600px;
+                text-align: center;
+            }
+            .image img {
+                width: 80%;
+                height: auto;
+                max-width: 800px;
+            }
+            a {
+                display: block;
+                text-align: center;
+                margin-top: 20px;
+                font-weight: bold;
+                color: #007bff;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>I registri della CPU</h1>
 
-<A HREF="indice.html">Torna all'indice</A>
-<font>
-</body>
-    </html>
+        <div class="content">
+            <div class="text">
+                I registri della CPU sono piccole memorie super veloci dentro al
+                processore. Servono a memorizzare temporaneamente i dati e le
+                istruzioni che la CPU sta usando, così da lavorare più
+                velocemente. Ecco i tipi principali:<br /><br />
+
+                1. <b>ACCUMULATORE</b>: dove si fanno i calcoli.<br />
+                2. <b>CONTATORE DI PROGRAMMA</b>: indica alla CPU dove andare
+                per l'istruzione successiva.<br />
+                3. <b>REGISTRO DI ISTRUZIONE</b>: contiene l'istruzione che la
+                CPU sta eseguendo.<br />
+                4. <b>REGISTRI GENERICI</b>: piccoli "cassetti" per tenere i
+                dati temporanei.<br />
+                5. <b>REGISTRO DI STATO</b>: segnala alla CPU condizioni
+                particolari, come errori.<br />
+                6. <b>STACK POINTER</b>: indica l'ultimo dato nello "stack", in
+                una zona di memoria speciale per le funzioni.<br />
+                7. <b>BASE POINTER</b>: aiuta a trovare facilmente i dati nello
+                stack.<br /><br />
+
+                In breve, questi registri aiutano la CPU a lavorare rapidamente
+                e senza interruzioni.
+            </div>
+
+            <div class="image">
+                <img
+                    src="IMG/registri.png"
+                    alt="Immagine dei registri della CPU"
+                />
+            </div>
+        </div>
+
+        <a href="indice.html">Torna all'indice</a>
+    </body>
+</html>
