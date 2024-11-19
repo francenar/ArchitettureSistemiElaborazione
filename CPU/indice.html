@@ -2,12 +2,51 @@
 <html>
     <head>
         <title>LA CPU</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body,
+            html {
+                height: 100%;
+                overflow: hidden;
+                font-family: Arial, sans-serif;
+            }
+
+            .video-background {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: -1;
+            }
+
+            .content {
+                position: relative;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        </style>
     </head>
-    <body background="IMG/cpu.jpg">
-        <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <body>
+        <video class="video-background" autoplay loop muted>
+            <source src="IMG/cpu.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         <h1 style="color: white; text-align: center; font-size: 100px">
             LA CPU
         </h1>
+        <br /><br /><br />
         <h2 align="center">
             <a href="introduzionecpu.html" style="color: white">La CPU</a>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -23,5 +62,19 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="chipset.html" style="color: white">Il chipset</a>
         </h2>
+        <div style="text-align: center; margin-top: 20px">
+            <a
+                href="../index.html"
+                style="
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1.1rem;
+                    transition: transform 0.3s;
+                    display: inline-block;
+                "
+                onmouseover="this.style.transform='scale(1.1)'"
+                onmouseout="this.style.transform='scale(1)'"
+                >Torna all'indice</a
+            >
     </body>
 </html>
