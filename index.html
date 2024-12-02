@@ -1,31 +1,20 @@
 <!doctype html>
-<html>
+<html lang="it">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Architetture Sistemi</title>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"/>
         <style>
             body {
                 margin: 0;
                 padding: 0;
-                overflow-x: hidden;
                 font-family: "Ubuntu", sans-serif;
-            }
-
-            .container-immagine {
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-                align-items: center;
-                text-align: center;
+                overflow-x: hidden;
             }
 
             header {
                 width: 100%;
-                margin: 0;
-                padding: 0;
                 position: relative;
             }
 
@@ -54,7 +43,6 @@
                 transform: scale(1.04);
             }
 
-            /* Grid layout for larger screens */
             .grid-container {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
@@ -63,31 +51,30 @@
                 justify-items: center;
             }
 
-            /* Mobile responsive layout */
             @media (max-width: 768px) {
                 .grid-container {
-                    grid-template-columns: 1fr; /* Stack images in one column */
+                    grid-template-columns: 1fr;
                     padding: 10px;
                 }
 
                 .testo-banner {
-                    font-size: 8vw; /* Make the banner text smaller on mobile */
+                    font-size: 8vw;
                 }
 
                 img:not(.banner) {
-                    max-width: 100%; /* Ensure images take up full width on mobile */
+                    max-width: 100%;
                     height: auto;
+                }
+
+                .container-immagine {
+                    margin-bottom: 20px;
                 }
             }
         </style>
     </head>
     <body>
         <header>
-            <img
-                src="banner.jpg"
-                class="banner"
-                style="height: auto; width: 100%; display: block"
-            />
+            <img src="banner.jpg" class="banner" style="width: 100%; height: auto; display: block"/>
             <div class="testo-banner">
                 Le architetture dei Sistemi di elaborazione
             </div>
@@ -96,60 +83,41 @@
         <div class="grid-container">
             <div class="container-immagine">
                 <a href="storia/lastoria.html">
-                    <img
-                        src="storia/IMG/eniac.jpg"
-                        style="width: 100%; height: 200px; object-fit: contain"
-                    />
+                    <img src="storia/IMG/eniac.jpg" style="height: 200px; object-fit: contain"/>
                 </a>
                 <p><a href="storia/lastoria.html">La Storia</a></p>
             </div>
             <div class="container-immagine">
                 <a href="architettura/Architettura.html">
-                    <img
-                        src="architettura/IMG/SCHEMA DEL MODELLO.png"
-                        style="width: 100%; height: 200px; object-fit: contain"
-                    />
+                    <img src="architettura/IMG/SCHEMA DEL MODELLO.png" style="height: 200px; object-fit: contain"/>
                 </a>
                 <p><a href="architettura/Architettura.html">L'architettura</a></p>
             </div>
             <div class="container-immagine">
                 <a href="CPU/indice.html">
-                    <img
-                        src="CPU/IMG/chipset.jpg"
-                        style="width: 100%; height: 200px; object-fit: contain"
-                    />
+                    <img src="CPU/IMG/chipset.jpg" style="height: 200px; object-fit: contain"/>
                 </a>
                 <p><a href="CPU/indice.html">La CPU</a></p>
             </div>
             <div class="container-immagine">
                 <a href="Memorie/Lememorie.html">
-                    <img
-                        src="Memorie/IMG/ram.jpg"
-                        style="width: 100%; height: 200px; object-fit: contain"
-                    />
+                    <img src="Memorie/IMG/ram.jpg" style="height: 200px; object-fit: contain"/>
                 </a>
                 <p><a href="Memorie/Lememorie.html">Le memorie</a></p>
             </div>
             <div class="container-immagine">
                 <a href="BUS/home.html">
-                    <img
-                        src="BUS/IMG/ARBITRAGGIO.png"
-                        style="width: 100%; height: 200px; object-fit: contain"
-                    />
+                    <img src="BUS/IMG/ARBITRAGGIO.png" style="height: 200px; object-fit: contain"/>
                 </a>
                 <p>
                     <a href="BUS/home.html">
-                        La comunicazione tramite i BUS e Le architetture non von
-                        Neumann
+                        La comunicazione tramite i BUS e Le architetture non von Neumann
                     </a>
                 </p>
             </div>
             <div class="container-immagine">
                 <a href="SO/home.html">
-                    <img
-                        src="SO/IMG/sistemi.jpg"
-                        style="width: 100%; height: 200px; object-fit: contain"
-                    />
+                    <img src="SO/IMG/sistemi.jpg" style="height: 200px; object-fit: contain"/>
                 </a>
                 <p>
                     <a href="SO/home.html">I Sistemi Operativi</a>
