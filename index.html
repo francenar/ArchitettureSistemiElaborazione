@@ -11,6 +11,7 @@
                 margin: 0;
                 padding: 0;
                 overflow-x: hidden;
+                font-family: "Ubuntu", sans-serif;
             }
 
             .container-immagine {
@@ -27,19 +28,20 @@
                 padding: 0;
                 position: relative;
             }
+
             .testo-banner {
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 color: white;
-                font-family: "Ubuntu", sans-serif;
                 font-size: 5vw;
                 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
                 text-align: center;
                 width: 90%;
                 overflow-wrap: break-word;
             }
+
             img:not(.banner) {
                 width: 100%;
                 max-width: 400px;
@@ -47,8 +49,35 @@
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                 transition: transform 0.3s ease;
             }
+
             img:not(.banner):hover {
                 transform: scale(1.04);
+            }
+
+            /* Grid layout for larger screens */
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                padding: 20px;
+                justify-items: center;
+            }
+
+            /* Mobile responsive layout */
+            @media (max-width: 768px) {
+                .grid-container {
+                    grid-template-columns: 1fr; /* Stack images in one column */
+                    padding: 10px;
+                }
+
+                .testo-banner {
+                    font-size: 8vw; /* Make the banner text smaller on mobile */
+                }
+
+                img:not(.banner) {
+                    max-width: 100%; /* Ensure images take up full width on mobile */
+                    height: auto;
+                }
             }
         </style>
     </head>
@@ -64,15 +93,7 @@
             </div>
         </header>
 
-        <div
-            style="
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 20px;
-                padding: 20px;
-                justify-items: center;
-            "
-        >
+        <div class="grid-container">
             <div class="container-immagine">
                 <a href="storia/lastoria.html">
                     <img
@@ -84,12 +105,12 @@
             </div>
             <div class="container-immagine">
                 <a href="architettura/Architettura.html">
-                <img
-                    src="architettura/IMG/SCHEMA DEL MODELLO.png"
-                    style="width: 100%; height: 200px; object-fit: contain"
-                />
+                    <img
+                        src="architettura/IMG/SCHEMA DEL MODELLO.png"
+                        style="width: 100%; height: 200px; object-fit: contain"
+                    />
                 </a>
-                <p><a href="architettura/Architettura.html">L'architettura </a></p>
+                <p><a href="architettura/Architettura.html">L'architettura</a></p>
             </div>
             <div class="container-immagine">
                 <a href="CPU/indice.html">
@@ -98,7 +119,7 @@
                         style="width: 100%; height: 200px; object-fit: contain"
                     />
                 </a>
-                <p><a href="CPU/indice.html"> La CPU</a></p>
+                <p><a href="CPU/indice.html">La CPU</a></p>
             </div>
             <div class="container-immagine">
                 <a href="Memorie/Lememorie.html">
