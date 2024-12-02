@@ -1,14 +1,61 @@
+html
+<!DOCTYPE html>
 <html>
-<head basefont size="16">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Memoria ram</title>
+<style>
+body {
+  background-color: #fffaf0;
+  font-size: 16px; /* Use CSS for base font size */
+  margin: 0; /* Remove default body margins */
+  padding: 0; /* Remove default body padding */
+  font-family: sans-serif; /* Add a default font */
+}
+
+h1 {
+  text-align: center; /* Center the heading */
+}
+
+img {
+  max-width: 100%; /* Ensure images scale appropriately */
+  height: auto;
+}
+
+a {
+  display: block; /* Make the link a block element for better styling */
+  text-align: center; /* Center the link text */
+  margin-top: 1em; /* Add some spacing */
+  padding: 0.5em 1em; /* Add some padding */
+  background-color: #ddd; /* Add a background color for better visibility */
+  text-decoration: none; /* Remove default underline */
+  color: #333; /* Set link color */
+}
+
+/* Media query for smaller screens (e.g., phones) */
+@media (max-width: 767px) {
+  img {
+    display: block; /* Ensure images are displayed as block elements on smaller screens */
+    margin: 0 auto; /* Center the images */
+  }
+}
+</style>
 </head>
-<body bgcolor="	#fffaf0">
+<body>
 <h1>Memoria ram</h1>
+<section>
 <p>La memoria ram (Random access memory) è una memoria di tipo volatile, ciò sta a significare che perde tutte le informazioni date quando non viene alimentata, sulla Ram vengono caricati i dati che la CPU deve eseguire. <br>
-Esistono vari tipi di RAM :
-SRAM (Static-Random-Access-Memory) è un tipo di memoria che ha una grande velocità , richiedono poca energia e scaldano poco ma sono dotate<br> di poca memoria, vengono quindi usate principalmente per le memorie cache.
-DRAM (Dinamyc-Random-Access-Memory) è una memoria dotata di grande spazio d’archiviazione a fronte di una scarsa qualità d’isolamento, questo causa la perdita dei dati, e l’unico modo è eseguire una operazione di ricarica detta “refreshing” che legge e riscrive i dati. <p/><br>
-<img src=IMG/ram.jpg> <img src=IMG/ramm.jpg height="auto" width="50%">
-<A HREF="Lememorie.html">TORNA INDIETRO</a>
+Esistono vari tipi di RAM:</p>
+<ul>
+  <li><strong>SRAM (Static-Random-Access-Memory)</strong> è un tipo di memoria che ha una grande velocità, richiedono poca energia e scaldano poco ma sono dotate di poca memoria, vengono quindi usate principalmente per le memorie cache.</li>
+  <li><strong>DRAM (Dinamyc-Random-Access-Memory)</strong> è una memoria dotata di grande spazio d’archiviazione a fronte di una scarsa qualità d’isolamento, questo causa la perdita dei dati, e l’unico modo è eseguire una operazione di ricarica detta “refreshing” che legge e riscrive i dati.</li>
+</ul>
+</section>
+<section>
+<img src="IMG/ram.jpg" alt="RAM image">
+<img src="IMG/ramm.jpg" alt="RAM image">
+</section>
+<a href="Lememorie.html">TORNA INDIETRO</a>
 </body>
 </html>
