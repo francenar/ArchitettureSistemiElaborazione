@@ -1,128 +1,182 @@
 <!doctype html>
 <html lang="it">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Architetture Sistemi</title>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"/>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-                font-family: "Ubuntu", sans-serif;
-                overflow-x: hidden;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architetture Sistemi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Ubuntu', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
 
-            header {
-                width: 100%;
-                position: relative;
-            }
+        h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
 
-            .testo-banner {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                color: white;
-                font-size: 5vw;
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-                text-align: center;
-                width: 90%;
-                overflow-wrap: break-word;
-            }
+        header {
+            position: relative;
+            width: 100%;
+            height: 70vh;
+        }
 
-            img:not(.banner) {
-                width: 100%;
-                max-width: 400px;
-                border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                transition: transform 0.3s ease;
-            }
+        .banner {
+            width: 100%;
+            height: 70%;
+            object-fit: cover;
+            display: block;
+        }
 
-            img:not(.banner):hover {
-                transform: scale(1.04);
-            }
+        .testo-banner {
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 4vw;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            width: 90%;
+            font-weight: bold;
+            margin-top: 10%;
+        }
 
-            .grid-container {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 20px;
-                padding: 20px;
-                justify-items: center;
-            }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 5%;
+            width: 80%;
+            margin: -5% 0 7% 0;
+            row-gap: 40px;
+        }
 
-            @media (max-width: 768px) {
-                .grid-container {
-                    grid-template-columns: 1fr;
-                    padding: 10px;
-                }
+        .container-immagine {
+            text-align: center;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
 
-                .testo-banner {
-                    font-size: 8vw;
-                }
+        .container-immagine:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
 
-                img:not(.banner) {
-                    max-width: 100%;
-                    height: auto;
-                }
+        .container-immagine img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
 
-                .container-immagine {
-                    margin-bottom: 20px;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <img src="banner.jpg" class="banner" style="width: 100%; height: auto; display: block"/>
-            <div class="testo-banner">
-                Le architetture dei Sistemi di elaborazione
-            </div>
-        </header>
+        .container-immagine img:hover {
+            transform: scale(1.05);
+        }
 
-        <div class="grid-container">
-            <div class="container-immagine">
-                <a href="storia/lastoria.html">
-                    <img src="storia/IMG/eniac.jpg" style="height: 200px; object-fit: contain"/>
-                </a>
-                <p><a href="storia/lastoria.html">La Storia</a></p>
-            </div>
-            <div class="container-immagine">
-                <a href="architettura/Architettura.html">
-                    <img src="architettura/IMG/SCHEMA DEL MODELLO.png" style="height: 200px; object-fit: contain"/>
-                </a>
-                <p><a href="architettura/Architettura.html">L'architettura</a></p>
-            </div>
-            <div class="container-immagine">
-                <a href="CPU/indice.html">
-                    <img src="CPU/IMG/chipset.jpg" style="height: 200px; object-fit: contain"/>
-                </a>
-                <p><a href="CPU/indice.html">La CPU</a></p>
-            </div>
-            <div class="container-immagine">
-                <a href="Memorie/Lememorie.html">
-                    <img src="Memorie/IMG/ram.jpg" style="height: 200px; object-fit: contain"/>
-                </a>
-                <p><a href="Memorie/Lememorie.html">Le memorie</a></p>
-            </div>
-            <div class="container-immagine">
-                <a href="BUS/home.html">
-                    <img src="BUS/IMG/ARBITRAGGIO.png" style="height: 200px; object-fit: contain"/>
-                </a>
-                <p>
-                    <a href="BUS/home.html">
-                        La comunicazione tramite i BUS e Le architetture non von Neumann
-                    </a>
-                </p>
-            </div>
-            <div class="container-immagine">
-                <a href="SO/home.html">
-                    <img src="SO/IMG/sistemi.jpg" style="height: 200px; object-fit: contain"/>
-                </a>
-                <p>
-                    <a href="SO/home.html">I Sistemi Operativi</a>
-                </p>
-            </div>
+        .container-immagine p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .container-immagine a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .container-immagine a:hover {
+            color: #0056b3;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            width: 100%;
+        }
+
+        .footer a {
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="banner.jpg" class="banner" alt="Banner">
+        <div class="testo-banner">
+            Le architetture dei Sistemi di elaborazione
         </div>
-    </body>
+    </header>
+
+    <div class="grid-container">
+        <div class="container-immagine">
+            <a href="storia/storia.html">
+                <img src="storia/IMG/eniac.jpg" alt="La Storia">
+            </a>
+            <p><a href="storia/storia.html">La Storia</a></p>
+        </div>
+
+        <div class="container-immagine">
+            <a href="architettura/Architettura.html">
+                <img src="pc.jpg" alt="L'architettura">
+            </a>
+            <p><a href="architettura/Architettura.html">L'architettura</a></p>
+        </div>
+
+        <div class="container-immagine">
+            <a href="CPU/cpu.html">
+                <img src="CPU/IMG/chipset.jpg" alt="La CPU">
+            </a>
+            <p><a href="CPU/cpu.html">La CPU</a></p>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="container-immagine">
+            <a href="Memorie/memorie.html">
+                <img src="Memorie/IMG/ram.jpg" alt="Le memorie">
+            </a>
+            <p><a href="Memorie/memorie.html">Le memorie</a></p>
+        </div>
+
+        <div class="container-immagine">
+            <a href="BUS/bus.html">
+                <img src="BUS/IMG/ARBITRAGGIO.png" alt="La comunicazione tramite i BUS">
+            </a>
+            <p><a href="BUS/bus.html">La comunicazione tramite i BUS e Le architetture non von Neumann</a></p>
+        </div>
+
+        <div class="container-immagine">
+            <a href="SO/sistemioperativi.html">
+                <img src="SO/IMG/sistemi.jpg" alt="I Sistemi Operativi">
+            </a>
+            <p><a href="SO/sistemioperativi.html">I Sistemi Operativi</a></p>
+        </div>
+    </div>
+</body>
 </html>
