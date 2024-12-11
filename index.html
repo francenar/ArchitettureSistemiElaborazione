@@ -12,10 +12,8 @@
             font-family: 'Ubuntu', sans-serif;
             background-color: #f4f4f4;
             color: #333;
+            min-height: 100vh;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             flex-direction: column;
         }
 
@@ -27,19 +25,19 @@
         header {
             position: relative;
             width: 100%;
-            height: 70vh;
+            height: 100vh;
         }
 
         .banner {
             width: 100%;
-            height: 70%;
+            height: 100%;
             object-fit: cover;
             display: block;
         }
 
         .testo-banner {
             position: absolute;
-            top: 5%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             color: white;
@@ -48,7 +46,6 @@
             text-align: center;
             width: 90%;
             font-weight: bold;
-            margin-top: 10%;
         }
 
         .grid-container {
@@ -56,7 +53,7 @@
             grid-template-columns: 1fr 1fr 1fr;
             gap: 5%;
             width: 80%;
-            margin: -5% 0 7% 0;
+            margin: -5% auto 7% auto;
             row-gap: 40px;
         }
 
@@ -106,11 +103,10 @@
 
         .footer {
             text-align: center;
-            margin-top: 40px;
             padding: 20px;
             background-color: #333;
             color: white;
-            width: 100%;
+            margin-top: auto;
         }
 
         .footer a {
