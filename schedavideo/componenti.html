@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componenti della GPU</title>
+    <style>
+        /* Base styling */
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0a74da;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .content {
+            width: 80%;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .content h2 {
+            font-size: 1.8rem;
+            color: #0a74da;
+            margin-bottom: 10px;
+        }
+
+        .content p, .content ul {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            background-color: #0a74da;
+            color: white;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 1rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Componenti della GPU</h1>
+</header>
+
+<div class="content">
+    <h2>Introduzione</h2>
+    <p>
+        La <strong>GPU (Graphics Processing Unit)</strong> è composta da numerosi componenti essenziali che lavorano insieme per gestire il rendering grafico e il calcolo parallelo. I principali componenti di una GPU includono:
+    </p>
+    <ul>
+        <li><strong>Core di elaborazione (Shader Cores)</strong>: Unità di calcolo che gestiscono le operazioni matematiche per il rendering delle immagini.</li>
+        <li><strong>Memoria Video (VRAM)</strong>: Memoria dedicata alla gestione dei dati grafici come texture e modelli 3D.</li>
+        <li><strong>Unità di Rasterizzazione</strong>: Converte le immagini 3D in pixel per essere visualizzate sullo schermo.</li>
+        <li><strong>Unità di Texture Mapping (TMU)</strong>: Gestisce l’applicazione delle texture sugli oggetti 3D.</li>
+        <li><strong>Interfaccia di Memoria</strong>: Gestisce il flusso di dati tra la GPU e la memoria VRAM.</li>
+    </ul>
+
+    <div class="image-container">
+        <img src="graphics-card-components.jpg" alt="Diagramma dei componenti di una GPU">
+    </div>
+
+    <h2>Conclusioni</h2>
+    <p>
+        Ogni componente della GPU ha un ruolo fondamentale nel processo di rendering e nella gestione delle operazioni parallele, che sono cruciali per il rendering di grafica complessa in tempo reale.
+    </p>
+</div>
+
+<footer>
+    <p>&copy; 2024 - GPU Information | Tutti i diritti riservati</p>
+</footer>
+
+</body>
+</html>

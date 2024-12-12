@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architettura della GPU</title>
+    <style>
+        /* Base styling (same as previous page) */
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0a74da;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .content {
+            width: 80%;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .content h2 {
+            font-size: 1.8rem;
+            color: #0a74da;
+            margin-bottom: 10px;
+        }
+
+        .content p, .content ul {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            background-color: #0a74da;
+            color: white;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 1rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Architettura della GPU</h1>
+</header>
+
+<div class="content">
+    <h2>Introduzione</h2>
+    <p>
+        L'architettura della GPU definisce come i suoi componenti lavorano insieme per eseguire operazioni complesse. Le GPU moderne hanno un'architettura parallela che include:
+    </p>
+    <ul>
+        <li><strong>Streaming Multiprocessors (SM)</strong>: Gruppi di core che eseguono operazioni parallele per ottenere alte prestazioni.</li>
+        <li><strong>Pipeline Grafica</strong>: Un processo che trasforma i dati 3D in immagini 2D visibili sullo schermo.</li>
+        <li><strong>Unified Memory</strong>: Una memoria condivisa tra CPU e GPU per una gestione più efficiente dei dati.</li>
+        <li><strong>Ray Tracing Cores</strong>: Unità specializzate per simulare in modo realistico il comportamento della luce nei giochi e nei film.</li>
+    </ul>
+
+    <div class="image-container">
+        <img src="path_to_image/your_architecture_image.png" alt="Architettura della GPU">
+    </div>
+
+    <h2>Conclusioni</h2>
+    <p>
+        Le moderne architetture delle GPU sono progettate per gestire non solo il rendering grafico, ma anche calcoli avanzati come il machine learning e il ray tracing, offrendo prestazioni straordinarie.
+    </p>
+</div>
+
+<footer>
+    <p>&copy; 2024 - GPU Architecture | Tutti i diritti riservati</p>
+</footer>
+
+</body>
+</html>
