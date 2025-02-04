@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f4f6f9;
+            background: linear-gradient(to right, #f0f0f0, #d6d6d6);
             color: #333;
             margin: 0;
             padding: 0;
@@ -16,162 +16,146 @@
         }
 
         header {
-            background-color: #333;
+            background: linear-gradient(90deg, #444, #222);
             color: white;
             text-align: center;
-            padding: 30px 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 50px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
         h1 {
-            font-size: 2.5em;
+            font-size: 3em;
             margin: 0;
             font-weight: 700;
         }
 
-        h2 {
-            font-size: 2em;
-            color: #333;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            text-align: center;
-            font-weight: 500;
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #222;
+            padding: 15px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
-        h3, p {
-            font-size: 1.1em;
-            color: #555;
-            margin: 20px 0;
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.3em;
+            padding: 15px 25px;
+            transition: background 0.3s, transform 0.2s;
+            border-radius: 8px;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #222;
+            text-align: center;
+            font-size: 2.2em;
         }
 
         p {
             text-align: justify;
-            line-height: 1.8;
+            font-size: 1.2em;
         }
 
-        a {
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        a:hover {
-            color: #0056b3;
-        }
-
-        .content, .sub-link-container {
-            margin: 40px 20px;
-            padding: 20px;
-            background-color: white;
+        img {
+            width: 100%;
             border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin: 25px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
-        .content img, .sub-link-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            margin: 20px 0;
-        }
-
-        .sub-link-container ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .sub-link-container li {
-            margin: 10px 0;
-            font-size: 1.1em;
-        }
-
-        .link-container {
+        .footer {
             text-align: center;
-            margin-top: 40px;
+            margin: 50px 0;
         }
 
-        .link-container a {
-            display: inline-block;
-            padding: 12px 25px;
-            background-color: #007bff;
+        .footer a {
+            padding: 15px 30px;
+            background-color: #444;
             color: white;
-            border-radius: 8px;
+            border-radius: 10px;
             text-transform: uppercase;
             letter-spacing: 1px;
-            font-size: 1.1em;
-            transition: background-color 0.3s, transform 0.2s;
-        }
-
-        .link-container a:hover {
-            background-color: #0056b3;
-            transform: scale(1.05);
-        }
-
-        .sub-link-container a {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border-radius: 8px;
+            font-size: 1.2em;
+            transition: background 0.3s, transform 0.2s;
             text-decoration: none;
-            font-weight: 500;
-            transition: background-color 0.3s, transform 0.2s;
         }
 
-        .sub-link-container a:hover {
-            background-color: #0056b3;
-            transform: scale(1.05);
+        .footer a:hover {
+            background-color: #222;
+            transform: scale(1.1);
         }
-
     </style>
 </head>
 <body>
-
     <header>
         <h1>Le Memorie</h1>
     </header>
+    
+    <nav>
+        <a href="#memoria">Memoria</a>
+        <a href="#mass">Memoria di Massa</a>
+        <a href="#ram">Memoria RAM</a>
+        <a href="#rom">Memoria ROM</a>
+    </nav>
 
-    <div class="sub-link-container">
-        <h2>Cosa si intende per memoria</h2>
-        <p>Durante la nostra vita, ognuno di noi ricorda dei momenti che lo hanno colpito, questi momenti vengono immagazzinati nella memoria, quindi come un essere umano anche una macchina può avere una memoria. La differenza tra la memoria umana e quella di una macchina è che quella umana immagazzina informazioni tramite stimoli complessi, mentre quella di una macchina immagazzina qualsiasi informazione e queste informazioni hanno un peso espresso in byte.</p>
+    <div class="container" id="memoria">
+        <h2>Che cos'è la memoria?</h2>
+        <p>La memoria è la capacità di immagazzinare informazioni. Nell'essere umano, è un processo cognitivo legato agli stimoli, mentre nei computer è un processo tecnico che si basa sulla registrazione digitale di dati in byte.</p>
+        <p>Le memorie digitali si dividono in volatile e non volatile. La prima perde i dati senza alimentazione, la seconda li conserva permanentemente.</p>
         <img src="IMG/memoria.jpg" alt="Memoria">
     </div>
 
-    <div class="sub-link-container">
-        <h2>Memoria di massa</h2>
-        <p>Una memoria di massa è un tipo di memoria che permette di immagazzinare grandi quantità di dati (file – audio – video – app) in modo permanente, è quindi a discrezione dell'utente l'eliminazione o meno dei suddetti dati. Esistono vari tipi di memorie di massa:</p>
+    <div class="container" id="mass">
+        <h2>Memoria di Massa</h2>
+        <p>Permette di conservare grandi quantità di dati in modo permanente. Esistono vari tipi:</p>
         <ul>
-            <li><strong>HARD DISK</strong> (disco rigido) è un dispositivo di archiviazione presente nella maggior parte dei PC e che è formato da dischi che ruotano ad alte velocità, con testine che scrivono o leggono i dati.</li>
-            <li><strong>SSD</strong> (static state disk) è un dispositivo che memorizza dati in maniera non volatile, senza l'uso di organi meccanici, sfruttando la memoria flash NAND.</li>
+            <li><strong>Hard Disk</strong>: Dischi rotanti con testine magnetiche.</li>
+            <li><strong>SSD</strong>: Memorie veloci basate su tecnologia NAND flash.</li>
+            <li><strong>Memorie USB</strong>: Piccole e portatili per l'archiviazione rapida.</li>
+            <li><strong>Cloud Storage</strong>: Spazio virtuale per salvare dati online.</li>
         </ul>
-        <img src="IMG/Immagine1.jpg" alt="Hard Disk">
-        <img src="IMG/Immagine2.jpg" alt="SSD">
         <img src="IMG/mass.jpg" alt="Memoria di Massa">
     </div>
 
-    <div class="sub-link-container">
+    <div class="container" id="ram">
         <h2>Memoria RAM</h2>
-        <p>La memoria RAM (Random Access Memory) è una memoria di tipo volatile, cioè perde tutte le informazioni quando non è alimentata. Esistono vari tipi di RAM:</p>
+        <p>La memoria volatile che permette l'elaborazione dei dati in tempo reale. Tipologie principali:</p>
         <ul>
-            <li><strong>SRAM</strong> (Static-Random-Access-Memory) è veloce, a basso consumo e con un'alta efficienza energetica, ma con poca memoria.</li>
-            <li><strong>DRAM</strong> (Dynamic-Random-Access-Memory) offre una maggiore capacità di archiviazione, ma richiede un'operazione di ricarica chiamata "refreshing" per mantenere i dati.</li>
+            <li><strong>SRAM</strong>: Più veloce e stabile, usata per cache.</li>
+            <li><strong>DRAM</strong>: Più economica, usata nei computer.</li>
+            <li><strong>LPDDR</strong>: Ottimizzata per dispositivi mobili.</li>
         </ul>
         <img src="IMG/ram.jpg" alt="Memoria RAM">
-        <img src="IMG/ramm.jpg" alt="Memoria DRAM" height="auto" width="50%">
     </div>
 
-    <div class="sub-link-container">
-        <h2>La memoria ROM</h2>
-        <p>La memoria ROM (Read-Only Memory) è una memoria non volatile che conserva i dati anche quando il dispositivo è spento. Viene utilizzata per memorizzare informazioni cruciali e istruzioni che non devono essere modificate, come il firmware o il BIOS. La memoria ROM è principalmente sola lettura, ma esistono vari tipi, come EPROM e EEPROM, che permettono la scrittura e la cancellazione in modo specifico.</p>
-        <p>EPROM (Erasable Programmable Read-Only Memory) è una memoria che può essere programmata e poi cancellata tramite luce ultravioletta. Una volta cancellata, può essere riprogrammata più volte.</p>
-
-        <p>EEPROM (Electrically Erasable Programmable Read-Only Memory) è simile, ma può essere cancellata e riprogrammata elettricamente, senza bisogno di luce. Permette di modificare singoli byte di memoria, ed è più versatile rispetto all'EPROM.</p>
+    <div class="container" id="rom">
+        <h2>Memoria ROM</h2>
+        <p>Memoria non volatile che conserva i dati anche senza alimentazione. Tipologie:</p>
+        <ul>
+            <li><strong>EPROM</strong>: Programmabile e cancellabile con UV.</li>
+            <li><strong>EEPROM</strong>: Cancellabile elettricamente, usata nei BIOS.</li>
+            <li><strong>Flash ROM</strong>: Utilizzata nei moderni dispositivi elettronici.</li>
+        </ul>
         <img src="IMG/rom.jpg" alt="Memoria ROM">
     </div>
+
     <div class="footer">
         <a href="../index.html">Torna all'indice</a>
-      </div>
+    </div>
 </body>
 </html>
