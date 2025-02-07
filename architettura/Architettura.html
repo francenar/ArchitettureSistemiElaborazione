@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Architettura del Computer</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
-        h1 { color: #2c3e50; }
-        h2 { color: #2980b9; }
-        h3 { color: #8e44ad; }
-        p { color: #333; }
-        ul { list-style-type: disc; margin-left: 20px; }
-    </style>
+     <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Architettura del Computer</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet" />
+         <link rel="stylesheet" href="../architetture.css">
 </head>
 <body>
 
     <!-- Prima persona -->
     <h1>Architettura del Computer</h1>
-    
-    <section>
-        <h2>Introduzione Generale</h2>
-        <h3>Il Computer</h3>
+     <nav>
+            <a href="#computer">Il Computer</a>
+            <a href="#componenti">Componenti Hardware Principali</a>
+            <a href="#vonNeumann">Il Modello di Von Neumann</a>
+            <a href="#virtualizzazione">Virtualizzazione e Sistemi di Elaborazione</a>
+        </nav>
+
+    <section class="container" id="computer">
+        <h2>Il Computer</h2>
         <p>Il <strong>computer</strong> è un sistema elettronico che esegue una serie di operazioni predeterminate tramite software, sulla base di istruzioni memorizzate. Tali operazioni spaziano da calcoli matematici a operazioni logiche, fino alla gestione di informazioni complesse. Il termine "architettura del computer" si riferisce alla progettazione di tutti i componenti hardware e alla loro interazione. Ogni componente ha un ruolo fondamentale nell’esecuzione delle operazioni: la <strong>CPU</strong> esegue i calcoli, la <strong>memoria</strong> conserva i dati temporanei e le istruzioni, e i dispositivi di <strong>input/output</strong> permettono l'interazione con l'utente o con altri sistemi.</p>
         <p>L'architettura di un computer è influenzata dalla combinazione di componenti hardware e software, che operano in modo sinergico. Oltre alla CPU e alla memoria, il computer comprende sistemi di <strong>interconnessione</strong> (bus, reti interne) e dispositivi di <strong>periferica</strong> che supportano l’elaborazione, come tastiere, mouse, monitor e stampanti. La progettazione dell'architettura del computer deve considerare l’efficienza, la velocità di elaborazione, l'affidabilità, la scalabilità e il consumo energetico.</p>
+          <h2>Definizione e Funzione del Computer</h2>
+        <p>Il computer, noto anche come elaboratore o calcolatore, è una macchina automatizzata e programmabile che esegue calcoli complessi e altre elaborazioni di dati. Viene concepito per potenziare capacità umane come il calcolo e la memorizzazione, applicandole alla soluzione di problemi scientifici e ingegneristici.</p>
+
     </section>
 
     <!-- Nuovo testo da aggiungere -->
-    <section>
-        <h2>Definizione e Funzione del Computer</h2>
-        <p>Il computer, noto anche come elaboratore o calcolatore, è una macchina automatizzata e programmabile che esegue calcoli complessi e altre elaborazioni di dati. Viene concepito per potenziare capacità umane come il calcolo e la memorizzazione, applicandole alla soluzione di problemi scientifici e ingegneristici.</p>
-
+    <section class="container" id="componenti">
         <h2>Componenti Hardware Principali</h2>
         <p>Il computer è composto da vari componenti hardware fondamentali per il suo funzionamento:</p>
         <ul>
@@ -58,7 +58,7 @@
     </section>
 
     <!-- Modello di Von Neumann -->
-    <section>
+    <section class="container" id="vonNeumann">
         <h2>Il Modello di Von Neumann</h2>
         <p>Il modello di Von Neumann, sviluppato dal matematico e fisico John von Neumann, descrive l'architettura di un computer basato su un <strong>processore centrale</strong> (CPU), una <strong>memoria</strong> e dispositivi di <strong>input/output</strong>, e prevede che il programma e i dati siano memorizzati nella stessa memoria. È il modello di base per la maggior parte dei computer moderni.</p>
         <h3>Struttura del Modello di Von Neumann</h3>
@@ -72,30 +72,21 @@
             <li><strong>Dispositivi di Input/Output (I/O):</strong> Permettono l'interazione con l'esterno, come tastiere, mouse, monitor, stampanti e dischi rigidi.</li>
         </ul>
         <p>In un computer basato sul modello di Von Neumann, le istruzioni vengono lette dalla memoria, decodificate dall'unità di controllo, e quindi eseguite dall'ALU. I risultati delle operazioni vengono quindi scritti nuovamente nella memoria o inviati ai dispositivi di output.</p>
+    
+        <h3>La Memoria</h3>
+        <p>Nel modello di Von Neumann, la memoria è utilizzata per immagazzinare sia i dati che le istruzioni. Questo concetto è essenziale per il funzionamento dei computer moderni, dove la memoria centrale (RAM) è utilizzata per conservare temporaneamente le informazioni durante l'esecuzione dei programmi. Le operazioni di lettura e scrittura della memoria sono eseguite dal processore attraverso un bus di dati, che permette il trasferimento dei dati tra i vari componenti del sistema.</p>
+        <h3>Input/Output e la CPU</h3>
+        <p>Nel modello di Von Neumann, la CPU è al centro di tutte le operazioni, gestendo l’esecuzione delle istruzioni e il flusso di dati. Gli <strong>input</strong> vengono inviati al computer tramite dispositivi di input (come tastiere, mouse o sensori), mentre gli <strong>output</strong> vengono inviati ai dispositivi di output (come monitor, stampanti e altoparlanti). Questi componenti di I/O permettono agli utenti di interagire con il sistema, sia per inserire dati che per ricevere informazioni elaborate dal processore.</p>
+        <p>Il bus di sistema funge da collegamento tra la CPU, la memoria e i dispositivi di I/O, consentendo il trasferimento dei dati tra questi componenti. Questo modello rimane alla base della progettazione di molti sistemi informatici moderni.</p>
     </section>
 
-    <!-- Seconda persona -->
-    <section>
+    <section class="container" id="virtualizzazione">
         <h2>Virtualizzazione e Sistemi di Elaborazione</h2>
         <h3>Le Macchine Virtuali</h3>
         <p>Le <strong>macchine virtuali</strong> sono un concetto fondamentale nella modernizzazione delle infrastrutture informatiche. Invece di utilizzare un computer fisico per ogni applicazione o sistema operativo, è possibile creare ambienti separati all'interno dello stesso hardware fisico. Una macchina virtuale (VM) è un software che simula un computer fisico, emulando l'intero sistema operativo e consentendo l’esecuzione di programmi come se fossero su un dispositivo fisico. La macchina virtuale permette di eseguire applicazioni su sistemi operativi diversi senza la necessità di acquistare hardware aggiuntivo.</p>
         <p>Esistono vari vantaggi nell'uso delle macchine virtuali: la <strong>consolidazione dei server</strong>, che riduce i costi hardware; la <strong>scalabilità dinamica</strong>, che consente di aggiungere o rimuovere risorse virtuali rapidamente; e la <strong>sicurezza migliorata</strong>, poiché ogni macchina virtuale è isolata e non può influenzare le altre. Le VM sono utilizzate soprattutto in ambienti di <strong>cloud computing</strong> e nei data center, dove più sistemi operativi possono essere eseguiti su un singolo server fisico.</p>
     </section>
-
-    <!-- Terza persona -->
-    <section>
-        <h2>Il Modello di Von Neumann (Parte 1)</h2>
-        <h3>La Memoria</h3>
-        <p>Nel modello di Von Neumann, la memoria è utilizzata per immagazzinare sia i dati che le istruzioni. Questo concetto è essenziale per il funzionamento dei computer moderni, dove la memoria centrale (RAM) è utilizzata per conservare temporaneamente le informazioni durante l'esecuzione dei programmi. Le operazioni di lettura e scrittura della memoria sono eseguite dal processore attraverso un bus di dati, che permette il trasferimento dei dati tra i vari componenti del sistema.</p>
-    </section>
-
-    <!-- Quarta persona -->
-    <section>
-        <h2>Il Modello di Von Neumann (Parte 2)</h2>
-        <h3>Input/Output e la CPU</h3>
-        <p>Nel modello di Von Neumann, la CPU è al centro di tutte le operazioni, gestendo l’esecuzione delle istruzioni e il flusso di dati. Gli <strong>input</strong> vengono inviati al computer tramite dispositivi di input (come tastiere, mouse o sensori), mentre gli <strong>output</strong> vengono inviati ai dispositivi di output (come monitor, stampanti e altoparlanti). Questi componenti di I/O permettono agli utenti di interagire con il sistema, sia per inserire dati che per ricevere informazioni elaborate dal processore.</p>
-        <p>Il bus di sistema funge da collegamento tra la CPU, la memoria e i dispositivi di I/O, consentendo il trasferimento dei dati tra questi componenti. Questo modello rimane alla base della progettazione di molti sistemi informatici moderni.</p>
-    </section>
+   
     <div class="footer">
         <a href="../index.html">Torna all'indice</a>
       </div>
