@@ -1,96 +1,161 @@
-<html>
-      <head>
-          <title>LA STORIA DELL'INFORMATICA</TITLE>
-			<style>
-				* {
-				  margin: 0;
-				  padding: 0;
-				  box-sizing: border-box;
-				}
-				
-				
-		  
-				
-		  
-				
-		  
-				a {
-				  text-decoration: none;
-				  color: #007bff;
-				  transition: color 0.3s ease;
-				}
-		  
-				a:hover {
-				  color: #0056b3;
-				}
-		  
-				.container {
-				  width: 80%;
-				  margin: 0 auto;
-				  max-width: 1200px;
-				}
-		  
-				.img-container {
-				  text-align: center;
-				  margin-bottom: 20px;
-				}
-		  
-				.img-container img {
-				  width: 100%;
-				  max-width: 600px;
-				  height: auto;
-				  border-radius: 8px;
-				  transition: transform 0.3s ease;
-				}
-		  
-				.img-container img:hover {
-				  transform: scale(1.05);
-				}
-		  
-				ul {
-				  list-style: none;
-				  margin: 20px 0;
-				  padding-left: 0;
-				}
-		  
-				ul li {
-				  margin-bottom: 10px;
-				  font-size: 1.1rem;
-				}
-		  
-				ul li a {
-				  font-weight: bold;
-				  color: #007bff;
-				}
-		  
-				iframe {
-				  width: 100%;
-				  max-width: 560px;
-				  margin: 30px auto;
-				  display: block;
-				}
-		  
-				
-			  </style>
-      </head>
-  <body>
-   <A href="storia.html">HOME</A>
-   <h1 align=center> <font face="arial black" color="black" size="7">LA STORIA DELL'INFORMATICA</h1><br/>
-     <h1 align=center> <font face="arial black" color="black" size="7">L'ABACO</h1><br/>
-	   <a href="https://www.youtube.com/watch?v=dSJLT8fDhbg" target="_blank">
-        <img src="IMG/bianco.jpg" alt="CiccioGamer89" width="1%" heigth="auto" align="rigth">
-	    </a>
-	  
-	 <p><font face="arial black" SIZE="5" >  Struttura fisica: L'abaco è composto da una serie di aste orizzontali su cui scorrono delle perline o
-                dischi, che rappresentano delle unità numeriche. Ogni asta rappresenta una potenza di dieci (unità,
-                decine, centinaia, ecc.) e le perline si spostano lungo l'asta per rappresentare i numeri.</br>
-                Complessità e operazioni: L'abaco consente di effettuare una varietà di operazioni
-                matematiche:</br>
-		 <ul>
-               <li>somma</li>
-               <li>sottrazione</li>
-               <li>moltiplicazione</li>
-               <li>divisione</li>
-		 </ul>
-  </body>
-  </html>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abaco Interattivo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center; /* Centra le colonne orizzontalmente */
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .abaco {
+            display: flex;
+            justify-content: space-evenly;
+            width: 60%; /* Abaco più stretto */
+            align-items: center;
+        }
+        .colonna {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            position: relative;
+        }
+        .colonna-unita { background-color: #4CAF50; }
+        .colonna-decine { background-color: #2196F3; }
+        .colonna-centinaia { background-color: #FF5722; }
+
+        .pallina {
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+            border-radius: 50%;
+            background-color: white;
+            border: 2px solid black;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            margin-left: 50px; /* Aumentato il margine sinistro per spostare le palline ancora più a destra */
+        }
+        .pallina.spostata {
+            background-color: #FF5722;
+        }
+        .valore {
+            position: absolute;
+            top: -30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+        }
+
+        .calcolatore {
+            margin-top: 30px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="abaco">
+        <!-- Colonna Unità -->
+        <div class="colonna colonna-unita" id="colonna-unita">
+            <div class="valore" id="valore-unita">0</div>
+            <div class="pallina" onclick="muovi('unita', 0)" data-valore="0"></div>
+            <div class="pallina" onclick="muovi('unita', 1)" data-valore="1"></div>
+            <div class="pallina" onclick="muovi('unita', 2)" data-valore="2"></div>
+            <div class="pallina" onclick="muovi('unita', 3)" data-valore="3"></div>
+            <div class="pallina" onclick="muovi('unita', 4)" data-valore="4"></div>
+            <div class="pallina" onclick="muovi('unita', 5)" data-valore="5"></div>
+            <div class="pallina" onclick="muovi('unita', 6)" data-valore="6"></div>
+            <div class="pallina" onclick="muovi('unita', 7)" data-valore="7"></div>
+            <div class="pallina" onclick="muovi('unita', 8)" data-valore="8"></div>
+            <div class="pallina" onclick="muovi('unita', 9)" data-valore="9"></div>
+        </div>
+
+        <!-- Colonna Decine -->
+        <div class="colonna colonna-decine" id="colonna-decine">
+            <div class="valore" id="valore-decine">0</div>
+            <div class="pallina" onclick="muovi('decine', 0)" data-valore="0"></div>
+            <div class="pallina" onclick="muovi('decine', 1)" data-valore="1"></div>
+            <div class="pallina" onclick="muovi('decine', 2)" data-valore="2"></div>
+            <div class="pallina" onclick="muovi('decine', 3)" data-valore="3"></div>
+            <div class="pallina" onclick="muovi('decine', 4)" data-valore="4"></div>
+            <div class="pallina" onclick="muovi('decine', 5)" data-valore="5"></div>
+            <div class="pallina" onclick="muovi('decine', 6)" data-valore="6"></div>
+            <div class="pallina" onclick="muovi('decine', 7)" data-valore="7"></div>
+            <div class="pallina" onclick="muovi('decine', 8)" data-valore="8"></div>
+            <div class="pallina" onclick="muovi('decine', 9)" data-valore="9"></div>
+        </div>
+
+        <!-- Colonna Centinaia -->
+        <div class="colonna colonna-centinaia" id="colonna-centinaia">
+            <div class="valore" id="valore-centinaia">0</div>
+            <div class="pallina" onclick="muovi('centinaia', 0)" data-valore="0"></div>
+            <div class="pallina" onclick="muovi('centinaia', 1)" data-valore="1"></div>
+            <div class="pallina" onclick="muovi('centinaia', 2)" data-valore="2"></div>
+            <div class="pallina" onclick="muovi('centinaia', 3)" data-valore="3"></div>
+            <div class="pallina" onclick="muovi('centinaia', 4)" data-valore="4"></div>
+            <div class="pallina" onclick="muovi('centinaia', 5)" data-valore="5"></div>
+            <div class="pallina" onclick="muovi('centinaia', 6)" data-valore="6"></div>
+            <div class="pallina" onclick="muovi('centinaia', 7)" data-valore="7"></div>
+            <div class="pallina" onclick="muovi('centinaia', 8)" data-valore="8"></div>
+            <div class="pallina" onclick="muovi('centinaia', 9)" data-valore="9"></div>
+        </div>
+    </div>
+
+    <!-- Calcolatore -->
+    <div class="calcolatore">
+        <p>Valore totale: <span id="valore-totale">0</span></p>
+    </div>
+
+    <script>
+        let valori = {
+            unita: 0,
+            decine: 0,
+            centinaia: 0
+        };
+
+        // Funzione per spostare una pallina e aggiornare il valore
+        function muovi(colonna, indice) {
+            const colonnaElement = document.getElementById(`colonna-${colonna}`);
+            const pallina = colonnaElement.children[indice + 1]; // Offset di 1 per ignorare la "valore"
+
+            // Se la pallina è già spostata, riportarla su
+            if (pallina.style.transform === "translateX(-50px)") {
+                pallina.style.transform = "translateX(0)";
+                pallina.classList.remove("spostata");
+                // Ripristina il valore originale
+                pallina.innerText = pallina.getAttribute('data-valore');
+                valori[colonna]--;
+            } else {
+                pallina.style.transform = "translateX(-50px)";
+                pallina.classList.add("spostata");
+                // Nascondi il valore
+                pallina.innerText = '';
+                valori[colonna]++;
+            }
+
+            aggiornaValore(colonna);
+            aggiornaTotale();
+        }
+
+        // Funzione per aggiornare il valore della colonna
+        function aggiornaValore(colonna) {
+            document.getElementById(`valore-${colonna}`).innerText = valori[colonna];
+        }
+
+        // Funzione per aggiornare il valore totale
+        function aggiornaTotale() {
+            let totale = (valori.centinaia * 100) + (valori.decine * 10) + valori.unita;
+            document.getElementById("valore-totale").innerText = totale;
+        }
+    </script>
+
+</body>
+</html>
