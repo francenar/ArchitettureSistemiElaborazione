@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             display: flex;
-            justify-content: center; /* Centra le colonne orizzontalmente */
+            justify-content: center; 
             align-items: center;
             height: 100vh;
             margin: 0;
@@ -18,7 +18,7 @@
         .abaco {
             display: flex;
             justify-content: space-evenly;
-            width: 60%; /* Abaco più stretto */
+            width: 60%;
             align-items: center;
         }
         .colonna {
@@ -42,7 +42,7 @@
             border: 2px solid black;
             cursor: pointer;
             transition: transform 0.3s ease, background-color 0.3s ease;
-            margin-left: 50px; /* Aumentato il margine sinistro per spostare le palline ancora più a destra */
+            margin-left: 50px;
         }
         .pallina.spostata {
             background-color: #FF5722;
@@ -64,7 +64,7 @@
 <body>
 
     <div class="abaco">
-        <!-- Colonna Unità -->
+      
         <div class="colonna colonna-unita" id="colonna-unita">
             <div class="valore" id="valore-unita">0</div>
             <div class="pallina" onclick="muovi('unita', 0)" data-valore="0"></div>
@@ -79,7 +79,7 @@
             <div class="pallina" onclick="muovi('unita', 9)" data-valore="9"></div>
         </div>
 
-        <!-- Colonna Decine -->
+        
         <div class="colonna colonna-decine" id="colonna-decine">
             <div class="valore" id="valore-decine">0</div>
             <div class="pallina" onclick="muovi('decine', 0)" data-valore="0"></div>
@@ -94,7 +94,7 @@
             <div class="pallina" onclick="muovi('decine', 9)" data-valore="9"></div>
         </div>
 
-        <!-- Colonna Centinaia -->
+        
         <div class="colonna colonna-centinaia" id="colonna-centinaia">
             <div class="valore" id="valore-centinaia">0</div>
             <div class="pallina" onclick="muovi('centinaia', 0)" data-valore="0"></div>
@@ -110,7 +110,7 @@
         </div>
     </div>
 
-    <!-- Calcolatore -->
+  
     <div class="calcolatore">
         <p>Valore totale: <span id="valore-totale">0</span></p>
     </div>
@@ -122,22 +122,22 @@
             centinaia: 0
         };
 
-        // Funzione per spostare una pallina e aggiornare il valore
+        
         function muovi(colonna, indice) {
             const colonnaElement = document.getElementById(`colonna-${colonna}`);
-            const pallina = colonnaElement.children[indice + 1]; // Offset di 1 per ignorare la "valore"
+            const pallina = colonnaElement.children[indice + 1]; 
 
-            // Se la pallina è già spostata, riportarla su
+           
             if (pallina.style.transform === "translateX(-50px)") {
                 pallina.style.transform = "translateX(0)";
                 pallina.classList.remove("spostata");
-                // Ripristina il valore originale
+                
                 pallina.innerText = pallina.getAttribute('data-valore');
                 valori[colonna]--;
             } else {
                 pallina.style.transform = "translateX(-50px)";
                 pallina.classList.add("spostata");
-                // Nascondi il valore
+              
                 pallina.innerText = '';
                 valori[colonna]++;
             }
@@ -146,12 +146,12 @@
             aggiornaTotale();
         }
 
-        // Funzione per aggiornare il valore della colonna
+        
         function aggiornaValore(colonna) {
             document.getElementById(`valore-${colonna}`).innerText = valori[colonna];
         }
 
-        // Funzione per aggiornare il valore totale
+       
         function aggiornaTotale() {
             let totale = (valori.centinaia * 100) + (valori.decine * 10) + valori.unita;
             document.getElementById("valore-totale").innerText = totale;
