@@ -1,166 +1,131 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="it">
     <head>
-        <title>Storia dei sistemi informativi</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Storia dei sistemi operativi</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../architetture.css" />
         <style>
-            @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
-            body {
-                background-color: #f0f8ff;
-                font-family: "Quicksand", sans-serif;
-                line-height: 1.6;
-                margin: 0;
-                padding: 20px;
-            }
-
-            h1, h2 {
+            * {
                 font-family: "Quicksand", sans-serif;
             }
-
-            h1 {
-                text-align: center;
-                margin-bottom: 40px;
-                font-size: 2.5rem;
-            }
-
-            .content-wrapper {
-                max-width: 1200px;
-                margin: 0 auto;
-            }
-
-            .flex-container {
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-                margin-bottom: 40px;
-            }
-
-            .text-content {
-                width: 100%;
-                padding-right: 40px;
-            }
-
-            p {
-                font-size: 1.1rem;
-            }
-
-            img {
-                width: 400px;
-                border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                transition: transform 0.3s ease;
-            }
-
         </style>
     </head>
     <body>
-        <div class="content-wrapper">
-            <h1>Storia dei sistemi informativi</h1>
+        <header>
+            <h1>Storia dei sistemi operativi</h1>
+        </header>
 
-            <div class="text-content">
-                <h2>Cos'è un sistema operativo?</h2>
+        <nav>
+            <a href="#operativo">Sistema Operativo</a>
+            <a href="#cpu">CPU</a>
+            <a href="#efficienza">Efficienza</a>
+            <a href="#evoluzione">Evoluzione</a>
+        </nav>
+
+        <div class="container" id="operativo">
+            <h2>Cos'è un sistema operativo?</h2>
+            <p>
+                Un sistema operativo è un insieme di programmi che deve
+                garantire la gestione delle risorse hardware in modo semplice ed
+                efficiente.
+            </p>
+        </div>
+
+        <div class="container" id="cpu">
+            <h2>Cosa fa la CPU?</h2>
+            <p>
+                La CPU si trova ad eseguire i programmi del sistema operativo in
+                alternanza con quelli applicativi. La necessità di utilizzare al
+                meglio il tempo della CPU ha fatto nascere l'esigenza di
+                introdurre programmi capaci di amministrare tutte le risorse di
+                un calcolatore.
+            </p>
+        </div>
+
+        <div class="container" id="efficienza">
+            <h2>Quali parametri servono per misurare l'efficienza?</h2>
+            <p>
+                I parametri necessari per effettuare la misura dell'efficienza
+                sono:
+            </p>
+            <ul>
+                <li>I tempi di risposta;</li>
+                <li>La facilità d'uso;</li>
+                <li>Tolleranza ai guasti.</li>
+            </ul>
+        </div>
+
+        <div class="container" id="evoluzione">
+            <h2>
+                Come sono cambiati i sistemi operativi nel corso degli anni?
+            </h2>
+            <p>
+                Nel corso degli anni i sistemi operativi hanno avuto delle
+                evoluzioni, una sorta di cambiamento, che hanno portato al loro
+                perfezionamento. Esse si suddividono in 5 generazioni:
+            </p>
+
+            <div class="container">
+                <h3>Prima generazione:</h3>
                 <p>
-                    Un sistema operativo è un insieme di programmi che deve garantire la<br />
-                    gestione delle risorse hardware in modo semplice ed efficiente.
+                    Non esisteva un vero e proprio sistema operativo. I
+                    calcolatori venivano programmati in linguaggio macchina e
+                    richiedevano schede perforate o nastri magnetici per l'input
+                    dei dati. Il sistema operativo era in pratica un insieme di
+                    semplici istruzioni per avviare i calcoli.
                 </p>
+                <img src="IMG/scheda.jpg" alt="Scheda Perforata" />
+            </div>
 
-                <h2>Cosa fa la CPU?</h2>
-                <p>
-                    La CPU si trova ad eseguire i programmi del sistema operativo in<br />
-                    alternanza con quelli applicativi. La necessità di utilizzare al<br />
-                    meglio il tempo della CPU ha fatto nascere l'esigenza di introdurre<br />
-                    programmi capaci di amministrare tutte le risorse di un calcolatore.
-                </p>
-
-                <h2>Quali parametri servono per misurare l'efficienza?</h2>
-                <p>
-                    I parametri necessari per effettuare la misura dell'efficienza<br />
-                    sono:
-                    <ul>
-                        <li>I tempi di risposta;</li>
-                        <li>La facilità d'uso;</li>
-                        <li>tolleranza ai guasti.</li>
-                    </ul>
-                </p>
-
-                <h2>Come sono cambiati i sistemi operativi nel corso degli anni?</h2>
-                <p>
-                    Nel corso degli anni i sistemi operativi hanno avuto delle<br />
-                    evoluzioni, una sorta di cambiamento, che hanno portato al loro<br />
-                    perfezionamento. Esse si suddividono in 5 generazioni:
-                </p>
-
-                <div class="flex-container">
-                    <div>
-                        <h3>Prima generazione:</h3>
-                        <p>
-                            Non esisteva un vero e proprio sistema operativo.<br />
-                            I calcolatori venivano programmati in linguaggio macchina e<br />
-                            richiedevano schede perforate o nastri magnetici per l'input dei dati.<br />
-                            Il sistema operativo era in pratica un insieme di semplici<br />
-                            istruzioni per avviare i calcoli.
-                        </p>
-                    </div>
-                    <img
-                        src="IMG/scheda.jpg"
-                        alt="Scheda Perforata"
-                    />
-                </div>
-
+            <div class="container">
                 <h3>Seconda generazione:</h3>
                 <p>
-                    Nascita dei sistemi batch ossia programmi simili che venivano<br />
-                    eseguiti in sequenza senza intervento umano tra uno e l'altro.<br />
-                    Introduzione di linguaggi di programmazione di alto livello come<br />
-                    Fortran.
+                    Nascita dei sistemi batch ossia programmi simili che
+                    venivano eseguiti in sequenza senza intervento umano tra uno
+                    e l'altro. Introduzione di linguaggi di programmazione di
+                    alto livello come Fortran.
                 </p>
+            </div>
 
-                <div class="flex-container">
-                    <div>
-                        <h3>Terza Generazione:</h3>
-                        <p>
-                            Comparsa dei sistemi multi programmati ovvero più programmi che<br />
-                            potevano essere eseguiti contemporaneamente, migliorando l'efficienza.<br />
-                            Utilizzo di terminali interattivi.<br />
-                            Sviluppo di sistemi operativi come Unix.
-                        </p>
-                    </div>
-                    <img
-                        src="IMG/unix.webp"
-                        alt="Sistema Unix"
-                    />
-                </div>
+            <div class="container">
+                <h3>Terza Generazione:</h3>
+                <p>
+                    Comparsa dei sistemi multi programmati ovvero più programmi
+                    che potevano essere eseguiti contemporaneamente, migliorando
+                    l'efficienza. Utilizzo di terminali interattivi. Sviluppo di
+                    sistemi operativi come Unix.
+                </p>
+                <img src="IMG/unix.webp" alt="Sistema Unix" />
+            </div>
 
+            <div class="container">
                 <h3>Quarta Generazione:</h3>
                 <p>
-                    Introduzione del personal computer e dei sistemi operativi grafici<br />
-                    Evoluzione della rete (LAN E INTERNET) e della sicurezza<br />
-                    Avvento delle macchine virtuali
+                    Introduzione del personal computer e dei sistemi operativi
+                    grafici Evoluzione della rete (LAN E INTERNET) e della
+                    sicurezza Avvento delle macchine virtuali
                 </p>
+            </div>
 
+            <div class="container">
                 <h3>Tendenze Future:</h3>
                 <p>
-                    L'evoluzione continua dei sistemi operativi vede l'integrazione con<br />
-                    intelligenza artificiale e Internet of Things.<br />
-                    Si prevedono sistemi operativi più intelligenti e autonomi, capaci<br />
-                    di adattarsi alle esigenze degli utenti in tempo reale.
+                    L'evoluzione continua dei sistemi operativi vede
+                    l'integrazione con intelligenza artificiale e Internet of
+                    Things. Si prevedono sistemi operativi più intelligenti e
+                    autonomi, capaci di adattarsi alle esigenze degli utenti in
+                    tempo reale.
                 </p>
             </div>
         </div>
 
-        <div style="text-align: center; margin-top: 20px">
-            <a
-                href="home.html"
-                style="
-                    text-decoration: none;
-                    color: black;
-                    font-size: 1.1rem;
-                    transition: transform 0.3s;
-                    display: inline-block;
-                "
-                onmouseover="this.style.transform='scale(1.1)'"
-                onmouseout="this.style.transform='scale(1)'"
-                >Torna alla home</a
-            >
+        <div class="footerSite">
+            <a href="home.html">Torna alla home</a>
         </div>
     </body>
 </html>

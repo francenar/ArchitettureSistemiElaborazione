@@ -1,145 +1,97 @@
 <!doctype html>
-<html>
+<html lang="it">
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Windows</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../architetture.css" />
         <style>
-            @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
-            body {
-                background-color: #f0f8ff;
+            * {
                 font-family: "Quicksand", sans-serif;
-                line-height: 1.6;
-                margin: 0;
-                padding: 20px;
-            }
-
-            h1 {
-                text-align: center;
-                margin-bottom: 40px;
-                font-family: "Quicksand", sans-serif;
-            }
-
-            .content-wrapper {
-                max-width: 1200px;
-                margin: 0 auto;
-            }
-
-            .flex-container {
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-                margin-bottom: 40px;
-            }
-
-            .text-content {
-                width: 50%;
-                padding-right: 40px;
-            }
-
-            img {
-                width: 400px;
-                border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                transition: transform 0.3s ease;
-            }
-
-            ol {
-                padding-left: 20px;
-            }
-
-            li {
-                margin-bottom: 10px;
             }
         </style>
     </head>
     <body>
-        <div class="content-wrapper">
-            <h1 style="font-size: 2.5rem">Windows</h1>
+        <header>
+            <h1>Windows</h1>
+        </header>
 
-            <div class="flex-container">
-                <div class="text-content">
-                    <h2>Storia di Windows</h2>
-                    <p style="font-size: 1.1rem">
-                        Microsoft Windows è una famiglia di sistemi operativi
-                        prodotta da Microsoft Corporation. nel 1984 la Microsoft
-                        annuncia che sta sviluppando Windows, un'interfaccia
-                        grafica per il suo sistema operativo MS-DOS che era
-                        venduto con i PC IBM e compatibili dal 1981.
-                    </p>
-                </div>
-            </div>
+        <nav>
+            <a href="#storia">Storia di Windows</a>
+            <a href="#prime">Prime Versioni</a>
+            <a href="#ibm">Collaborazione IBM</a>
+            <a href="#nt">Windows NT</a>
+        </nav>
 
-            <div class="flex-container">
-                <div class="text-content">
-                    <h2>Prime Versioni di Windows</h2>
-                    <p style="font-size: 1.1rem">
-                        Nel 1985 Windows 1.0, ha scarso successo, non fornisce
-                        un sistema operativo completo, ma era un'estensione
-                        dell'MS-DOS. Nel 1990 Windows ottiene un deciso successo
-                        con la nuova versione 3.0, che oltre a funzionalità
-                        migliorate date alle applicazioni native, consente
-                        l'utilizzo dei programmi di MS-DOS con un multitasking
-                        migliore.
-                    </p>
-                </div>
-                <img
-                    src="https://www.cnet.com/a/img/resize/d2352f62abf7bd1e82798683757d3bf147b4d75e/hub/2012/08/07/454b28b6-6788-11e3-846b-14feb5ca9861/Windows1.0.png?auto=webp&width=1200"
-                    alt="Windows 1.0"
-                />
-            </div>
-
-            <div class="flex-container">
-                <div class="text-content">
-                    <h2>Collaborazione con IBM</h2>
-                    <p style="font-size: 1.1rem">
-                        Con il suo successo Windows 3.0 diventa la maggiore
-                        fonte di reddito per la Microsoft, e guida le scelte e i
-                        piani successivi dell'azienda. Windows inizia la sua
-                        collaborazione con IBM insieme continuano a fare
-                        ricerche su OS 2 e arrivano al Windows NT.
-                    </p>
-                </div>
-                <img
-                    src="https://winworldpc.com/res/img/screenshots/os-2-warp-40-a52c2e11b12d5e45f7a19efc8a5d86fc-poweroff.png"
-                    alt="OS/2"
-                />
-            </div>
-
-            <div class="text-content">
-                <h2>Windows NT</h2>
-                <p style="font-size: 1.1rem">
-                    Windows NT viene rilasciato definitivamente attraverso
-                    Windows 3.1 NT ma non ebbe molto successo a causa delle sue
-                    problematiche, era troppo potente per i PC dell'epoca.
-                    Tuttavia, le sue caratteristiche lo resero perfetto per il
-                    mercato di server LAN che in quel periodo stava decollando,
-                    permettendo a Microsoft di ottenere un altro successo.
-                </p>
-                <h2>Multitasking</h2>
-                <p style="font-size: 1.1rem">
-                    Il sistema operativo è di tipo multitasking, una funzione di
-                    Windows che permette di utilizzare più desktop
-                    contemporaneamente. Windows è sin dall'origine un sistema
-                    operativo grafico, pensato per essere utilizzato con il
-                    mouse e, a differenza dei sistemi Unix, l'interfaccia
-                    grafica è un componente essenziale.
-                </p>
-            </div>
+        <div class="container" id="storia">
+            <h2>Storia di Windows</h2>
+            <p>
+                Microsoft Windows è una famiglia di sistemi operativi prodotta
+                da Microsoft Corporation. nel 1984 la Microsoft annuncia che sta
+                sviluppando Windows, un'interfaccia grafica per il suo sistema
+                operativo MS-DOS che era venduto con i PC IBM e compatibili dal
+                1981.
+            </p>
         </div>
 
-        <div style="text-align: center; margin-top: 20px">
-            <a
-                href="home.html"
-                style="
-                    text-decoration: none;
-                    color: black;
-                    font-size: 1.1rem;
-                    transition: transform 0.3s;
-                    display: inline-block;
-                "
-                onmouseover="this.style.transform='scale(1.1)'"
-                onmouseout="this.style.transform='scale(1)'"
-                >Torna alla home</a
-            >
+        <div class="container" id="prime">
+            <h2>Prime Versioni di Windows</h2>
+            <p>
+                Nel 1985 Windows 1.0, ha scarso successo, non fornisce un
+                sistema operativo completo, ma era un'estensione dell'MS-DOS.
+                Nel 1990 Windows ottiene un deciso successo con la nuova
+                versione 3.0, che oltre a funzionalità migliorate date alle
+                applicazioni native, consente l'utilizzo dei programmi di MS-DOS
+                con un multitasking migliore.
+            </p>
+            <img
+                src="https://www.cnet.com/a/img/resize/d2352f62abf7bd1e82798683757d3bf147b4d75e/hub/2012/08/07/454b28b6-6788-11e3-846b-14feb5ca9861/Windows1.0.png?auto=webp&width=1200"
+                alt="Windows 1.0"
+            />
+        </div>
+
+        <div class="container" id="ibm">
+            <h2>Collaborazione con IBM</h2>
+            <p>
+                Con il suo successo Windows 3.0 diventa la maggiore fonte di
+                reddito per la Microsoft, e guida le scelte e i piani successivi
+                dell'azienda. Windows inizia la sua collaborazione con IBM
+                insieme continuano a fare ricerche su OS 2 e arrivano al Windows
+                NT.
+            </p>
+            <img
+                src="https://winworldpc.com/res/img/screenshots/os-2-warp-40-a52c2e11b12d5e45f7a19efc8a5d86fc-poweroff.png"
+                alt="OS/2"
+            />
+        </div>
+
+        <div class="container" id="nt">
+            <h2>Windows NT</h2>
+            <p>
+                Windows NT viene rilasciato definitivamente attraverso Windows
+                3.1 NT ma non ebbe molto successo a causa delle sue
+                problematiche, era troppo potente per i PC dell'epoca. Tuttavia,
+                le sue caratteristiche lo resero perfetto per il mercato di
+                server LAN che in quel periodo stava decollando, permettendo a
+                Microsoft di ottenere un altro successo.
+            </p>
+            <h2>Multitasking</h2>
+            <p>
+                Il sistema operativo è di tipo multitasking, una funzione di
+                Windows che permette di utilizzare più desktop
+                contemporaneamente. Windows è sin dall'origine un sistema
+                operativo grafico, pensato per essere utilizzato con il mouse e,
+                a differenza dei sistemi Unix, l'interfaccia grafica è un
+                componente essenziale.
+            </p>
+        </div>
+
+        <div class="footerSite">
+            <a href="home.html">Torna all'indice</a>
         </div>
     </body>
 </html>
