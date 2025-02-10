@@ -4,124 +4,94 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>La CU</title>
-        <style>
-            body {
-                background-color: #f6efea;
-                font-family: Arial, sans-serif;
-                line-height: 1.6;
-                margin: 20px;
-                display: flex;
-                flex-direction: column;
-                min-height: 100vh;
-            }
-            h1 {
-                text-align: center;
-                font-size: 2.5em;
-                margin-bottom: 20px;
-            }
-            .content {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 30px;
-                flex-grow: 1;
-            }
-            .text {
-                flex: 1;
-                max-width: 700px;
-                font-size: 1.1em;
-                line-height: 1.8;
-            }
-            .image {
-                flex: 1;
-                max-width: 800px;
-                text-align: center;
-            }
-            .image img {
-                width: 90%;
-                height: auto;
-                max-width: 600px;
-            }
-            a {
-                display: block;
-                text-align: center;
-                margin-top: 20px;
-                font-weight: bold;
-                color: #007bff;
-                text-decoration: none;
-                margin-top: 50px;
-            }
-            a:hover {
-                text-decoration: underline;
-            }
-        </style>
+        <link rel="stylesheet" href="../architetture.css" />
     </head>
     <body>
-        <h1>La CU</h1>
+        <header>
+            <h1>La CU</h1>
+        </header>
 
-        <div class="content">
-            <div class="text">
-                <p>
-                    L'unità di controllo, abbreviata anche come CU
-                    (dall'inglese: Control Unit), è un componente della CPU che
-                    ha il compito di coordinare tutte le azioni necessarie per
-                    l'esecuzione di una istruzione e di insiemi di istruzioni.
-                    Essa è uno dei tre blocchi funzionali principali in cui è
-                    suddivisa un'unità di elaborazione centrale (CPU). Gli altri
-                    due blocchi sono l'unità logica aritmetica e l'unità di
-                    registro.
-                </p>
-                <p>
-                    La sua funzione è quella di recuperare le istruzioni dalla
-                    memoria principale, decodificarle (interpretarle) ed
-                    eseguirle, utilizzando l'unità di elaborazione centrale.
-                </p>
-                <p>
-                    La CU è il componente che dà la possibilità al
-                    microprocessore di eseguire istruzioni diverse. Le azioni
-                    che coordinano i vari settori della CPU (la ALU, i registri,
-                    il Write-Back) vengono dette "micro operazioni", mentre un
-                    insieme di micro-istruzioni viene detto "microprogramma".
-                </p>
-                <p>
-                    Esistono due tipi di unità di controllo: le unità di
-                    controllo cablate, generalmente utilizzate nelle macchine
-                    semplici, e le unità di controllo microprogrammate,
-                    utilizzate nelle macchine più complesse. Nel primo caso, i
-                    componenti principali sono il circuito logico sequenziale,
-                    il circuito di controllo dello stato, il circuito logico
-                    combinatorio e il circuito di emissione del riconoscimento
-                    del segnale di controllo. Nel secondo caso, la
-                    microprogrammazione dell'unità di controllo è memorizzata in
-                    una micro-memoria, alla quale si accede in modo sequenziale
-                    per eseguire successivamente ciascuna delle
-                    micro-istruzioni.
-                </p>
-                <p>
-                    Le uscite della CU sono responsabili del controllo
-                    dell'attività del resto del dispositivo. Una CU può essere
-                    considerata come una macchina a stati finiti.
-                </p>
-                <p>
-                    La CU è il circuito che controlla il flusso di dati
-                    attraverso il processore e coordina quest'ultimo, che a sua
-                    volta controlla il resto del computer.
-                </p>
-                <p>
-                    Esempi di dispositivi che richiedono una CU sono le CPU e le
-                    GPU. La moderna era dell'informazione non sarebbe possibile
-                    senza la progettazione di complesse CU.
-                </p>
-            </div>
+        <nav>
+            <a href="#introduzione">La CU</a>
+            <a href="#funzioni">Funzioni</a>
+            <a href="#tipi">Tipi</a>
+            <a href="#caratteristiche">Caratteristiche</a>
+            <a href="#applicazioni">Applicazioni</a>
+        </nav>
 
-            <div class="image">
-                <br /><br /><br />
-                <img src="IMG/cu.png" alt="Immagine della CU" />
-                <br /><br /><br /><br /><br />
-                <img src="IMG/cu2.png" alt="Seconda immagine della CU" />
-            </div>
+        <div class="container" id="introduzione">
+            <h2>La CU</h2>
+            <p>
+                L'unità di controllo, abbreviata anche come CU (dall'inglese:
+                Control Unit), è un componente della CPU che ha il compito di
+                coordinare tutte le azioni necessarie per l'esecuzione di una
+                istruzione e di insiemi di istruzioni. Essa è uno dei tre
+                blocchi funzionali principali in cui è suddivisa un'unità di
+                elaborazione centrale (CPU). Gli altri due blocchi sono l'unità
+                logica aritmetica e l'unità di registro.
+            </p>
+            <img src="IMG/cu.png" alt="Immagine della CU" />
         </div>
 
-        <a href="indice.html">Torna all'indice</a>
+        <div class="container" id="funzioni">
+            <h2>Funzioni</h2>
+            <p>
+                La sua funzione è quella di recuperare le istruzioni dalla
+                memoria principale, decodificarle (interpretarle) ed eseguirle,
+                utilizzando l'unità di elaborazione centrale.
+            </p>
+            <p>
+                La CU è il componente che dà la possibilità al microprocessore
+                di eseguire istruzioni diverse. Le azioni che coordinano i vari
+                settori della CPU (la ALU, i registri, il Write-Back) vengono
+                dette "micro operazioni", mentre un insieme di micro-istruzioni
+                viene detto "microprogramma".
+            </p>
+        </div>
+
+        <div class="container" id="tipi">
+            <h2>Tipi di Unità di Controllo</h2>
+            <p>
+                Esistono due tipi di unità di controllo: le unità di controllo
+                cablate, generalmente utilizzate nelle macchine semplici, e le
+                unità di controllo microprogrammate, utilizzate nelle macchine
+                più complesse. Nel primo caso, i componenti principali sono il
+                circuito logico sequenziale, il circuito di controllo dello
+                stato, il circuito logico combinatorio e il circuito di
+                emissione del riconoscimento del segnale di controllo. Nel
+                secondo caso, la microprogrammazione dell'unità di controllo è
+                memorizzata in una micro-memoria, alla quale si accede in modo
+                sequenziale per eseguire successivamente ciascuna delle
+                micro-istruzioni.
+            </p>
+            <img src="IMG/cu2.png" alt="Seconda immagine della CU" />
+        </div>
+
+        <div class="container" id="caratteristiche">
+            <h2>Caratteristiche</h2>
+            <p>
+                Le uscite della CU sono responsabili del controllo dell'attività
+                del resto del dispositivo. Una CU può essere considerata come
+                una macchina a stati finiti.
+            </p>
+            <p>
+                La CU è il circuito che controlla il flusso di dati attraverso
+                il processore e coordina quest'ultimo, che a sua volta controlla
+                il resto del computer.
+            </p>
+        </div>
+
+        <div class="container" id="applicazioni">
+            <h2>Applicazioni</h2>
+            <p>
+                Esempi di dispositivi che richiedono una CU sono le CPU e le
+                GPU. La moderna era dell'informazione non sarebbe possibile
+                senza la progettazione di complesse CU.
+            </p>
+        </div>
+
+        <div class="footerSite">
+            <a href="cpu.html">Torna all'indice</a>
+        </div>
     </body>
 </html>

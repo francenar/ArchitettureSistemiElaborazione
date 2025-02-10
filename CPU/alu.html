@@ -4,129 +4,92 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>L'ALU</title>
-        <style>
-            body {
-                background-color: #fbf8cc;
-                font-family: Arial, sans-serif;
-                line-height: 1.6;
-                margin: 0;
-                padding: 20px;
-            }
-            h1 {
-                text-align: center;
-                font-size: 2.5em;
-                margin-bottom: 30px;
-                color: #333;
-            }
-            .container {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 30px;
-                justify-content: center;
-            }
-            .text {
-                flex: 1;
-                max-width: 700px;
-                padding-right: 20px;
-            }
-            .images {
-                flex: 1;
-                max-width: 600px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            img {
-                width: 100%;
-                max-width: 450px;
-                height: auto;
-                margin-bottom: 20px;
-            }
-            b {
-                font-size: 1.3em;
-                color: #333;
-            }
-            p {
-                font-size: 1.1em;
-                color: #444;
-            }
-            a {
-                text-decoration: none;
-                color: #007bff;
-                font-weight: bold;
-            }
-            a:hover {
-                text-decoration: underline;
-            }
-            .centered-link {
-                text-align: center;
-                margin-top: 30px;
-            }
-            ul, ol {
-                margin: 0;
-                padding-left: 20px;
-                font-size: 1em;
-                color: #444;
-            }
-        </style>
+        <link rel="stylesheet" href="../architetture.css" />
     </head>
     <body>
-        <h1>L'ALU</h1>
-        <div class="container">
-            <div class="text">
-                <p>
-                    L'ALU, o Unità Logica e Aritmetica, è una parte fondamentale della CPU. Si occupa di eseguire tutte le operazioni matematiche e logiche.
-                    Senza l'ALU, i computer non potrebbero funzionare come li conosciamo oggi!<br /><br />
+        <header>
+            <h1>L'ALU</h1>
+        </header>
 
-                    <b>Cosa fa l'ALU?</b><br />
-                    L'ALU svolge due tipi principali di operazioni:
-                    <ol type="1">
-                        <li><b>Operazioni Aritmetiche:</b> Queste includono addizioni, sottrazioni, moltiplicazioni e divisioni.
-                            Ad esempio, se vuoi calcolare 5 + 3, è l'ALU che esegue questa operazione.
-                        </li>
-                        <li><b>Operazioni Logiche:</b> L'ALU gestisce anche operazioni logiche, come AND, OR e NOT. Queste operazioni sono essenziali per prendere decisioni nei programmi.
-                            Ad esempio, se un programma deve sapere se un numero è maggiore di un altro, utilizza un'operazione logica.
-                        </li>
-                    </ol><br /><br />
+        <nav>
+            <a href="#introduzione">L'ALU</a>
+            <a href="#operazioni">Operazioni</a>
+            <a href="#funzionamento">Funzionamento</a>
+            <a href="#struttura">Struttura</a>
+            <a href="#importanza">Importanza</a>
+            <a href="#curiosita">Curiosità</a>
+        </nav>
 
-                    <b>Come Funziona l'ALU?</b><br />
-                 <a href=" https://circuitverse.org/simulator/51702">Un simulatore</a>
-               
-                    L'ALU riceve dati da altre parti del computer, come la memoria e la CPU. Ecco come funziona:
-                    <ol type="1">
-                        <li><b>Input:</b> L'ALU riceve due valori (chiamati operandi) su cui deve lavorare.</li>
-                        <li><b>Operazione:</b> L'ALU esegue l'operazione richiesta (come addizione o AND).</li>
-                        <li><b>Output:</b> Restituisce il risultato all'unità di controllo della CPU, che poi lo usa o lo memorizza.</li>
-                    </ol><br /><br />
-
-                    <b>Struttura dell'ALU</b><br />
-                    Un'ALU è composta da diversi circuiti elettronici:
-                    <ul type="disc">
-                        <li><b>Circuiti Aritmetici:</b> Gestiscono le operazioni matematiche.</li>
-                        <li><b>Circuiti Logici:</b> Eseguono le operazioni logiche.</li>
-                        <li><b>Registri:</b> Piccole memorie temporanee che immagazzinano i dati durante il processo.</li>
-                    </ul><br /><br />
-
-                    <b>Importanza dell'ALU</b><br />
-                    L'ALU è cruciale perché permette al computer di eseguire calcoli complessi e prendere decisioni.
-                    Ogni volta che utilizzi un computer per giocare, scrivere o navigare in Internet, l'ALU sta lavorando in background.<br /><br />
-
-                    <b>Curiosità sull'ALU</b>
-                    <ul type="disc">
-                        <li>Le prime ALU erano molto semplici e potevano eseguire solo operazioni base. Oggi, sono estremamente avanzate e possono gestire milioni di operazioni al secondo!</li>
-                        <li>Esistono diversi tipi di ALU, ognuna progettata per compiti specifici. Alcuni sono ottimizzati per il calcolo scientifico, mentre altri per l'elaborazione di immagini.</li>
-                    </ul><br />
-                </p>
-            </div>
-            <div class="images">
-                <br /><br />
-                <img src="IMG/alu.png" alt="ALU Image 1" />
-                <br /><br /><br /><br />
-                <img src="IMG/alu2.png" alt="ALU Image 2" />
-            </div>
+        <div class="container" id="introduzione">
+            <h2>L'ALU</h2>
+            <p>
+                L'ALU, o Unità Logica e Aritmetica, è una parte fondamentale della CPU. Si occupa di eseguire tutte le operazioni matematiche e logiche.
+                Senza l'ALU, i computer non potrebbero funzionare come li conosciamo oggi!
+            </p>
+            <img src="IMG/alu.png" alt="ALU Image 1" />
         </div>
-        <div class="centered-link">
-            <a href="indice.html">Torna all'indice</a>
+
+        <div class="container" id="operazioni">
+            <h2>Cosa fa l'ALU?</h2>
+            <p>
+                L'ALU svolge due tipi principali di operazioni:
+                <ol type="1">
+                    <li><b>Operazioni Aritmetiche:</b> Queste includono addizioni, sottrazioni, moltiplicazioni e divisioni.
+                        Ad esempio, se vuoi calcolare 5 + 3, è l'ALU che esegue questa operazione.
+                    </li>
+                    <li><b>Operazioni Logiche:</b> L'ALU gestisce anche operazioni logiche, come AND, OR e NOT. Queste operazioni sono essenziali per prendere decisioni nei programmi.
+                        Ad esempio, se un programma deve sapere se un numero è maggiore di un altro, utilizza un'operazione logica.
+                    </li>
+                </ol>
+            </p>
+        </div>
+
+        <div class="container" id="funzionamento">
+            <h2>Come Funziona l'ALU?</h2>
+            <p>
+                <a href="https://circuitverse.org/simulator/51702">Un simulatore</a>
+                L'ALU riceve dati da altre parti del computer, come la memoria e la CPU. Ecco come funziona:
+                <ol type="1">
+                    <li><b>Input:</b> L'ALU riceve due valori (chiamati operandi) su cui deve lavorare.</li>
+                    <li><b>Operazione:</b> L'ALU esegue l'operazione richiesta (come addizione o AND).</li>
+                    <li><b>Output:</b> Restituisce il risultato all'unità di controllo della CPU, che poi lo usa o lo memorizza.</li>
+                </ol>
+            </p>
+            <img src="IMG/alu2.png" alt="ALU Image 2" />
+        </div>
+
+        <div class="container" id="struttura">
+            <h2>Struttura dell'ALU</h2>
+            <p>
+                Un'ALU è composta da diversi circuiti elettronici:
+                <ul type="disc">
+                    <li><b>Circuiti Aritmetici:</b> Gestiscono le operazioni matematiche.</li>
+                    <li><b>Circuiti Logici:</b> Eseguono le operazioni logiche.</li>
+                    <li><b>Registri:</b> Piccole memorie temporanee che immagazzinano i dati durante il processo.</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="container" id="importanza">
+            <h2>Importanza dell'ALU</h2>
+            <p>
+                L'ALU è cruciale perché permette al computer di eseguire calcoli complessi e prendere decisioni.
+                Ogni volta che utilizzi un computer per giocare, scrivere o navigare in Internet, l'ALU sta lavorando in background.
+            </p>
+        </div>
+
+        <div class="container" id="curiosita">
+            <h2>Curiosità sull'ALU</h2>
+            <p>
+                <ul type="disc">
+                    <li>Le prime ALU erano molto semplici e potevano eseguire solo operazioni base. Oggi, sono estremamente avanzate e possono gestire milioni di operazioni al secondo!</li>
+                    <li>Esistono diversi tipi di ALU, ognuna progettata per compiti specifici. Alcuni sono ottimizzati per il calcolo scientifico, mentre altri per l'elaborazione di immagini.</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="footerSite">
+            <a href="cpu.html">Torna all'indice</a>
         </div>
     </body>
 </html>

@@ -4,63 +4,30 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>I registri della CPU</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                line-height: 1.6;
-                margin: 20px;
-                background-color: white ;
-                color: black;
-            }
-            h1 {
-                text-align: center;
-                font-size: 2em;
-                margin-bottom: 20px;
-            }
-            .content {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 30px;
-            }
-            .text {
-                flex: 1;
-                max-width: 600px;
-                font-size: 1.1em;
-                line-height: 1.8;
-            }
-            .image {
-                flex: 1;
-                max-width: 600px;
-                text-align: center;
-            }
-            .image img {
-                width: 80%;
-                height: auto;
-                max-width: 800px;
-            }
-            a {
-                display: block;
-                text-align: center;
-                margin-top: 20px;
-                font-weight: bold;
-                color: #007bff;
-            }
-            a:hover {
-                text-decoration: underline;
-            }
-        </style>
+        <link rel="stylesheet" href="../architetture.css" />
     </head>
     <body>
-        <h1>I registri della CPU</h1>
+        <header>
+            <h1>I registri della CPU</h1>
+        </header>
 
-        <div class="content">
-            <div class="text">
+        <nav>
+            <a href="#introduzione">I Registri</a>
+            <a href="#funzioni">Funzioni</a>
+            <a href="#evoluzione">Evoluzione</a>
+            <a href="#gaming">Gaming</a>
+            <a href="#curiosita">Curiosità</a>
+        </nav>
+
+        <div class="container" id="introduzione">
+            <h2>I Registri della CPU</h2>
+            <p>
                 I registri della CPU sono piccole memorie super veloci dentro al
                 processore. Servono a memorizzare temporaneamente i dati e le
                 istruzioni che la CPU sta usando, così da lavorare più
-                velocemente. Ecco i tipi principali:<br /><br />
-
+                velocemente. Ecco i tipi principali:
+            </p>
+            <p>
                 1. <b>ACCUMULATORE</b>: dove si fanno i calcoli.<br />
                 2. <b>CONTATORE DI PROGRAMMA</b>: indica alla CPU dove andare
                 per l'istruzione successiva.<br />
@@ -73,20 +40,45 @@
                 6. <b>STACK POINTER</b>: indica l'ultimo dato nello "stack", in
                 una zona di memoria speciale per le funzioni.<br />
                 7. <b>BASE POINTER</b>: aiuta a trovare facilmente i dati nello
-                stack.<br /><br />
-
-                In breve, questi registri aiutano la CPU a lavorare rapidamente
-                e senza interruzioni.
-            </div>
-
-            <div class="image">
-                <img
-                    src="IMG/registri.png"
-                    alt="Immagine dei registri della CPU"
-                />
-            </div>
+                stack.
+            </p>
+            <img src="IMG/registri.png" alt="Immagine dei registri della CPU" />
         </div>
 
-        <a href="indice.html">Torna all'indice</a>
+        <div class="container" id="funzioni">
+            <h2>Funzioni</h2>
+            <p>
+                In breve, questi registri aiutano la CPU a lavorare rapidamente
+                e senza interruzioni.
+            </p>
+        </div>
+
+        <div class="container" id="evoluzione">
+            <h2>Evoluzione</h2>
+            <p>
+                Nel corso degli anni i registri della CPU si sono evoluti
+                diventando sempre più efficienti e numerosi.
+            </p>
+        </div>
+
+        <div class="container" id="gaming">
+            <h2>Gaming</h2>
+            <p>
+                I registri sono fondamentali anche nel gaming, permettendo alla
+                CPU di elaborare rapidamente i dati di gioco.
+            </p>
+        </div>
+
+        <div class="container" id="curiosita">
+            <h2>Curiosità</h2>
+            <p>
+                I primi registri della CPU erano molto più semplici e limitati
+                rispetto a quelli moderni.
+            </p>
+        </div>
+
+        <div class="footerSite">
+            <a href="cpu.html">Torna all'indice</a>
+        </div>
     </body>
 </html>

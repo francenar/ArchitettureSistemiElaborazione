@@ -1,99 +1,71 @@
 <!doctype html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introduzione alla CPU</title>
-    <style>
-        body {
-            background-color: #98f5e1;
-            font-family: Verdana, Geneva, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 10px;
-        }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Introduzione alla CPU</title>
+        <link rel="stylesheet" href="../architetture.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Introduzione alla CPU</h1>
+        </header>
 
-        h1 {
-            text-align: center;
-            font-size: 2em;
-            color: #333;
-            margin-bottom: 15px;
-        }
+        <nav>
+            <a href="#introduzione">La CPU</a>
+            <a href="#funzioni">Funzioni</a>
+            <a href="#architetture">Architetture</a>
+            <a href="#fasi">Fasi</a>
+            <a href="#registri">Registri</a>
+        </nav>
 
-        .content {
-            flex-direction: column;
-            gap: 20px;
-            padding: 0 10px;
-        }
-
-        .text {
-            font-size: 1em;
-            line-height: 1.5;
-            max-width: 100%;
-        }
-
-        .images {
-            text-align: center;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        a {
-            text-decoration: none;
-            color: #333;
-            font-size: 1.1em;
-            display: block;
-            margin: 10px auto;
-            padding: 8px 16px;
-            background-color: #f0f0f0;
-            border-radius: 5px;
-        }
-
-    </style>
-</head>
-<body>
-    <h1>Introduzione alla CPU</h1>
-
-    <div class="content">
-        <div class="text">
+        <div class="container" id="introduzione">
+            <h2>La CPU</h2>
             <p>
                 La CPU (nota come unità di elaborazione centrale), è
-                colloquialmente conosciuta come processore. È il
-                sottosistema che implementa la maggioranza delle operazioni
-                fondamentali di un computer e coordina l'esecuzione delle
-                operazioni tra i sottosistemi periferici. La maggior parte
-                delle CPU moderne è realizzata sotto forma di
-                microprocessore digitale, che utilizza un'architettura a
-                registri generali.
+                colloquialmente conosciuta come processore. È il sottosistema
+                che implementa la maggioranza delle operazioni fondamentali di
+                un computer e coordina l'esecuzione delle operazioni tra i
+                sottosistemi periferici. La maggior parte delle CPU moderne è
+                realizzata sotto forma di microprocessore digitale, che utilizza
+                un'architettura a registri generali.
             </p>
+            <img src="IMG/cpu.jpg" alt="Immagine della CPU" />
+        </div>
+
+        <div class="container" id="funzioni">
+            <h2>Funzioni</h2>
             <p>
-                Una CPU ha il compito di eseguire le istruzioni di un
-                programma presente nella ROM in fase di boot, per poi
-                passare alla memoria centrale (come la RAM) per
-                l'esecuzione. Le architetture di CPU più comuni sono quelle
-                basate su:
+                Una CPU ha il compito di eseguire le istruzioni di un programma
+                presente nella ROM in fase di boot, per poi passare alla memoria
+                centrale (come la RAM) per l'esecuzione.
             </p>
+        </div>
+
+        <div class="container" id="architetture">
+            <h2>Architetture</h2>
+            <p>Le architetture di CPU più comuni sono quelle basate su:</p>
             <ul>
                 <li>
-                    <strong>Von Neumann</strong>: dove i dati e le
-                    istruzioni risiedono nella stessa memoria.
+                    <strong>Von Neumann</strong>: dove i dati e le istruzioni
+                    risiedono nella stessa memoria.
                 </li>
                 <li>
-                    <strong>Harvard</strong>: in cui i dati e le istruzioni
-                    sono separati in due memorie distinte, migliorando le
+                    <strong>Harvard</strong>: in cui i dati e le istruzioni sono
+                    separati in due memorie distinte, migliorando le
                     prestazioni.
                 </li>
             </ul>
+            <img src="IMG/cpu2.jpg" alt="Seconda immagine della CPU" />
+        </div>
+
+        <div class="container" id="fasi">
+            <h2>Fasi di Esecuzione</h2>
             <p>La CPU esegue le istruzioni in diverse fasi:</p>
             <ul>
                 <li>
-                    <strong>FETCH</strong>: preleva l'istruzione
-                    dall'indirizzo nel registro PC.
+                    <strong>FETCH</strong>: preleva l'istruzione dall'indirizzo
+                    nel registro PC.
                 </li>
                 <li>
                     <strong>DECODE</strong>: decodifica l'istruzione nel
@@ -104,24 +76,22 @@
                     necessari per l'operazione.
                 </li>
                 <li>
-                    <strong>EXECUTE</strong>: esegue l'operazione (ad
-                    esempio, una somma o una moltiplicazione).
+                    <strong>EXECUTE</strong>: esegue l'operazione (ad esempio,
+                    una somma o una moltiplicazione).
                 </li>
             </ul>
+        </div>
+
+        <div class="container" id="registri">
+            <h2>Registri</h2>
             <p>
-                I registri della CPU sono memorie molto veloci che vengono
-                usate per memorizzare temporaneamente i dati e le
-                istruzioni.
+                I registri della CPU sono memorie molto veloci che vengono usate
+                per memorizzare temporaneamente i dati e le istruzioni.
             </p>
         </div>
 
-        <div class="images">
-            <img src="IMG/cpu.jpg" alt="Immagine della CPU" />
-            <img src="IMG/cpu2.jpg" alt="Seconda immagine della CPU" />
+        <div class="footerSite">
+            <a href="cpu.html">Torna all'indice</a>
         </div>
-    </div>
-
-    <a href="indice.html">Torna all'indice</a>
-
-</body>
+    </body>
 </html>
