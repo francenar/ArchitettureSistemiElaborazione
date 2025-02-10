@@ -76,6 +76,16 @@ img {
     margin-right: auto;
 }
 
+iframe {
+    width: 70%;
+    border-radius: 10px;
+    margin: 15px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .footer {
     text-align: center;
     margin: 60px 0;
