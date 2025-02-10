@@ -1,21 +1,67 @@
-<!DOCTYPE html>
-<html>
- <head>
-     <title>le architetture non von Neumann</title>
- </head>
-  <body>
-       <h1 align="center"><font face="Times New Romans" size="7" color="black">LE ARCHITETTURE NON VON NEUMANN</font><br></h1>
-	   <h2 align="center"><IMG src="IMG/NONVONNEUMANN.jpg"><br></h2>
-	   <h3><font face size="5">L’architettura non von Neumann è un modello di organizzazione di computer che differisce dal tradizionale modello di von Neumann, in cui CPU e memoria sono separati e comunicano attraverso un unico percorso, o bus, creando spesso un collo di bottiglia.<br>
-         Differenze principali:<br>
-         Eliminazione del collo di bottiglia: Nelle architetture non von Neumann, il collo di bottiglia tra CPU e memoria viene ridotto. Questo permette un flusso di dati più veloce ed efficiente.<br>
-         Memorie separate o integrate: Alcuni modelli, come l’architettura Harvard, usano memorie separate per dati e istruzioni, permettendo alla CPU di accedere a entrambe in parallelo.<br>
-         Parallelismo: Utilizzano spesso più unità di calcolo che lavorano contemporaneamente, permettendo di eseguire più operazioni allo stesso tempo (ad esempio nelle GPU o nei supercomputer).<br>
-         Esempi di architetture non von Neumann:<br>
-         Architettura Harvard: Memoria separata per dati e istruzioni, che consente maggiore velocità.<br></font></h3>
-		 <h4 align"left"><A HREF="home.html">Home</A><br></h4>
+<!doctype html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>le architetture non von Neumann</title>
+        <link rel="stylesheet" href="../architetture.css" />
+    </head>
+    <body>
+        <header>
+            <h1>LE ARCHITETTURE NON VON NEUMANN</h1>
+        </header>
 
+        <nav>
+            <a href="#introduzione">Introduzione</a>
+            <a href="#differenze">Differenze Principali</a>
+            <a href="#esempi">Esempi</a>
+        </nav>
 
+        <div class="container" id="introduzione">
+            <h2>Introduzione</h2>
+            <p>
+                L'architettura non von Neumann è un modello di organizzazione di
+                computer che differisce dal tradizionale modello di von Neumann,
+                in cui CPU e memoria sono separati e comunicano attraverso un
+                unico percorso, o bus, creando spesso un collo di bottiglia.
+            </p>
+            <img
+                src="IMG/NONVONNEUMANN.jpg"
+                alt="Architetture non von Neumann"
+            />
+        </div>
 
-	</body>
+        <div class="container" id="differenze">
+            <h2>Differenze Principali</h2>
+            <p>
+                Eliminazione del collo di bottiglia: Nelle architetture non von
+                Neumann, il collo di bottiglia tra CPU e memoria viene ridotto.
+                Questo permette un flusso di dati più veloce ed efficiente.
+            </p>
+            <p>
+                Memorie separate o integrate: Alcuni modelli, come
+                l'architettura Harvard, usano memorie separate per dati e
+                istruzioni, permettendo alla CPU di accedere a entrambe in
+                parallelo.
+            </p>
+            <p>
+                Parallelismo: Utilizzano spesso più unità di calcolo che
+                lavorano contemporaneamente, permettendo di eseguire più
+                operazioni allo stesso tempo (ad esempio nelle GPU o nei
+                supercomputer).
+            </p>
+        </div>
+
+        <div class="container" id="esempi">
+            <h2>Esempi</h2>
+            <p>
+                Architettura Harvard: Memoria separata per dati e istruzioni,
+                che consente maggiore velocità.
+            </p>
+        </div>
+
+        <div class="footerSite">
+            <a href="bus.html">Home</a>
+        </div>
+    </body>
 </html>

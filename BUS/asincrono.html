@@ -1,35 +1,90 @@
-<!DOCTYPE html>
-<head>
-    <title>Bus Asincroni</title>
-</head>
-<body>
-    <header>
-        <h1 align="center"><font size="10">Bus Asincroni</font></h1>
-        <p align="center"><img src="IMG/busasincrono.jpg" width="700" height="600"></p>
-    </header>
+<!doctype html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bus Asincroni</title>
+        <link rel="stylesheet" href="../architetture.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Bus Asincroni</h1>
+        </header>
 
-    <section>
-        <h2><font size="6">Introduzione</font></h2>
-        <p><font size="5">Un bus asincrono è un tipo di bus in cui la trasmissione dei dati non dipende da un segnale di clock centrale. Invece di essere sincronizzati da un unico clock, i dispositivi comunicano tra loro utilizzando segnali di controllo. Questi segnali consentono ai dispositivi di "mettersi d'accordo" su quando trasferire i dati senza la necessità di un riferimento temporale centralizzato.</font></p>
-        <p><font size="5">Il vantaggio principale di un bus asincrono è che non è necessario un segnale di clock condiviso tra tutti i dispositivi. Ogni dispositivo può operare alla sua velocità e solo quando è pronto a trasmettere o ricevere dati.</font></p>
-    </section>
+        <nav>
+            <a href="#introduzione">Introduzione</a>
+            <a href="#funzionamento">Funzionamento</a>
+            <a href="#vantaggi">Vantaggi e Svantaggi</a>
+        </nav>
 
-    <section>
-        <h2><font size="6">Funzionamento</font></h2>
-        <p><font size="5">Nei bus asincroni, la sincronizzazione avviene tramite un meccanismo chiamato <strong>handshaking</strong>. Questo significa che i dispositivi utilizzano segnali di controllo per informarsi reciprocamente della disponibilità dei dati. In altre parole, prima che un dispositivo possa inviare o ricevere dati, deve stabilire che l'altro dispositivo è pronto.</font></p>
-        <p><font size="5">Ad esempio, un dispositivo può inviare un segnale di richiesta per iniziare il trasferimento dei dati. Il dispositivo di destinazione, una volta pronto, risponde con un segnale di conferma. Solo quando entrambi i dispositivi hanno stabilito di essere pronti, i dati vengono trasferiti.</font></p>
-    </section>
+        <div class="container" id="introduzione">
+            <h2>Introduzione</h2>
+            <p>
+                Un bus asincrono è un tipo di bus in cui la trasmissione dei
+                dati non dipende da un segnale di clock centrale. Invece di
+                essere sincronizzati da un unico clock, i dispositivi comunicano
+                tra loro utilizzando segnali di controllo. Questi segnali
+                consentono ai dispositivi di "mettersi d'accordo" su quando
+                trasferire i dati senza la necessità di un riferimento temporale
+                centralizzato.
+            </p>
+            <p>
+                Il vantaggio principale di un bus asincrono è che non è
+                necessario un segnale di clock condiviso tra tutti i
+                dispositivi. Ogni dispositivo può operare alla sua velocità e
+                solo quando è pronto a trasmettere o ricevere dati.
+            </p>
+            <img src="IMG/busasincrono.jpg" alt="Immagine del bus asincrono" />
+        </div>
 
-    <section>
-        <h2><font size="6">Vantaggi e Svantaggi</font></h2>
-        <ul>
-            <li><font size="5"><strong>Vantaggi:</strong> Un bus asincrono è molto più flessibile rispetto a uno sincrono, poiché non dipende da un singolo segnale di clock. Questo lo rende adatto a situazioni in cui i dispositivi operano a velocità diverse e non devono essere sincronizzati.</font></li>
-            <li><font size="5"><strong>Svantaggi:</strong> I bus asincroni tendono ad essere più complessi da progettare, poiché richiedono un meccanismo di controllo per gestire i segnali di handshaking. Inoltre, i trasferimenti possono essere più lenti rispetto a quelli sincroni, poiché ogni operazione dipende dal fatto che entrambi i dispositivi siano pronti.</font></li>
-            <li><font size="5">Inoltre, poiché i trasferimenti non sono strettamente sincronizzati, possono verificarsi più ritardi rispetto a un bus sincrono, in quanto dipendono dalla velocità dei segnali di controllo e dalla distanza tra i dispositivi.</font></li>
-        </ul>
-    </section>    
-    <footer>
-        <p align="center"><a href="bus.html"><font size="4"><B>TORNA ALLA HOME</B></font></a></p>
-    </footer>
-</body>
+        <div class="container" id="funzionamento">
+            <h2>Funzionamento</h2>
+            <p>
+                Nei bus asincroni, la sincronizzazione avviene tramite un
+                meccanismo chiamato <strong>handshaking</strong>. Questo
+                significa che i dispositivi utilizzano segnali di controllo per
+                informarsi reciprocamente della disponibilità dei dati. In altre
+                parole, prima che un dispositivo possa inviare o ricevere dati,
+                deve stabilire che l'altro dispositivo è pronto.
+            </p>
+            <p>
+                Ad esempio, un dispositivo può inviare un segnale di richiesta
+                per iniziare il trasferimento dei dati. Il dispositivo di
+                destinazione, una volta pronto, risponde con un segnale di
+                conferma. Solo quando entrambi i dispositivi hanno stabilito di
+                essere pronti, i dati vengono trasferiti.
+            </p>
+        </div>
+
+        <div class="container" id="vantaggi">
+            <h2>Vantaggi e Svantaggi</h2>
+            <ul>
+                <li>
+                    <strong>Vantaggi:</strong> Un bus asincrono è molto più
+                    flessibile rispetto a uno sincrono, poiché non dipende da un
+                    singolo segnale di clock. Questo lo rende adatto a
+                    situazioni in cui i dispositivi operano a velocità diverse e
+                    non devono essere sincronizzati.
+                </li>
+                <li>
+                    <strong>Svantaggi:</strong> I bus asincroni tendono ad
+                    essere più complessi da progettare, poiché richiedono un
+                    meccanismo di controllo per gestire i segnali di
+                    handshaking. Inoltre, i trasferimenti possono essere più
+                    lenti rispetto a quelli sincroni, poiché ogni operazione
+                    dipende dal fatto che entrambi i dispositivi siano pronti.
+                </li>
+                <li>
+                    Inoltre, poiché i trasferimenti non sono strettamente
+                    sincronizzati, possono verificarsi più ritardi rispetto a un
+                    bus sincrono, in quanto dipendono dalla velocità dei segnali
+                    di controllo e dalla distanza tra i dispositivi.
+                </li>
+            </ul>
+        </div>
+
+        <div class="footerSite">
+            <a href="bus.html">Torna alla home</a>
+        </div>
+    </body>
 </html>

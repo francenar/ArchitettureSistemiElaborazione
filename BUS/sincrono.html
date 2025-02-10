@@ -1,36 +1,86 @@
-<!DOCTYPE html>
-<head>
-    <title>Bus Sincroni</title>
-</head>
-<body>
-    <header>
-        <h1 align="center"><font size="10">Bus Sincroni</font></h1>
-        <p align="center"><img src="IMG/bussincrono.jpg" width="700" height="600"></p>
-    </header>
+<!doctype html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bus Sincroni</title>
+        <link rel="stylesheet" href="../architetture.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Bus Sincroni</h1>
+        </header>
 
-    <section>
-        <h2><font size="6">Introduzione</font></h2>
-        <p><font size="5">Un bus sincrono è un tipo di bus in cui la trasmissione di dati è coordinata da un segnale di clock. Il segnale di clock è un impulso regolare che sincronizza tutte le operazioni di trasferimento dati, assicurando che i dati vengano trasferiti in modo preciso e prevedibile. Ogni dispositivo collegato a un bus sincrono è sincronizzato con il segnale di clock e sa esattamente quando può inviare o ricevere dati.</font></p>
-        <p><font size="5">In un sistema sincrono, ogni dispositivo collegato al bus deve attendere il segnale di clock per sapere quando può trasferire i dati. Questo tipo di bus è comune in molti sistemi informatici, come nelle connessioni tra la CPU e la memoria.</font></p>
-    </section>
+        <nav>
+            <a href="#introduzione">Introduzione</a>
+            <a href="#funzionamento">Funzionamento</a>
+            <a href="#vantaggi-svantaggi">Vantaggi e Svantaggi</a>
+        </nav>
 
-    <section>
-        <h2><font size="6">Funzionamento</font></h2>
-        <p><font size="5">Nel bus sincrono, il trasferimento dei dati avviene durante un determinato intervallo di tempo in cui il segnale di clock è attivo. Ogni impulso del clock rappresenta una "finestra" temporale in cui un componente del sistema può trasmettere o ricevere dati.</font></p>
-        <p><font size="5">Per esempio, se la CPU deve inviare dei dati alla memoria, la CPU e la memoria sono sincronizzate dal segnale di clock: la CPU sa che, al momento dell'impulso del clock, deve inviare i dati attraverso il bus, e la memoria sa quando deve riceverli.</font></p>
-    </section>
+        <div class="container" id="introduzione">
+            <h2>Introduzione</h2>
+            <p>
+                Un bus sincrono è un tipo di bus in cui la trasmissione di dati
+                è coordinata da un segnale di clock. Il segnale di clock è un
+                impulso regolare che sincronizza tutte le operazioni di
+                trasferimento dati, assicurando che i dati vengano trasferiti in
+                modo preciso e prevedibile. Ogni dispositivo collegato a un bus
+                sincrono è sincronizzato con il segnale di clock e sa
+                esattamente quando può inviare o ricevere dati.
+            </p>
+            <p>
+                In un sistema sincrono, ogni dispositivo collegato al bus deve
+                attendere il segnale di clock per sapere quando può trasferire i
+                dati. Questo tipo di bus è comune in molti sistemi informatici,
+                come nelle connessioni tra la CPU e la memoria.
+            </p>
+            <img src="IMG/bussincrono.jpg" alt="Bus Sincrono" />
+        </div>
 
-    <section>
-        <h2><font size="6">Vantaggi e Svantaggi</font></h2>
-        <ul>
-            <li><font size="5"><strong>Vantaggi:</strong> Un bus sincrono è semplice da progettare, poiché il segnale di clock regola tutto il sistema. La sincronizzazione rende più facile il controllo del flusso dei dati, riducendo gli errori.</font></li>
-            <li><font size="5"><strong>Svantaggi:</strong> La velocità di trasferimento è limitata dalla frequenza del clock. Più alta è la frequenza del clock, più velocemente si possono trasferire i dati, ma a una certa frequenza si possono verificare problemi di sincronizzazione e interferenze elettromagnetiche.</font></li>
-            <li><font size="5">Un altro svantaggio è che la distanza tra i dispositivi deve essere limitata per mantenere la sincronizzazione. Se la distanza è troppo lunga, potrebbero verificarsi dei ritardi nel segnale di clock.</font></li>
-        </ul>
-    </section>
+        <div class="container" id="funzionamento">
+            <h2>Funzionamento</h2>
+            <p>
+                Nel bus sincrono, il trasferimento dei dati avviene durante un
+                determinato intervallo di tempo in cui il segnale di clock è
+                attivo. Ogni impulso del clock rappresenta una "finestra"
+                temporale in cui un componente del sistema può trasmettere o
+                ricevere dati.
+            </p>
+            <p>
+                Per esempio, se la CPU deve inviare dei dati alla memoria, la
+                CPU e la memoria sono sincronizzate dal segnale di clock: la CPU
+                sa che, al momento dell'impulso del clock, deve inviare i dati
+                attraverso il bus, e la memoria sa quando deve riceverli.
+            </p>
+        </div>
 
-    <footer>
-        <p align="center"><a href="bus.html"><font size="4"><B>TORNA ALLA HOME</B></font></a></p>
-    </footer>
-</body>
+        <div class="container" id="vantaggi-svantaggi">
+            <h2>Vantaggi e Svantaggi</h2>
+            <ul>
+                <li>
+                    <strong>Vantaggi:</strong> Un bus sincrono è semplice da
+                    progettare, poiché il segnale di clock regola tutto il
+                    sistema. La sincronizzazione rende più facile il controllo
+                    del flusso dei dati, riducendo gli errori.
+                </li>
+                <li>
+                    <strong>Svantaggi:</strong> La velocità di trasferimento è
+                    limitata dalla frequenza del clock. Più alta è la frequenza
+                    del clock, più velocemente si possono trasferire i dati, ma
+                    a una certa frequenza si possono verificare problemi di
+                    sincronizzazione e interferenze elettromagnetiche.
+                </li>
+                <li>
+                    Un altro svantaggio è che la distanza tra i dispositivi deve
+                    essere limitata per mantenere la sincronizzazione. Se la
+                    distanza è troppo lunga, potrebbero verificarsi dei ritardi
+                    nel segnale di clock.
+                </li>
+            </ul>
+        </div>
+
+        <div class="footerSite">
+            <a href="bus.html">Torna alla home</a>
+        </div>
+    </body>
 </html>

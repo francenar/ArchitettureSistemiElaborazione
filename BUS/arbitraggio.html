@@ -1,49 +1,120 @@
-<!DOCTYPE html>
-<head>
-    <title>Arbitraggio dei Bus nel Computer</title>
-</head>
-<body>
-    <header>
-        <font size="5"><h1 align="center">Arbitraggio dei Bus nel Computer</h1></font>
-		<p align="center"><img src="IMG/ARBITRAGGIO1.png"></p>
-    </header>
+<!doctype html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Arbitraggio dei Bus nel Computer</title>
+        <link rel="stylesheet" href="../architetture.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Arbitraggio dei Bus nel Computer</h1>
+        </header>
 
-    <section>
-        <h2>Cos'è l'Arbitraggio dei Bus nel Computer?</h2>
-        <font size="4"><p>L'arbitraggio dei bus in un sistema informatico è il processo mediante il quale viene gestito l'accesso al bus di sistema da parte dei vari componenti del computer. Il bus è un canale di comunicazione che consente il trasferimento di dati tra la CPU, la memoria e le periferiche (come dischi rigidi, tastiere, monitor, ecc.).</p></font>
-        <font size="4"><p>Poiché più dispositivi possono richiedere l'accesso al bus simultaneamente, è necessario un sistema che determini quale dispositivo ottiene l'accesso al bus in un determinato momento, evitando conflitti e assicurando un funzionamento corretto del sistema.</p></font>
-    </section>
+        <nav>
+            <a href="#introduzione">Introduzione</a>
+            <a href="#necessita">Necessità</a>
+            <a href="#funzionamento">Funzionamento</a>
+            <a href="#conclusione">Conclusione</a>
+        </nav>
 
-    <section>
-        <h2>Perché è Necessario l'Arbitraggio dei Bus?</h2>
-        <font size="4"><p>L'arbitraggio è essenziale perché più dispositivi possono competere per l'accesso al bus. I dispositivi coinvolti includono:</p></font>
-        <font size="4">
-        <ul>
-            <li><strong>CPU:</strong> La CPU esegue le istruzioni e gestisce i calcoli e le operazioni logiche.</li>
-            <li><strong>Memoria (RAM):</strong> La memoria archivia temporaneamente i dati e le istruzioni per un rapido accesso.</li>
-            <li><strong>Periferiche:</strong> Dispositivi come il disco rigido, la scheda grafica, la tastiera, ecc., che richiedono comunicazione con la CPU e la memoria.</li>
-        </ul>
-        </font>
-        <font size="4"><p>Senza un sistema di arbitraggio, potrebbe verificarsi un conflitto quando più dispositivi cercano di accedere contemporaneamente al bus, rallentando o bloccando il funzionamento del sistema.</p></font>
-    </section>
+        <div class="container" id="introduzione">
+            <h2>Cos'è l'Arbitraggio dei Bus nel Computer?</h2>
+            <p>
+                L'arbitraggio dei bus in un sistema informatico è il processo
+                mediante il quale viene gestito l'accesso al bus di sistema da
+                parte dei vari componenti del computer. Il bus è un canale di
+                comunicazione che consente il trasferimento di dati tra la CPU,
+                la memoria e le periferiche (come dischi rigidi, tastiere,
+                monitor, ecc.).
+            </p>
+            <p>
+                Poiché più dispositivi possono richiedere l'accesso al bus
+                simultaneamente, è necessario un sistema che determini quale
+                dispositivo ottiene l'accesso al bus in un determinato momento,
+                evitando conflitti e assicurando un funzionamento corretto del
+                sistema.
+            </p>
+            <img
+                src="IMG/ARBITRAGGIO1.png"
+                alt="Immagine dell'arbitraggio dei bus"
+            />
+        </div>
 
-    <section>
-        <h2>Come Funziona l'Arbitraggio dei Bus?</h2>
-        <font size="4"><p>L'arbitraggio dei bus viene gestito da un componente chiamato "arbitro del bus". Questo arbitro decide quale dispositivo può accedere al bus in un determinato momento, utilizzando diverse tecniche di arbitraggio:</p></font>
-        <font size="4">
-        <ol>
-            <li><strong>Arbitraggio centralizzato:</strong> Un singolo dispositivo, l'arbitro, decide quale dispositivo ha il diritto di accedere al bus. L'arbitro assegna l'accesso in base a una politica di priorità o richiesta di accesso.</li>
-            <li><strong>Arbitraggio decentralizzato:</strong> In questo sistema, non esiste un singolo arbitro centrale. Ogni dispositivo negozia direttamente con gli altri per ottenere l'accesso al bus. Un esempio di arbitraggio decentralizzato è il sistema di passaggio del token, in cui i dispositivi passano un "token" che dà loro il diritto di accedere al bus.</li>
-        </ol>
-        </font>
-    </section>
+        <div class="container" id="necessita">
+            <h2>Perché è Necessario l'Arbitraggio dei Bus?</h2>
+            <p>
+                L'arbitraggio è essenziale perché più dispositivi possono
+                competere per l'accesso al bus. I dispositivi coinvolti
+                includono:
+            </p>
+            <ul>
+                <li>
+                    <strong>CPU:</strong> La CPU esegue le istruzioni e gestisce
+                    i calcoli e le operazioni logiche.
+                </li>
+                <li>
+                    <strong>Memoria (RAM):</strong> La memoria archivia
+                    temporaneamente i dati e le istruzioni per un rapido
+                    accesso.
+                </li>
+                <li>
+                    <strong>Periferiche:</strong> Dispositivi come il disco
+                    rigido, la scheda grafica, la tastiera, ecc., che richiedono
+                    comunicazione con la CPU e la memoria.
+                </li>
+            </ul>
+            <p>
+                Senza un sistema di arbitraggio, potrebbe verificarsi un
+                conflitto quando più dispositivi cercano di accedere
+                contemporaneamente al bus, rallentando o bloccando il
+                funzionamento del sistema.
+            </p>
+        </div>
 
-    <section>
-        <h2>Conclusione</h2>
-        <font size="4"><p>L'arbitraggio dei bus è una parte fondamentale della gestione delle comunicazioni tra le componenti di un computer. Senza un sistema di arbitraggio efficace, il sistema potrebbe diventare inefficiente o addirittura instabile. I vari metodi di arbitraggio, come quelli centralizzati, decentralizzati o a priorità, sono essenziali per garantire che i dispositivi possano lavorare in modo collaborativo, senza conflitti, in modo da ottimizzare le prestazioni complessive del sistema.</p></font>
-    </section>
-    <footer>
-     <p align="center"><a href="bus.html"><font size="4"><B>TORNA ALLA HOME</B></font></a></p>
- </footer>
-</body>
+        <div class="container" id="funzionamento">
+            <h2>Come Funziona l'Arbitraggio dei Bus?</h2>
+            <p>
+                L'arbitraggio dei bus viene gestito da un componente chiamato
+                "arbitro del bus". Questo arbitro decide quale dispositivo può
+                accedere al bus in un determinato momento, utilizzando diverse
+                tecniche di arbitraggio:
+            </p>
+            <ol>
+                <li>
+                    <strong>Arbitraggio centralizzato:</strong> Un singolo
+                    dispositivo, l'arbitro, decide quale dispositivo ha il
+                    diritto di accedere al bus. L'arbitro assegna l'accesso in
+                    base a una politica di priorità o richiesta di accesso.
+                </li>
+                <li>
+                    <strong>Arbitraggio decentralizzato:</strong> In questo
+                    sistema, non esiste un singolo arbitro centrale. Ogni
+                    dispositivo negozia direttamente con gli altri per ottenere
+                    l'accesso al bus. Un esempio di arbitraggio decentralizzato
+                    è il sistema di passaggio del token, in cui i dispositivi
+                    passano un "token" che dà loro il diritto di accedere al
+                    bus.
+                </li>
+            </ol>
+        </div>
+
+        <div class="container" id="conclusione">
+            <h2>Conclusione</h2>
+            <p>
+                L'arbitraggio dei bus è una parte fondamentale della gestione
+                delle comunicazioni tra le componenti di un computer. Senza un
+                sistema di arbitraggio efficace, il sistema potrebbe diventare
+                inefficiente o addirittura instabile. I vari metodi di
+                arbitraggio, come quelli centralizzati, decentralizzati o a
+                priorità, sono essenziali per garantire che i dispositivi
+                possano lavorare in modo collaborativo, senza conflitti, in modo
+                da ottimizzare le prestazioni complessive del sistema.
+            </p>
+        </div>
+
+        <div class="footerSite">
+            <a href="bus.html">Torna alla Home</a>
+        </div>
+    </body>
 </html>
