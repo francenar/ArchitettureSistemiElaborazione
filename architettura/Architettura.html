@@ -1,98 +1,280 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
-<head>
-     <meta charset="UTF-8" />
+    <head>
+        <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <title>Architettura del Computer</title>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-            rel="stylesheet" />
-         <link rel="stylesheet" href="../architetture.css">
-</head>
-<body>
-       <header>
-             <h1>Architettura del Computer</h1>
+        <title>Architettura del Computer</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../architetture.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Architettura del Computer</h1>
         </header>
-  
-     <nav>
+
+        <nav>
             <a href="#computer">Il Computer</a>
             <a href="#tipi">Tipi di Computer</a>
             <a href="#vonNeumann">Il Modello di Von Neumann</a>
             <a href="#componenti">Componenti Hardware Principali</a>
-            <a href="#virtualizzazione">Virtualizzazione e Sistemi di Elaborazione</a>
+            <a href="#virtualizzazione"
+                >Virtualizzazione e Sistemi di Elaborazione</a
+            >
         </nav>
 
-    <section class="container" id="computer">
-        <h2>Il Computer</h2>
-        <p>Il <strong>computer</strong> è un sistema elettronico che esegue una serie di operazioni predeterminate tramite software, sulla base di istruzioni memorizzate. Tali operazioni spaziano da calcoli matematici a operazioni logiche, fino alla gestione di informazioni complesse. Il termine "architettura del computer" si riferisce alla progettazione di tutti i componenti hardware e alla loro interazione. Ogni componente ha un ruolo fondamentale nell’esecuzione delle operazioni: la <strong>CPU</strong> esegue i calcoli, la <strong>memoria</strong> conserva i dati temporanei e le istruzioni, e i dispositivi di <strong>input/output</strong> permettono l'interazione con l'utente o con altri sistemi.</p>
-        <p>L'architettura di un computer è influenzata dalla combinazione di componenti hardware e software, che operano in modo sinergico. Oltre alla CPU e alla memoria, il computer comprende sistemi di <strong>interconnessione</strong> (bus, reti interne) e dispositivi di <strong>periferica</strong> che supportano l’elaborazione, come tastiere, mouse, monitor e stampanti. La progettazione dell'architettura del computer deve considerare l’efficienza, la velocità di elaborazione, l'affidabilità, la scalabilità e il consumo energetico.</p>
-          <h2>Definizione e Funzione del Computer</h2>
-        <p>Il computer, noto anche come elaboratore o calcolatore, è una macchina automatizzata e programmabile che esegue calcoli complessi e altre elaborazioni di dati. Viene concepito per potenziare capacità umane come il calcolo e la memorizzazione, applicandole alla soluzione di problemi scientifici e ingegneristici.</p>
+        <section class="container" id="computer">
+            <h2>Il Computer</h2>
+            <p>
+                Il <strong>computer</strong> è un sistema elettronico che esegue
+                una serie di operazioni predeterminate tramite software, sulla
+                base di istruzioni memorizzate. Tali operazioni spaziano da
+                calcoli matematici a operazioni logiche, fino alla gestione di
+                informazioni complesse. Il termine "architettura del computer"
+                si riferisce alla progettazione di tutti i componenti hardware e
+                alla loro interazione. Ogni componente ha un ruolo fondamentale
+                nell’esecuzione delle operazioni: la <strong>CPU</strong> esegue
+                i calcoli, la <strong>memoria</strong> conserva i dati
+                temporanei e le istruzioni, e i dispositivi di
+                <strong>input/output</strong> permettono l'interazione con
+                l'utente o con altri sistemi.
+            </p>
+            <p>
+                L'architettura di un computer è influenzata dalla combinazione
+                di componenti hardware e software, che operano in modo
+                sinergico. Oltre alla CPU e alla memoria, il computer comprende
+                sistemi di <strong>interconnessione</strong> (bus, reti interne)
+                e dispositivi di <strong>periferica</strong> che supportano
+                l’elaborazione, come tastiere, mouse, monitor e stampanti. La
+                progettazione dell'architettura del computer deve considerare
+                l’efficienza, la velocità di elaborazione, l'affidabilità, la
+                scalabilità e il consumo energetico.
+            </p>
+            <h2>Definizione e Funzione del Computer</h2>
+            <p>
+                Il computer, noto anche come elaboratore o calcolatore, è una
+                macchina automatizzata e programmabile che esegue calcoli
+                complessi e altre elaborazioni di dati. Viene concepito per
+                potenziare capacità umane come il calcolo e la memorizzazione,
+                applicandole alla soluzione di problemi scientifici e
+                ingegneristici.
+            </p>
+        </section>
+        <section class="container" id="tipi">
+            <h2>Tipi di Computer</h2>
+            <p>
+                I computer si suddividono in diverse categorie in base alle loro
+                caratteristiche e potenza:
+            </p>
+            <ul>
+                <li>
+                    <strong>Supercomputer:</strong> Potenza di calcolo molto
+                    elevata, utilizzato per calcoli scientifici complessi.
+                </li>
+                <li>
+                    <strong>Mainframe:</strong> Potente, usato per
+                    l'elaborazione di grandi volumi di dati.
+                </li>
+                <li>
+                    <strong>Minicomputer:</strong> Di dimensioni medie, adatto a
+                    compiti specifici.
+                </li>
+                <li>
+                    <strong>Microcomputer:</strong> Include PC desktop,
+                    notebook, tablet e smartphone.
+                </li>
+                <li>
+                    <strong>Workstation:</strong> Per compiti specialistici.
+                </li>
+                <li>
+                    <strong>Reti di Computer:</strong> Connessioni tra più
+                    computer.
+                </li>
+                <li>
+                    <strong>Personal Computer (PC):</strong> Comprende sia
+                    desktop che portatili.
+                </li>
+                <li>
+                    <strong>Computer Fisso:</strong> Tipo di PC che non è
+                    portatile.
+                </li>
+            </ul>
+        </section>
 
-    </section>
- <section class="container" id="tipi">
-        <h2>Tipi di Computer</h2>
-        <p>I computer si suddividono in diverse categorie in base alle loro caratteristiche e potenza:</p>
-        <ul>
-            <li><strong>Supercomputer:</strong> Potenza di calcolo molto elevata, utilizzato per calcoli scientifici complessi.</li>
-            <li><strong>Mainframe:</strong> Potente, usato per l'elaborazione di grandi volumi di dati.</li>
-            <li><strong>Minicomputer:</strong> Di dimensioni medie, adatto a compiti specifici.</li>
-            <li><strong>Microcomputer:</strong> Include PC desktop, notebook, tablet e smartphone.</li>
-            <li><strong>Workstation:</strong> Per compiti specialistici.</li>
-            <li><strong>Reti di Computer:</strong> Connessioni tra più computer.</li>
-            <li><strong>Personal Computer (PC):</strong> Comprende sia desktop che portatili.</li>
-            <li><strong>Computer Fisso:</strong> Tipo di PC che non è portatile.</li>
-        </ul>
-    </section>
+        <!-- Modello di Von Neumann -->
+        <section class="container" id="vonNeumann">
+            <h2>Il Modello di Von Neumann</h2>
+            <p>
+                Il modello di Von Neumann, sviluppato dal matematico e fisico
+                John von Neumann, descrive l'architettura di un computer basato
+                su un <strong>processore centrale</strong> (CPU), una
+                <strong>memoria</strong> e dispositivi di
+                <strong>input/output</strong>, e prevede che il programma e i
+                dati siano memorizzati nella stessa memoria. È il modello di
+                base per la maggior parte dei computer moderni.
+            </p>
+            <h3>Struttura del Modello di Von Neumann</h3>
+            <img src="IMG/VonNeumann.jpg" alt="Modello di Von Neumann" />
+            <p>
+                Il modello di Von Neumann si basa su una struttura che include i
+                seguenti componenti:
+            </p>
+            <ul>
+                <li>
+                    <strong>Unità di Controllo (CU):</strong> Coordina e
+                    gestisce l'esecuzione delle istruzioni del programma,
+                    interpretando le operazioni e il flusso di dati tra le varie
+                    componenti del computer.
+                </li>
+                <li>
+                    <strong>Unità Aritmetico-Logica (ALU):</strong> Esegue le
+                    operazioni aritmetiche (come somma e sottrazione) e le
+                    operazioni logiche (come AND e OR) sui dati.
+                </li>
+                <li>
+                    <strong>Memoria:</strong> Conserva sia i dati che le
+                    istruzioni. In questo modello, i dati e le istruzioni sono
+                    trattati in modo simile, entrambi archiviati nella stessa
+                    memoria.
+                </li>
+                <li>
+                    <strong>Bus:</strong> Un insieme di linee di comunicazione
+                    attraverso le quali i dati vengono trasferiti tra la
+                    memoria, l'ALU, l'unità di controllo e i dispositivi di I/O.
+                </li>
+                <li>
+                    <strong>Dispositivi di Input/Output (I/O):</strong>
+                    Permettono l'interazione con l'esterno, come tastiere,
+                    mouse, monitor, stampanti e dischi rigidi.
+                </li>
+            </ul>
+            <p>
+                In un computer basato sul modello di Von Neumann, le istruzioni
+                vengono lette dalla memoria, decodificate dall'unità di
+                controllo, e quindi eseguite dall'ALU. I risultati delle
+                operazioni vengono quindi scritti nuovamente nella memoria o
+                inviati ai dispositivi di output.
+            </p>
 
-    <!-- Modello di Von Neumann -->
-    <section class="container" id="vonNeumann">
-        <h2>Il Modello di Von Neumann</h2>
-        <p>Il modello di Von Neumann, sviluppato dal matematico e fisico John von Neumann, descrive l'architettura di un computer basato su un <strong>processore centrale</strong> (CPU), una <strong>memoria</strong> e dispositivi di <strong>input/output</strong>, e prevede che il programma e i dati siano memorizzati nella stessa memoria. È il modello di base per la maggior parte dei computer moderni.</p>
-        <h3>Struttura del Modello di Von Neumann</h3>
-           <img src="IMG/VonNeumann.jpg" alt="Modello di Von Neumann" />
-        <p>Il modello di Von Neumann si basa su una struttura che include i seguenti componenti:</p>
-        <ul>
-            <li><strong>Unità di Controllo (CU):</strong> Coordina e gestisce l'esecuzione delle istruzioni del programma, interpretando le operazioni e il flusso di dati tra le varie componenti del computer.</li>
-            <li><strong>Unità Aritmetico-Logica (ALU):</strong> Esegue le operazioni aritmetiche (come somma e sottrazione) e le operazioni logiche (come AND e OR) sui dati.</li>
-            <li><strong>Memoria:</strong> Conserva sia i dati che le istruzioni. In questo modello, i dati e le istruzioni sono trattati in modo simile, entrambi archiviati nella stessa memoria.</li>
-            <li><strong>Bus:</strong> Un insieme di linee di comunicazione attraverso le quali i dati vengono trasferiti tra la memoria, l'ALU, l'unità di controllo e i dispositivi di I/O.</li>
-            <li><strong>Dispositivi di Input/Output (I/O):</strong> Permettono l'interazione con l'esterno, come tastiere, mouse, monitor, stampanti e dischi rigidi.</li>
-        </ul>
-        <p>In un computer basato sul modello di Von Neumann, le istruzioni vengono lette dalla memoria, decodificate dall'unità di controllo, e quindi eseguite dall'ALU. I risultati delle operazioni vengono quindi scritti nuovamente nella memoria o inviati ai dispositivi di output.</p>
-    
-        <h3>La Memoria</h3>
-        <p>Nel modello di Von Neumann, la memoria è utilizzata per immagazzinare sia i dati che le istruzioni. Questo concetto è essenziale per il funzionamento dei computer moderni, dove la memoria centrale (RAM) è utilizzata per conservare temporaneamente le informazioni durante l'esecuzione dei programmi. Le operazioni di lettura e scrittura della memoria sono eseguite dal processore attraverso un bus di dati, che permette il trasferimento dei dati tra i vari componenti del sistema.</p>
-        <h3>Input/Output e la CPU</h3>
-        <p>Nel modello di Von Neumann, la CPU è al centro di tutte le operazioni, gestendo l’esecuzione delle istruzioni e il flusso di dati. Gli <strong>input</strong> vengono inviati al computer tramite dispositivi di input (come tastiere, mouse o sensori), mentre gli <strong>output</strong> vengono inviati ai dispositivi di output (come monitor, stampanti e altoparlanti). Questi componenti di I/O permettono agli utenti di interagire con il sistema, sia per inserire dati che per ricevere informazioni elaborate dal processore.</p>
-        <p>Il bus di sistema funge da collegamento tra la CPU, la memoria e i dispositivi di I/O, consentendo il trasferimento dei dati tra questi componenti. Questo modello rimane alla base della progettazione di molti sistemi informatici moderni.</p>
-    </section>
+            <h3>La Memoria</h3>
+            <p>
+                Nel modello di Von Neumann, la memoria è utilizzata per
+                immagazzinare sia i dati che le istruzioni. Questo concetto è
+                essenziale per il funzionamento dei computer moderni, dove la
+                memoria centrale (RAM) è utilizzata per conservare
+                temporaneamente le informazioni durante l'esecuzione dei
+                programmi. Le operazioni di lettura e scrittura della memoria
+                sono eseguite dal processore attraverso un bus di dati, che
+                permette il trasferimento dei dati tra i vari componenti del
+                sistema.
+            </p>
+            <h3>Input/Output e la CPU</h3>
+            <p>
+                Nel modello di Von Neumann, la CPU è al centro di tutte le
+                operazioni, gestendo l’esecuzione delle istruzioni e il flusso
+                di dati. Gli <strong>input</strong> vengono inviati al computer
+                tramite dispositivi di input (come tastiere, mouse o sensori),
+                mentre gli <strong>output</strong> vengono inviati ai
+                dispositivi di output (come monitor, stampanti e altoparlanti).
+                Questi componenti di I/O permettono agli utenti di interagire
+                con il sistema, sia per inserire dati che per ricevere
+                informazioni elaborate dal processore.
+            </p>
+            <p>
+                Il bus di sistema funge da collegamento tra la CPU, la memoria e
+                i dispositivi di I/O, consentendo il trasferimento dei dati tra
+                questi componenti. Questo modello rimane alla base della
+                progettazione di molti sistemi informatici moderni.
+            </p>
+        </section>
 
         <!-- Nuovo testo da aggiungere -->
-    <section class="container" id="componenti">
-        <h2>Componenti Hardware Principali</h2>
-        <p>Il computer è composto da vari componenti hardware fondamentali per il suo funzionamento:</p>
-        <ul>
-            <li><strong>Case:</strong> Protegge e organizza i componenti hardware. È paragonabile alla "pelle" di un corpo umano.</li>
-            <li><strong>Alimentatore:</strong> Fornisce energia elettrica a tutti i componenti.</li>
-            <li><strong> <a href="../scheda madre/scheda madre2.html">Scheda Madre</a>:</strong> Connette tutti i componenti hardware, ospita il processore.</li>
-            <li><strong>Processore (CPU):</strong> È il "cervello" del computer, esegue le istruzioni.</li>
-            <li><strong>Dissipatore:</strong> Serve per raffreddare il processore e prevenire il surriscaldamento.</li>
-            <li><strong><a href="../schedavideo/gpuprincipale.html">Scheda Video</a>:</strong> Essenziale per attività grafiche intensive, come giochi e CAD.</li>
-            <li><strong>Memoria RAM:</strong> Memoria temporanea che migliora le prestazioni generali del computer.</li>
-            <li><strong>Dispositivi di Archiviazione (Hard Disk o SSD):</strong> Memorizzano dati e sistemi operativi.</li>
-        </ul>
-  </section>
+        <section class="container" id="componenti">
+            <h2>Componenti Hardware Principali</h2>
+            <p>
+                Il computer è composto da vari componenti hardware fondamentali
+                per il suo funzionamento:
+            </p>
+            <ul>
+                <li>
+                    <strong>Case:</strong> Protegge e organizza i componenti
+                    hardware. È paragonabile alla "pelle" di un corpo umano.
+                </li>
+                <li>
+                    <strong>Alimentatore:</strong> Fornisce energia elettrica a
+                    tutti i componenti.
+                </li>
+                <li>
+                    <strong>
+                        <a href="../Motherboard/motherboard.html"
+                            >Scheda Madre</a
+                        >:</strong
+                    >
+                    Connette tutti i componenti hardware, ospita il processore.
+                </li>
+                <li>
+                    <strong>Processore (CPU):</strong> È il "cervello" del
+                    computer, esegue le istruzioni.
+                </li>
+                <li>
+                    <strong>Dissipatore:</strong> Serve per raffreddare il
+                    processore e prevenire il surriscaldamento.
+                </li>
+                <li>
+                    <strong
+                        ><a href="../GPU/gpuprincipale.html">Scheda Video</a
+                        >:</strong
+                    >
+                    Essenziale per attività grafiche intensive, come giochi e
+                    CAD.
+                </li>
+                <li>
+                    <strong>Memoria RAM:</strong> Memoria temporanea che
+                    migliora le prestazioni generali del computer.
+                </li>
+                <li>
+                    <strong
+                        >Dispositivi di Archiviazione (Hard Disk o SSD):</strong
+                    >
+                    Memorizzano dati e sistemi operativi.
+                </li>
+            </ul>
+        </section>
 
-    <section class="container" id="virtualizzazione">
-        <h2>Virtualizzazione e Sistemi di Elaborazione</h2>
-        <h3>Le Macchine Virtuali</h3>
-        <p>Le <strong>macchine virtuali</strong> sono un concetto fondamentale nella modernizzazione delle infrastrutture informatiche. Invece di utilizzare un computer fisico per ogni applicazione o sistema operativo, è possibile creare ambienti separati all'interno dello stesso hardware fisico. Una macchina virtuale (VM) è un software che simula un computer fisico, emulando l'intero sistema operativo e consentendo l’esecuzione di programmi come se fossero su un dispositivo fisico. La macchina virtuale permette di eseguire applicazioni su sistemi operativi diversi senza la necessità di acquistare hardware aggiuntivo.</p>
-        <p>Esistono vari vantaggi nell'uso delle macchine virtuali: la <strong>consolidazione dei server</strong>, che riduce i costi hardware; la <strong>scalabilità dinamica</strong>, che consente di aggiungere o rimuovere risorse virtuali rapidamente; e la <strong>sicurezza migliorata</strong>, poiché ogni macchina virtuale è isolata e non può influenzare le altre. Le VM sono utilizzate soprattutto in ambienti di <strong>cloud computing</strong> e nei data center, dove più sistemi operativi possono essere eseguiti su un singolo server fisico.</p>
-    </section>
-   
-    <div class="footerSite">
-        <a href="../index.html">Torna all'indice</a>
-      </div>
+        <section class="container" id="virtualizzazione">
+            <h2>Virtualizzazione e Sistemi di Elaborazione</h2>
+            <h3>Le Macchine Virtuali</h3>
+            <p>
+                Le <strong>macchine virtuali</strong> sono un concetto
+                fondamentale nella modernizzazione delle infrastrutture
+                informatiche. Invece di utilizzare un computer fisico per ogni
+                applicazione o sistema operativo, è possibile creare ambienti
+                separati all'interno dello stesso hardware fisico. Una macchina
+                virtuale (VM) è un software che simula un computer fisico,
+                emulando l'intero sistema operativo e consentendo l’esecuzione
+                di programmi come se fossero su un dispositivo fisico. La
+                macchina virtuale permette di eseguire applicazioni su sistemi
+                operativi diversi senza la necessità di acquistare hardware
+                aggiuntivo.
+            </p>
+            <p>
+                Esistono vari vantaggi nell'uso delle macchine virtuali: la
+                <strong>consolidazione dei server</strong>, che riduce i costi
+                hardware; la <strong>scalabilità dinamica</strong>, che consente
+                di aggiungere o rimuovere risorse virtuali rapidamente; e la
+                <strong>sicurezza migliorata</strong>, poiché ogni macchina
+                virtuale è isolata e non può influenzare le altre. Le VM sono
+                utilizzate soprattutto in ambienti di
+                <strong>cloud computing</strong> e nei data center, dove più
+                sistemi operativi possono essere eseguiti su un singolo server
+                fisico.
+            </p>
+        </section>
 
-</body>
+        <div class="footerSite">
+            <a href="../index.html">Torna all'indice</a>
+        </div>
+    </body>
 </html>
