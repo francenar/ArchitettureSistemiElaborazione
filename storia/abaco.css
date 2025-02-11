@@ -1,0 +1,58 @@
+.abaco {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    align-items: center;
+}
+.colonna {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+.colonna-unita {
+    background-color: #4caf50;
+}
+.colonna-decine {
+    background-color: #2196f3;
+}
+.colonna-centinaia {
+    background-color: #ff5722;
+}
+
+.pallina {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+.pallina.spostata {
+    background-color: #ff5722;
+}
+.valore {
+    position: absolute;
+    top: -30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
+
+.calcolatore {
+    margin-top: 30px;
+    font-size: 1.5em;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
