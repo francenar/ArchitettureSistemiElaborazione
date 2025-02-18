@@ -24,6 +24,7 @@
             <a href="#storia">La storia di Linux</a>
             <a href="#architettura">Architettura e sviluppo</a>
             <a href="#distribuzioni">Distribuzioni di Linux</a>
+            <a href="#prova">Prova Linux</a>
         </nav>
 
         <div class="container" id="storia">
@@ -118,6 +119,103 @@
             <img src="IMG/linux.png" alt="Mappa Linux" />
         </div>
 
+        <div class="container" id="prova">
+            <h2>Prova Linux nel Browser</h2>
+            <p>
+                Puoi provare Linux direttamente nel tuo browser web grazie a
+                WebVM. Nota: WebVM funziona solo su versioni desktop recenti di
+                Chrome, Edge, Firefox e Safari.<br />
+                <a href="https://webvm.io/" target="_blank">Visita WebVM</a>
+            </p>
+            <h2>Crea un file di testo in un terminale di linux</h2>
+            <p>
+                Impariamo un paio di comandi necessari per la creazione di
+                cartelle e file di testo:
+            </p>
+            <ol type="1">
+                <li>
+                    <b>ls</b>: Il comando ls mostra i contenuti nella cartella
+                    corrente, ha la stessa funzione del comando dir su Windows;
+                </li>
+                <li>
+                    <b>mkdir</b>: Il comando mkdir crea una cartella, bisogna
+                    darle un nome. Il comando è uguale su Windows;
+                </li>
+                <li>
+                    <b>cd</b>: Il comando cd serve per cambiare la cartella
+                    selezionata, bisogna inserire il nome della cartella e il
+                    percorso. Il comando è uguale su Windows;
+                </li>
+                <li>
+                    <b>cat</b>: Il comando cat serve per mostare i contenuti di
+                    un file.
+                </li>
+            </ol>
+            <b
+                ><p>
+                    Per incollare su un terminale linux bisogna fare Shift +
+                    Ctrl + V, e non Ctrl + V.
+                </p></b
+            >
+            <b
+                ><p>
+                    Ora creiamo una cartella chiamata "Testo" con questo
+                    comando.
+                </p></b
+            >
+            <input type="text" value="mkdir Testo" readonly />
+            <button onclick="navigator.clipboard.writeText('mkdir Testo')">
+                Copia
+            </button>
+            <b><p>Verifichiamo che la cartella sia stata creata.</p></b>
+            <input type="text" value="ls" readonly />
+            <button onclick="navigator.clipboard.writeText('ls')">Copia</button>
+            <p>dovresti vedere questo</p>
+            <img src="IMG/linux1.png" />
+            <b><p>Entriamo nella cartella "Testo".</p></b>
+            <input type="text" value="cd Testo" readonly />
+            <button onclick="navigator.clipboard.writeText('cd Testo')">
+                Copia
+            </button>
+            <b><p>Apriamo l'editor di testo "nano".</p></b>
+            <input type="text" value="nano" readonly />
+            <button onclick="navigator.clipboard.writeText('nano')">
+                Copia
+            </button>
+            <p>dovresti vedere questo</p>
+            <img src="IMG/linux2.png" />
+            <p>Scriviamo "Ciao Mondo!"</p>
+            <img src="IMG/linux3.png" />
+            <p>
+                Premi Ctrl + O per salvare il file. Scrivi il nome del file come
+                "Testo.txt" e premi Enter.
+            </p>
+            <img src="IMG/linux4.png" />
+            <p>Premi Ctrl + X per uscire da nano.</p>
+            <b><p>Verifichiamo che il file sia stato creato.</p></b>
+            <input type="text" value="ls" readonly />
+            <button onclick="navigator.clipboard.writeText('ls')">Copia</button>
+            <p>dovresti vedere questo</p>
+            <img src="IMG/linux5.png" />
+            <b><p>Stampiamo il contenuto del file.</p></b>
+            <input type="text" value="cat Testo.txt" readonly />
+            <button onclick="navigator.clipboard.writeText('cat Testo.txt')">
+                Copia
+            </button>
+            <p>dovresti vedere questo</p>
+            <img src="IMG/linux6.png" />
+            <h2>
+                Congratulazioni! hai imparato a creare e navigare cartelle,
+                modificare e creare file di testo!
+            </h2>
+            <p>
+                Per tornare alla cartella iniziale puoi eseguire questo comando:
+            </p>
+            <input type="text" value="cd .." readonly />
+            <button onclick="navigator.clipboard.writeText('cd ..')">
+                Copia
+            </button>
+        </div>
         <div class="footerSite">
             <a href="home.html">Torna alla home</a>
         </div>

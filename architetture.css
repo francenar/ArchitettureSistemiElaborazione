@@ -127,3 +127,24 @@ iframe {
 .footerSite a:hover {
     color: #007bff;
 }
+
+input {
+    width: 200px;
+    background: #f0f8ff;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-family: &quot;Roboto&quot;, sans-serif;
+    color: #333;
+}
+
+button {
+    background: linear-gradient(90deg, #444, #222);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: &quot;Roboto&quot;, sans-serif;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
