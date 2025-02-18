@@ -200,7 +200,9 @@
                 if (pallina.style.transform === "translateX(-50px)") {
                     pallina.style.transform = "translateX(0)";
                     pallina.classList.remove("spostata");
-
+                    
+                    pallina.innerText = pallina.getAttribute("data-valore");
+                    valori[colonna]--;
                    
                 } else {
                     pallina.style.transform = "translateX(-50px)";
