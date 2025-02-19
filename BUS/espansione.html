@@ -21,9 +21,11 @@
         <div class="container" id="introduzione">
             <h2>I BUS di espansione</h2>
             <p>
-                I bus di espansione sono usati per aggiungere nuove funzionalità
-                o dispositivi a un computer, collegando schede aggiuntive alla
-                scheda madre.
+            I bus di espansione sono componenti fondamentali dell’architettura di un computer, progettati per collegare e integrare nuove periferiche e schede di espansione all'interno del sistema.
+			Grazie ai bus di espansione, è possibile migliorare le funzionalità del computer aggiungendo componenti 
+			hardware come schede grafiche, schede audio, schede di rete, unità di archiviazione aggiuntive e molto altro.
+            Senza i bus di espansione, i computer sarebbero dispositivi statici e non aggiornabili. 
+			Con essi, invece, gli utenti possono personalizzare e potenziare il proprio sistema in base alle esigenze, prolungando la vita utile del computer e adattandolo a nuove tecnologie.
             </p>
             <img src="IMG/bus.jpg" alt="Immagine del BUS" />
         </div>
@@ -39,20 +41,35 @@
                 I bus di espansione permettono al processore di comunicare con
                 le periferiche aggiuntive attraverso schede aggiuntive che si
                 inseriscono negli appositi slot della scheda madre.
+				Esso è formato da un insieme di linee elettriche (tracce di rame sulla scheda madre) che permettono lo scambio di informazioni attraverso segnali digitali.
             </p>
         </div>
 
         <div class="container" id="tipi">
             <h2>Tipi di BUS</h2>
-            <p>
-                PCI (Peripheral Component Interconnect): Utilizzato per
-                collegare schede grafiche, schede di rete e altre periferiche.
+            <p><font size="4">
+                Bus ISA
+				<ul>
+				<li>Introdotto negli anni '80, era il primo standard per il collegamento di schede di espansione nei PC.</li>
+				<li>Aveva una larghezza di banda limitata e lavorava a velocità molto basse (8 MHz).</li>
+				<li>È stato progressivamente sostituito da bus più moderni e veloci.</li>
+				</ul></font>
             </p>
             <p>
-                PCIe (PCI Express): Una versione più veloce del PCI, usata per
-                dispositivi che richiedono un'ampia larghezza di banda come le
-                moderne GPU.
+                PCI 
+				<ul>
+				<li>Introdotto negli anni ‘90, ha rappresentato un grande miglioramento rispetto all’ISA.</li>
+				<li>Operava a 33 MHz con una larghezza di banda di 133 MB/s nella sua versione base.</li>
+				<li>Ha permesso di collegare una vasta gamma di dispositivi, tra cui schede video e schede di rete.</li>
+				<li>Con il tempo, è stato sostituito dal più veloce PCI Express (PCIe), ma alcune schede madri più vecchie hanno ancora slot PCI per compatibilità.</li>
+				</ul>
             </p>
+			<p>
+			  Bus PCI Express
+			  <ul>
+			  <li>È lo standard moderno per il collegamento di schede di espansione, come schede video, SSD NVMe e schede di rete ad alta velocità.</li>
+			  <li>È scalabile e retrocompatibile: una scheda PCIe 3.0 può funzionare su uno slot PCIe 4.0, anche se alla velocità della versione più lenta.</li>
+			  <li>Ha una struttura a corsie (lanes), dove ogni dispositivo può avere 1x, 4x, 8x o 16x corsie, in base alle esigenze di prestazioni.</li>
         </div>
 
         <div class="footerSite">
