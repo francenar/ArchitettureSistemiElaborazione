@@ -3,20 +3,19 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Bus Principali di un Computer</title>
+        <title>I tipi di BUS</title>
         <link rel="stylesheet" href="../architetture.css" />
     </head>
     <body>
         <header>
-            <h1>Bus Principali di un Computer</h1>
+            <h1>I tipi di Bus in un Computer</h1>
         </header>
 
         <nav>
-            <a href="bus.html"><img src="../home.svg" alt="home"></a>
+            <a href="../index.html"><img src="../home.svg" alt="home"></a>
             <a href="#bus-dati">Bus Dati</a>
             <a href="#bus-indirizzi">Bus Indirizzi</a>
             <a href="#bus-controllo">Bus di Controllo</a>
-            <a href="#bus-pci">Bus PCI</a>
             <a href="#bus-usb">Bus USB</a>
             <a href="#bus-sata">Bus SATA</a>
         </nav>
@@ -25,55 +24,48 @@
             <h2>Bus Dati</h2>
             <p><img src="IMG/bus_dati.png" alt="Scheda Madre" />
             <p>
-                Il bus dati è responsabile del trasferimento delle informazioni
-                tra la CPU, la memoria e gli altri dispositivi. Questo bus può
-                avere diverse larghezze (ad esempio 8, 16, 32 o 64 bit) e
-                determina la quantità di dati che possono essere trasferiti
-                simultaneamente.
+       Il bus dati è uno degli elementi più importanti di un computer, poiché si occupa del trasferimento delle informazioni tra i vari componenti del sistema.
+	   È una linea di comunicazione che consente alla CPU, alla memoria RAM, alla scheda video, ai dispositivi di archiviazione e 
+	   ad altri elementi hardware di scambiarsi dati in modo veloce ed efficiente.
+       Possiamo immaginare il bus dati come un'autostrada su cui viaggiano le informazioni sotto forma di pacchetti binari (sequenze di 0 e 1). 
+	   La larghezza di questa autostrada, ovvero il numero di bit che può trasportare contemporaneamente, determina la velocità e la capacità di trasferimento del sistema. 
+	   Ad esempio, un bus dati a 32 bit può trasmettere simultaneamente 32 bit di informazione, mentre un bus a 64 bit è in grado di trasferirne il doppio,
+       migliorando così le prestazioni del computer.
             </p>
         </div>
 
         <div class="container" id="bus-indirizzi">
             <h2>Bus Indirizzi</h2>
             <p>
-                Il bus indirizzi trasporta gli indirizzi di memoria a cui la CPU
-                desidera accedere per leggere o scrivere dati. La larghezza del
-                bus indirizzi determina la quantità massima di memoria
-                indirizzabile dal sistema.
+                Il bus indirizzi è una componente essenziale dell’architettura di un computer,
+				poiché permette alla CPU di individuare in modo preciso dove si trovano i dati e le istruzioni nella memoria e negli altri dispositivi collegati al sistema. 
+				Possiamo immaginarlo come una sorta di GPS interno che guida il processore nel trovare rapidamente le informazioni necessarie per eseguire le operazioni richieste.</br>
+				Quando la CPU ha bisogno di leggere o scrivere un dato, non può semplicemente "chiedere" alla memoria di consegnarlo. 
+				Deve invece inviare un segnale preciso per indicare esattamente dove il dato si trova. Questo segnale viene trasmesso attraverso il bus indirizzi, che trasporta il numero dell'indirizzo di memoria corrispondente.
             </p>
         </div>
 
         <div class="container" id="bus-controllo">
             <h2>Bus di Controllo</h2>
             <p>
-                Il bus di controllo gestisce i segnali di controllo e
-                coordinamento tra i vari componenti del computer. Include
-                segnali come lettura/scrittura, clock e interruzioni, essenziali
-                per garantire il corretto funzionamento delle operazioni di
-                input/output.
+                Il bus di controllo è una delle componenti fondamentali dell’architettura di un computer, responsabile della gestione e del coordinamento delle operazioni tra CPU, memoria e periferiche. 
+				Se il bus dati trasporta le informazioni e il bus indirizzi indica dove trovarle, il bus di controllo assicura che tutto avvenga nel modo corretto, 
+				inviando segnali che sincronizzano e regolano il flusso di dati all’interno del sistema.
+				Immaginiamo il bus di controllo come un direttore d’orchestra che stabilisce il tempo e il ritmo di ogni operazione. 
+				Quando la CPU esegue un'istruzione, ha bisogno di comunicare con la memoria e con i dispositivi di input/output, ma senza un coordinamento preciso il processo diventerebbe caotico. 
+				Il bus di controllo emette segnali elettrici che indicano cosa deve succedere e quando.
+                Ad esempio, se la CPU vuole leggere un dato dalla memoria, invia un segnale di lettura attraverso il bus di controllo, mentre se deve scrivere un’informazione, invia un segnale di scrittura. 
+                Questo assicura che i dispositivi coinvolti sappiano esattamente come comportarsi.
             </p>
         </div>
-
-        <div class="container" id="bus-pci">
-            <h2>Bus PCI</h2>
-            <p><img src="IMG/buspci.jpg"></p>
-            <p>
-                Il bus PCI (Peripheral Component Interconnect) collega le schede
-                di espansione alla scheda madre. Le versioni moderne includono
-                il PCI Express (PCIe), che offre velocità di trasferimento dati
-                notevolmente superiori grazie alla sua architettura a corsie
-                indipendenti. PCIe è disponibile in diverse configurazioni (x1,
-                x4, x8, x16) e viene utilizzato per schede grafiche, SSD NVMe e
-                altre periferiche ad alta velocità.
-            </p>
-        </div>
-
         <div class="container" id="bus-usb">
             <h2>Bus USB</h2>
             <p>
-                Il bus USB (Universal Serial Bus) consente il collegamento di
-                dispositivi esterni come mouse, tastiere e stampanti. Offre
-                diverse versioni con velocità variabili, come USB 2.0 (fino a
+				L’Universal Serial Bus (USB) è uno degli standard di comunicazione più diffusi al mondo, progettato per permettere il collegamento di una vasta gamma di dispositivi a un computer o ad altri dispositivi elettronici. 
+				Il suo successo è dovuto alla versatilità, alla facilità d’uso e alla capacità di trasmettere sia dati che alimentazione elettrica attraverso un singolo cavo.
+                Introdotto alla fine degli anni ‘90, il bus USB ha progressivamente sostituito diverse interfacce precedenti, 
+				come le porte seriali, parallele e PS/2, diventando lo standard universale per il collegamento di periferiche esterne come tastiere, mouse, stampanti, unità di archiviazione e molti altri dispositivi.
+				Offre diverse versioni con velocità variabili, come USB 2.0 (fino a
                 480 Mbps), USB 3.0 (fino a 5 Gbps) e USB 3.1/3.2 (fino a 10/20
                 Gbps).
             </p>
@@ -84,10 +76,10 @@
             <h2>Bus SATA</h2>
             <p><img src="IMG/bussata.jpg"></p>
             <p>
-                Il bus SATA (Serial ATA) viene utilizzato per collegare hard
-                disk e unità SSD alla scheda madre. Le versioni più recenti,
-                come SATA III, possono raggiungere velocità fino a 6 Gbps,
-                migliorando le prestazioni di archiviazione.
+            Il bus SATA (Serial Advanced Technology Attachment) è un’interfaccia di trasferimento dati utilizzata per collegare dispositivi di archiviazione come hard disk (HDD), 
+		    unità a stato solido (SSD) e unità ottiche (CD/DVD/Blu-ray) alla scheda madre di un computer.
+            Introdotto nei primi anni 2000 come evoluzione del precedente standard PATA (Parallel ATA o IDE),
+			il bus SATA ha rivoluzionato il modo in cui i dispositivi di archiviazione comunicano con il sistema, garantendo maggiori velocità, una connessione più semplice e una migliore gestione dei dati.
             </p>
         </div>
 

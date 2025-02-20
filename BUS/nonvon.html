@@ -12,7 +12,7 @@
         </header>
 
         <nav>
-            <a href="bus.html"><img src="../home.svg" alt="home"></a>
+            <a href="../index.html"><img src="../home.svg" alt="home"></a>
             <a href="#introduzione">Introduzione</a>
             <a href="#differenze">Differenze Principali</a>
             <a href="#esempi">Esempi</a>
@@ -21,10 +21,10 @@
         <div class="container" id="introduzione">
             <h2>Introduzione</h2>
             <p>
-                L'architettura non von Neumann è un modello di organizzazione di
-                computer che differisce dal tradizionale modello di von Neumann,
-                in cui CPU e memoria sono separati e comunicano attraverso un
-                unico percorso, o bus, creando spesso un collo di bottiglia.
+                Le architetture non Von Neumann rappresentano un paradigma alternativo all’architettura di Von Neumann, 
+				che è il modello su cui si basano la maggior parte dei computer moderni.
+				Queste architetture sono state sviluppate per superare i limiti della classica organizzazione di un computer, migliorando prestazioni,
+				efficienza energetica e capacità di elaborazione parallela.
             </p>
             <img
                 src="IMG/NONVONNEUMANN.jpg"
@@ -56,8 +56,19 @@
         <div class="container" id="esempi">
             <h2>Esempi</h2>
             <p>
-                Architettura Harvard: Memoria separata per dati e istruzioni,
-                che consente maggiore velocità.
+                Architettura Harvard: 
+				<ul><font size="4">
+				<li>Separazione tra memoria dati e memoria istruzioni, evitando il collo di bottiglia di Von Neumann.</li>
+				<li>Permette alla CPU di leggere dati e istruzioni contemporaneamente, migliorando le prestazioni.</li>
+				<li>Utilizzata in microcontrollori e processori per applicazioni embedded (es. Arduino e DSP).</li>
+				</ul>
+			   <p>
+			   Architettura a Flusso di Dati (Dataflow)
+			   <ul><font size="4">
+			   <li>Non segue il modello sequenziale classico, ma esegue istruzioni non appena i dati necessari sono disponibili.</li>
+			   <li>Ideale per il calcolo parallelo, usato nei supercomputer e nei processori specializzati in intelligenza artificiale.</li>
+			   <li>Riduce al minimo le attese della CPU, sfruttando al massimo le risorse hardware.</li>
+			   </ul>
             </p>
         </div>
 
