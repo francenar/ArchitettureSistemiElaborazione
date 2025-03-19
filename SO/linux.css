@@ -1,0 +1,59 @@
+.command-box {
+    display: flex;
+    align-items: center;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.command-box input {
+    border: none;
+    background: none;
+    font-family: monospace;
+    font-size: 1em;
+    outline: none;
+    width: auto;
+}
+
+.copy-btn {
+    background: linear-gradient(90deg, #444, #222);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+    transition:
+        background 0.3s,
+        transform 0.2s;
+}
+
+.copy-btn:hover {
+    background: linear-gradient(90deg, #333, #111);
+    transform: scale(1.03);
+}
+
+.popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, #444, #222);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: inherit;
+    font-size: 1em;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.popup.show {
+    opacity: 1;
+}

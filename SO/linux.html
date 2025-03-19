@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>La storia di Linux</title>
         <link rel="stylesheet" href="../architetture.css" />
+        <link rel="stylesheet" href="linux.css" />
     </head>
     <body>
         <header>
@@ -25,7 +26,6 @@
                 Helsinki nel 1969. Si è laureato in informatica all'Università
                 di Helsinki nel 1996.
             </p>
-
             <p>
                 Lo sviluppo di Linux è iniziato a seguito di una disputa tecnica
                 di Torvalds con il professor Andrew Tanenbaum. Tanenbaum aveva
@@ -33,7 +33,6 @@
                 Unix chiamato MINIX, che però non permetteva modifiche al codice
                 senza autorizzazione.
             </p>
-
             <p>
                 Questo spinse Torvalds a riflettere sulla possibilità di creare
                 un clone di MINIX ma con una licenza d'uso che consentisse la
@@ -58,7 +57,6 @@
                 ed è diventato uno dei sistemi operativi più diffusi, utilizzato
                 anche in alcune console da gioco come lo Steam Deck.
             </p>
-
             <p>
                 Questa struttura modulare permette agli utenti di personalizzare
                 il sistema operativo in base alle loro esigenze, sostituendo o
@@ -79,7 +77,6 @@
                 grafica, i programmi preinstallati, le opzioni di sicurezza e le
                 comunità di supporto.
             </p>
-
             <p>Le principali famiglie di distribuzioni sono:</p>
             <ul>
                 <li>
@@ -142,59 +139,91 @@
                     un file.
                 </li>
             </ol>
-            <b
-                ><p>
+            <b>
+                <p>
                     Per incollare su un terminale linux bisogna fare Shift +
                     Ctrl + V, e non Ctrl + V.
-                </p></b
-            >
-            <b
-                ><p>
+                </p>
+            </b>
+            <b>
+                <p>
                     Ora creiamo una cartella chiamata "Testo" con questo
                     comando.
-                </p></b
-            >
-            <input type="text" value="mkdir Testo" readonly />
-            <button onclick="navigator.clipboard.writeText('mkdir Testo')">
-                Copia
-            </button>
-            <b><p>Verifichiamo che la cartella sia stata creata.</p></b>
-            <input type="text" value="ls" readonly />
-            <button onclick="navigator.clipboard.writeText('ls')">Copia</button>
+                </p>
+            </b>
+            <div class="command-box">
+                <input type="text" value="mkdir Testo" readonly />
+                <button
+                    class="copy-btn"
+                    onclick="copyText(this, 'mkdir Testo')"
+                >
+                    Copia
+                </button>
+            </div>
+            <b>
+                <p>Verifichiamo che la cartella sia stata creata.</p>
+            </b>
+            <div class="command-box">
+                <input type="text" value="ls" readonly />
+                <button class="copy-btn" onclick="copyText(this, 'ls')">
+                    Copia
+                </button>
+            </div>
             <p>dovresti vedere questo</p>
-            <img src="IMG/linux1.png" />
-            <b><p>Entriamo nella cartella "Testo".</p></b>
-            <input type="text" value="cd Testo" readonly />
-            <button onclick="navigator.clipboard.writeText('cd Testo')">
-                Copia
-            </button>
-            <b><p>Apriamo l'editor di testo "nano".</p></b>
-            <input type="text" value="nano" readonly />
-            <button onclick="navigator.clipboard.writeText('nano')">
-                Copia
-            </button>
+            <img src="IMG/linux1.png" alt="Output ls" />
+            <b>
+                <p>Entriamo nella cartella "Testo".</p>
+            </b>
+            <div class="command-box">
+                <input type="text" value="cd Testo" readonly />
+                <button class="copy-btn" onclick="copyText(this, 'cd Testo')">
+                    Copia
+                </button>
+            </div>
+            <b>
+                <p>Apriamo l'editor di testo "nano".</p>
+            </b>
+            <div class="command-box">
+                <input type="text" value="nano" readonly />
+                <button class="copy-btn" onclick="copyText(this, 'nano')">
+                    Copia
+                </button>
+            </div>
             <p>dovresti vedere questo</p>
-            <img src="IMG/linux2.png" />
+            <img src="IMG/linux2.png" alt="Output nano" />
             <p>Scriviamo "Ciao Mondo!"</p>
-            <img src="IMG/linux3.png" />
+            <img src="IMG/linux3.png" alt="Ciao Mondo" />
             <p>
                 Premi Ctrl + O per salvare il file. Scrivi il nome del file come
                 "Testo.txt" e premi Enter.
             </p>
-            <img src="IMG/linux4.png" />
+            <img src="IMG/linux4.png" alt="Salvataggio file" />
             <p>Premi Ctrl + X per uscire da nano.</p>
-            <b><p>Verifichiamo che il file sia stato creato.</p></b>
-            <input type="text" value="ls" readonly />
-            <button onclick="navigator.clipboard.writeText('ls')">Copia</button>
+            <b>
+                <p>Verifichiamo che il file sia stato creato.</p>
+            </b>
+            <div class="command-box">
+                <input type="text" value="ls" readonly />
+                <button class="copy-btn" onclick="copyText(this, 'ls')">
+                    Copia
+                </button>
+            </div>
             <p>dovresti vedere questo</p>
-            <img src="IMG/linux5.png" />
-            <b><p>Stampiamo il contenuto del file.</p></b>
-            <input type="text" value="cat Testo.txt" readonly />
-            <button onclick="navigator.clipboard.writeText('cat Testo.txt')">
-                Copia
-            </button>
+            <img src="IMG/linux5.png" alt="Verifica file" />
+            <b>
+                <p>Stampiamo il contenuto del file.</p>
+            </b>
+            <div class="command-box">
+                <input type="text" value="cat Testo.txt" readonly />
+                <button
+                    class="copy-btn"
+                    onclick="copyText(this, 'cat Testo.txt')"
+                >
+                    Copia
+                </button>
+            </div>
             <p>dovresti vedere questo</p>
-            <img src="IMG/linux6.png" />
+            <img src="IMG/linux6.png" alt="Contenuto file" />
             <h2>
                 Congratulazioni! hai imparato a creare e navigare cartelle,
                 modificare e creare file di testo!
@@ -202,13 +231,30 @@
             <p>
                 Per tornare alla cartella iniziale puoi eseguire questo comando:
             </p>
-            <input type="text" value="cd .." readonly />
-            <button onclick="navigator.clipboard.writeText('cd ..')">
-                Copia
-            </button>
+            <div class="command-box">
+                <input type="text" value="cd .." readonly />
+                <button class="copy-btn" onclick="copyText(this, 'cd ..')">
+                    Copia
+                </button>
+            </div>
         </div>
+
         <div class="footerSite">
             <a href="home.html">Torna indietro</a>
         </div>
+
+        <div id="popup" class="popup">✅ Testo copiato</div>
+
+        <script>
+            function copyText(button, text) {
+                navigator.clipboard.writeText(text).then(() => {
+                    var popup = document.getElementById("popup");
+                    popup.classList.add("show");
+                    setTimeout(function () {
+                        popup.classList.remove("show");
+                    }, 2000);
+                });
+            }
+        </script>
     </body>
 </html>
