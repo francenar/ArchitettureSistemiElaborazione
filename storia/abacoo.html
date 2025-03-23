@@ -1,7 +1,7 @@
-mal<!doctype html>
+<!doctype html>
 <html lang="it">
     <head>
-        <meta charset="UTF-8" />
+        <script src="../tema.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>LA STORIA DELL'INFORMATICA</title>
         <link rel="stylesheet" href="../architetture.css" />
@@ -18,7 +18,9 @@ mal<!doctype html>
         </header>
 
         <div class="container">
-            <a href="abaco.html"><img src="IMG/abacodecimal.png" id="Abaco" /></a>
+            <a href="abaco.html"
+                ><img src="IMG/abacodecimal.png" id="Abaco"
+            /></a>
 
             <p>
                 Struttura fisica: L'abaco è composto da una serie di aste
@@ -38,6 +40,12 @@ mal<!doctype html>
         </div>
     </body>
     <div class="footerSite">
-        <a href="storia.html">Torna all'indice</a>
+        <a href="storia.html">Torna indietro</a>
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">
+            <span id="sun-icon" class="theme-icon" style="display: none"
+                >🌞</span
+            >
+            <span id="moon-icon" class="theme-icon">🌜</span>
+        </button>
     </div>
 </html>

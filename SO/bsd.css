@@ -49,3 +49,56 @@ h1 {
 .footerSite a:hover {
     color: #007bff;
 }
+
+.dark-mode body {
+    background: linear-gradient(to right, #121212, #1e1e1e);
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    font-size: 1em;
+}
+
+.dark-mode header {
+    background: linear-gradient(90deg, #222, #111);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode h1 {
+    font-size: 3em;
+    margin: 0;
+    font-weight: 700;
+    color: #ddd;
+}
+
+.dark-mode .container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #222;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    color: #e0e0e0;
+}
+
+.dark-mode .footerSite {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: white;
+    margin-top: auto;
+}
+
+.dark-mode .footerSite a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dark-mode .footerSite a:hover {
+    color: #1e90ff;
+}

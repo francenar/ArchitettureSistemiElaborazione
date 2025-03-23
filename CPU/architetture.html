@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="it">
     <head>
-        <meta charset="UTF-8" />
+        <script src="../tema.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Le architetture</title>
         <link rel="stylesheet" href="../architetture.css" />
@@ -48,7 +48,11 @@
                 tablet e microcontrollori. Sono ideali per dispositivi che
                 devono essere veloci e risparmiare energia.
             </p>
-            <img src="IMG/risc.png" alt="Architettura RISC" />
+            <img
+                src="IMG/risc.png"
+                alt="Architettura RISC"
+                class="white-bg-img"
+            />
         </div>
 
         <div class="container" id="cisc">
@@ -71,7 +75,11 @@
                 gioco. Sono ottimi per applicazioni che richiedono operazioni
                 complesse e potenza.
             </p>
-            <img src="IMG/cisc.png" alt="Architettura CISC" />
+            <img
+                src="IMG/cisc.png"
+                alt="Architettura CISC"
+                class="white-bg-img"
+            />
         </div>
 
         <div class="container" id="conclusione">
@@ -83,7 +91,13 @@
         </div>
 
         <div class="footerSite">
-            <a href="cpu.html">Torna all'indice</a>
+            <a href="cpu.html">Torna indietro</a>
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                <span id="sun-icon" class="theme-icon" style="display: none"
+                    >🌞</span
+                >
+                <span id="moon-icon" class="theme-icon">🌜</span>
+            </button>
         </div>
     </body>
 </html>

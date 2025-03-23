@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="it">
     <head>
-        <meta charset="UTF-8" />
+        <script src="../tema.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>I BUS di espansione</title>
         <link rel="stylesheet" href="../architetture.css" />
@@ -22,9 +22,9 @@
             <h2>I BUS di espansione</h2>
             <p>
             I bus di espansione sono componenti fondamentali dell’architettura di un computer, progettati per collegare e integrare nuove periferiche e schede di espansione all'interno del sistema.
-			Grazie ai bus di espansione, è possibile migliorare le funzionalità del computer aggiungendo componenti 
+			Grazie ai bus di espansione, è possibile migliorare le funzionalità del computer aggiungendo componenti
 			hardware come schede grafiche, schede audio, schede di rete, unità di archiviazione aggiuntive e molto altro.
-            Senza i bus di espansione, i computer sarebbero dispositivi statici e non aggiornabili. 
+            Senza i bus di espansione, i computer sarebbero dispositivi statici e non aggiornabili.
 			Con essi, invece, gli utenti possono personalizzare e potenziare il proprio sistema in base alle esigenze, prolungando la vita utile del computer e adattandolo a nuove tecnologie.
             </p>
             <img src="IMG/bus.jpg" alt="Immagine del BUS" />
@@ -56,7 +56,7 @@
 				</ul></font>
             </p>
             <p>
-                PCI 
+                PCI
 				<ul>
 				<li>Introdotto negli anni ‘90, ha rappresentato un grande miglioramento rispetto all’ISA.</li>
 				<li>Operava a 33 MHz con una larghezza di banda di 133 MB/s nella sua versione base.</li>
@@ -73,7 +73,13 @@
         </div>
 
         <div class="footerSite">
-            <a href="bus.html">Torna all'indice</a>
+            <a href="bus.html">Torna indietro</a>
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                <span id="sun-icon" class="theme-icon" style="display: none"
+                    >🌞</span
+                >
+                <span id="moon-icon" class="theme-icon">🌜</span>
+            </button>
         </div>
     </body>
 </html>

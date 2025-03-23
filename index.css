@@ -114,3 +114,24 @@ header {
 .footerSite a:hover {
     text-decoration: underline;
 }
+
+.dark-mode header {
+    background-color: #222;
+}
+
+.dark-mode .testo-banner {
+    color: #ddd;
+}
+
+.dark-mode .container-immagine {
+    background-color: #222;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .container-immagine p {
+    color: #ddd;
+}
+
+.dark-mode .footerSite {
+    background-color: #111;
+}

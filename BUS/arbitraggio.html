@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="it">
     <head>
-        <meta charset="UTF-8" />
+        <script src="../tema.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Arbitraggio dei Bus nel Computer</title>
         <link rel="stylesheet" href="../architetture.css" />
@@ -12,7 +12,7 @@
         </header>
 
         <nav>
-            <a href="../index.html"><img src="../home.svg" alt="home"></a>
+            <a href="../index.html"><img src="../home.svg" alt="home" /></a>
             <a href="#introduzione">Introduzione</a>
             <a href="#necessita">Necessità</a>
             <a href="#funzionamento">Funzionamento</a>
@@ -46,8 +46,7 @@
             <h2>Perché è Necessario l'Arbitraggio dei Bus?</h2>
             <p>
                 L'arbitraggio è essenziale perché più dispositivi possono
-                competere per l'accesso al bus. 
-                I dispositivi coinvolti
+                competere per l'accesso al bus. I dispositivi coinvolti
                 includono:
             </p>
             <ul>
@@ -116,7 +115,13 @@
         </div>
 
         <div class="footerSite">
-            <a href="bus.html">Torna alla Home</a>
+            <a href="bus.html">Torna indietro</a>
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                <span id="sun-icon" class="theme-icon" style="display: none"
+                    >🌞</span
+                >
+                <span id="moon-icon" class="theme-icon">🌜</span>
+            </button>
         </div>
     </body>
 </html>

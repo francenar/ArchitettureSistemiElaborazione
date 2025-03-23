@@ -1,3 +1,30 @@
+.popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, #444, #222);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: inherit;
+    font-size: 1em;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.popup.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dark-mode .popup {
+    background: linear-gradient(90deg, #333, #111);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
 .command-box {
     display: flex;
     align-items: center;
@@ -37,23 +64,45 @@
     transform: scale(1.03);
 }
 
-.popup {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: linear-gradient(90deg, #444, #222);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    font-family: inherit;
-    font-size: 1em;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.5s ease-in-out;
+.dark-mode .command-box {
+    background: #222;
+    border: 1px solid #444;
+    color: #e0e0e0;
 }
 
-.popup.show {
-    opacity: 1;
+.dark-mode .command-box input {
+    color: #e0e0e0;
+}
+
+.dark-mode .copy-btn {
+    background: linear-gradient(90deg, #333, #111);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .copy-btn:hover {
+    background: linear-gradient(90deg, #222, #000);
+}
+
+body:not(.dark-mode) .popup {
+    background: linear-gradient(90deg, #444, #222);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+body:not(.dark-mode) .command-box {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    color: #000;
+}
+
+body:not(.dark-mode) .command-box input {
+    color: #000;
+}
+
+body:not(.dark-mode) .copy-btn {
+    background: linear-gradient(90deg, #444, #222);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+body:not(.dark-mode) .copy-btn:hover {
+    background: linear-gradient(90deg, #333, #111);
 }

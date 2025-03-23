@@ -150,3 +150,77 @@ button {
 * {
     font-family: "Quicksand", sans-serif;
 }
+
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.theme-icon {
+    transition: opacity 0.3s ease;
+}
+
+.dark-mode body {
+    background: linear-gradient(to right, #121212, #1e1e1e);
+    color: #e0e0e0;
+}
+
+.dark-mode header {
+    background: linear-gradient(90deg, #222, #111);
+}
+
+.dark-mode nav {
+    background-color: #111;
+}
+
+.dark-mode nav a {
+    color: #bbb;
+}
+
+.dark-mode nav a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .container {
+    background: #222;
+    color: #e0e0e0;
+}
+
+.dark-mode h2 {
+    color: #ddd;
+}
+
+.dark-mode p {
+    color: #ccc;
+}
+
+.dark-mode .footerSite {
+    background-color: #111;
+}
+
+.dark-mode .footerSite a:hover {
+    color: #1e90ff;
+}
+
+.dark-mode input {
+    background: #333;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+.dark-mode button {
+    background: linear-gradient(90deg, #333, #111);
+}
+
+body.dark-mode .container a {
+    color: #1e90ff;
+}
+
+.white-bg-img {
+    background-color: white;
+}

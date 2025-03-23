@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="it">
     <head>
-        <meta charset="UTF-8" />
+        <script src="../tema.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>le architetture non von Neumann</title>
         <link rel="stylesheet" href="../architetture.css" />
@@ -21,7 +21,7 @@
         <div class="container" id="introduzione">
             <h2>Introduzione</h2>
             <p>
-                Le architetture non Von Neumann rappresentano un paradigma alternativo all’architettura di Von Neumann, 
+                Le architetture non Von Neumann rappresentano un paradigma alternativo all’architettura di Von Neumann,
 				che è il modello su cui si basano la maggior parte dei computer moderni.
 				Queste architetture sono state sviluppate per superare i limiti della classica organizzazione di un computer, migliorando prestazioni,
 				efficienza energetica e capacità di elaborazione parallela.
@@ -56,7 +56,7 @@
         <div class="container" id="esempi">
             <h2>Esempi</h2>
             <p>
-                Architettura Harvard: 
+                Architettura Harvard:
 				<ul><font size="4">
 				<li>Separazione tra memoria dati e memoria istruzioni, evitando il collo di bottiglia di Von Neumann.</li>
 				<li>Permette alla CPU di leggere dati e istruzioni contemporaneamente, migliorando le prestazioni.</li>
@@ -73,7 +73,13 @@
         </div>
 
         <div class="footerSite">
-            <a href="bus.html">Home</a>
+            <a href="bus.html">Torna indietro</a>
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                <span id="sun-icon" class="theme-icon" style="display: none"
+                    >🌞</span
+                >
+                <span id="moon-icon" class="theme-icon">🌜</span>
+            </button>
         </div>
     </body>
 </html>

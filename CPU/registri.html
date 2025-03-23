@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="it">
     <head>
-        <meta charset="UTF-8" />
+        <script src="../tema.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>I registri della CPU</title>
         <link rel="stylesheet" href="../architetture.css" />
@@ -41,14 +41,21 @@
                 7. <b>BASE POINTER</b>: aiuta a trovare facilmente i dati nello
                 stack.
             </p>
-            <img src="IMG/registri.png" alt="Immagine dei registri della CPU" />
+            <img
+                src="IMG/registri.png"
+                alt="Immagine dei registri della CPU"
+                class="white-bg-img"
+            />
         </div>
 
         <div class="container" id="funzioni">
             <h2>Funzioni</h2>
             <p>
                 In breve, questi registri aiutano la CPU a lavorare rapidamente
-                e senza interruzioni. Sono piccole unita' di memoria locale che servono a mantenere fisicamente vicini alla ALU le informazioni che in quel momento sono essenziali per eseguire l'elaborazione richiesta.<br>
+                e senza interruzioni. Sono piccole unita' di memoria locale che
+                servono a mantenere fisicamente vicini alla ALU le informazioni
+                che in quel momento sono essenziali per eseguire l'elaborazione
+                richiesta.<br />
             </p>
         </div>
 
@@ -56,7 +63,9 @@
             <h2>Evoluzione</h2>
             <p>
                 Nel corso degli anni i registri della CPU si sono evoluti
-                diventando sempre più efficienti e numerosi, anche se sono cambiati "fisicamente" durante il corso degli anni, per quanto riguarda sia le dimensioni che le funzioni ad essi adibite.<br> 
+                diventando sempre più efficienti e numerosi, anche se sono
+                cambiati "fisicamente" durante il corso degli anni, per quanto
+                riguarda sia le dimensioni che le funzioni ad essi adibite.<br />
             </p>
         </div>
 
@@ -64,12 +73,22 @@
             <h2>Curiosità</h2>
             <p>
                 I primi registri della CPU erano molto più semplici e limitati
-                rispetto a quelli moderni. Ad esempio x86 ha 8 registri, che sono larghi 64 bit. Ora un computer sta naturalmente chiamando piu' programmi e processi che ovviamente richiedono lo spostamento dei dati, quindi come funzionano, ovvero nel senso di come gestiscono il carico di piu' programmi.<br>
+                rispetto a quelli moderni. Ad esempio x86 ha 8 registri, che
+                sono larghi 64 bit. Ora un computer sta naturalmente chiamando
+                piu' programmi e processi che ovviamente richiedono lo
+                spostamento dei dati, quindi come funzionano, ovvero nel senso
+                di come gestiscono il carico di piu' programmi.<br />
             </p>
         </div>
 
         <div class="footerSite">
-            <a href="cpu.html">Torna all'indice</a>
+            <a href="cpu.html">Torna indietro</a>
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                <span id="sun-icon" class="theme-icon" style="display: none"
+                    >🌞</span
+                >
+                <span id="moon-icon" class="theme-icon">🌜</span>
+            </button>
         </div>
     </body>
 </html>

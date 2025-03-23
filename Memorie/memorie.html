@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="it">
     <head>
-        <meta charset="UTF-8" />
+        <script src="../tema.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Le Memorie</title>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-            rel="stylesheet" />
-         <link rel="stylesheet" href="../architetture.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../architetture.css" />
     </head>
     <body>
         <header>
@@ -14,7 +16,7 @@
         </header>
 
         <nav>
-            <a href="../index.html"><img src="../home.svg" alt="home"></a>
+            <a href="../index.html"><img src="../home.svg" alt="home" /></a>
             <a href="#memoria">Memoria</a>
             <a href="#mass">Memoria di Massa</a>
             <a href="#ram">Memoria RAM</a>
@@ -46,7 +48,7 @@
             <ul>
                 <li>
                     <strong>Hard Disk</strong>: Dischi rotanti con testine
-                    magnetiche, economici e funzionali. Venne creato nel 1956 
+                    magnetiche, economici e funzionali. Venne creato nel 1956
                     dall'IBM e poteva contenere 5 Mbyte di dati.
                 </li>
                 <li>
@@ -55,7 +57,7 @@
                 </li>
                 <li>
                     <strong>Memorie USB</strong>: Piccole e portatili per
-                    l'archiviazione rapida. Unica limitazione data dal numero 
+                    l'archiviazione rapida. Unica limitazione data dal numero
                     limitato di riscritture (oltre le 100.000).
                 </li>
                 <li>
@@ -81,10 +83,11 @@
                     <strong>DRAM</strong>: Più economica, usata nei computer.
                 </li>
                 <li>
-                    <strong>SDRAM</strong>: Ram Dinamica sincronizzata al clock, velocizzando lo scambio di dati.
+                    <strong>SDRAM</strong>: Ram Dinamica sincronizzata al clock,
+                    velocizzando lo scambio di dati.
                 </li>
                 <li>
-                <strong>LPDDR</strong>: Ottimizzata per dispositivi mobili.
+                    <strong>LPDDR</strong>: Ottimizzata per dispositivi mobili.
                 </li>
             </ul>
             <img src="IMG/ram.jpg" alt="Memoria RAM" />
@@ -94,7 +97,8 @@
             <h2>Memoria ROM</h2>
             <p>
                 Memoria non volatile che conserva i dati anche senza
-                alimentazione. Il suo contenuto viene definito nella fase di progettazione e costruzione. Tipologie:
+                alimentazione. Il suo contenuto viene definito nella fase di
+                progettazione e costruzione. Tipologie:
             </p>
             <ul>
                 <li>
@@ -113,7 +117,13 @@
         </div>
 
         <div class="footerSite">
-            <a href="memorie.html">Torna all'inizio</a>
+            <a href="memorie.html">Torna all'indice</a>
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                <span id="sun-icon" class="theme-icon" style="display: none"
+                    >🌞</span
+                >
+                <span id="moon-icon" class="theme-icon">🌜</span>
+            </button>
         </div>
     </body>
 </html>

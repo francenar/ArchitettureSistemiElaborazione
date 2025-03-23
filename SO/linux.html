@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="it">
     <head>
-        <meta charset="UTF-8" />
+        <script src="../tema.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>La storia di Linux</title>
         <link rel="stylesheet" href="../architetture.css" />
@@ -241,16 +241,28 @@
 
         <div class="footerSite">
             <a href="home.html">Torna indietro</a>
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                <span id="sun-icon" class="theme-icon" style="display: none"
+                    >🌞</span
+                >
+                <span id="moon-icon" class="theme-icon">🌜</span>
+            </button>
         </div>
 
         <div id="popup" class="popup">✅ Testo copiato</div>
 
         <script>
+            function toggleDarkMode() {
+                document.body.classList.toggle("dark-mode");
+                const popup = document.getElementById("popup");
+                popup.classList.remove("show");
+            }
+
             function copyText(button, text) {
                 navigator.clipboard.writeText(text).then(() => {
-                    var popup = document.getElementById("popup");
+                    const popup = document.getElementById("popup");
                     popup.classList.add("show");
-                    setTimeout(function () {
+                    setTimeout(() => {
                         popup.classList.remove("show");
                     }, 2000);
                 });
