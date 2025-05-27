@@ -1,119 +1,157 @@
 <!doctype html>
 <html lang="it">
-    <head>
-        <script src="../tema.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Abaco Decimale</title>
-        <link rel="stylesheet" href="../architetture.css" />
-        <link rel="stylesheet" href="abaco.css" />
-    </head>
-    <body>
-        <header>
-            <h1>Abaco Decimale</h1>
-        </header>
-        <div class="container">
-            <div class="abacus" id="abacus"></div>
-            <button onclick="addBall(0)">+</button>
-            <button onclick="removeBall(0)">-</button>
-            <div>
-                <input
-                    type="number"
-                    id="inputNumber"
-                    placeholder="Inserisci numero"
-                    min="0"
-                />
-                <button onclick="setAbacus()">Imposta</button>
-            </div>
-            <div id="total">Valore: 0</div>
+<head>
+    <script src="../tema.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abaco Decimale</title>
+    <link rel="stylesheet" href="../architetture.css" />
+    <link rel="stylesheet" href="abaco.css" />
+    <style>
+        .abacus {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: flex-end;
+            height: 300px;
+            flex-direction: row-reverse; /* Ecco qui */
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: flex-start;
+            width: 40px;
+            height: 250px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            background-color: #f9f9f9;
+            box-sizing: border-box;
+            overflow-y: hidden;
+        }
+
+        .ball {
+            width: 20px;
+            height: 20px;
+            margin: 3px 0;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            transition: transform 0.2s ease;
+        }
+
+        .ball:hover {
+            background-color: #388E3C;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Abaco Decimale</h1>
+    </header>
+    <div class="container">
+        <div class="abacus" id="abacus"></div>
+        <button onclick="addBall(0)">+</button>
+        <button onclick="removeBall(0)">-</button>
+        <div>
+            <input
+                type="number"
+                id="inputNumber"
+                placeholder="Inserisci numero"
+                min="0"
+            />
+            <button onclick="setAbacus()">Imposta</button>
         </div>
-        <div class="footerSite">
-            <a href="abacoo.html">Torna indietro</a>
-            <button id="theme-toggle" aria-label="Toggle Dark Mode">
-                <span id="sun-icon" class="theme-icon" style="display: none"
-                    >🌞</span
-                >
-                <span id="moon-icon" class="theme-icon">🌜</span>
-            </button>
-        </div>
-        <script>
-            const columns = 5;
-            let abacusColumns = [];
+        <div id="total">Valore: 0</div>
+    </div>
+    <div class="footerSite">
+        <a href="abacoo.html">Torna indietro</a>
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">
+            <span id="sun-icon" class="theme-icon" style="display: none"
+                >🌞</span
+            >
+            <span id="moon-icon" class="theme-icon">🌜</span>
+        </button>
+    </div>
+    <script>
+        const columns = 5;
+        let abacusColumns = [];
 
-            function createAbacus() {
-                const abacus = document.getElementById("abacus");
-                for (let i = 0; i < columns; i++) {
-                    const column = document.createElement("div");
-                    column.classList.add("column");
-                    column.dataset.value = i;
-                    abacusColumns.push(column);
-                    abacus.appendChild(column);
-                }
+        function createAbacus() {
+            const abacus = document.getElementById("abacus");
+            for (let i = 0; i < columns; i++) {
+                const column = document.createElement("div");
+                column.classList.add("column");
+                column.dataset.value = i;
+                abacusColumns.push(column);
+                abacus.appendChild(column);
             }
+        }
 
-            function updateTotal() {
-                let total = 0;
-                for (let i = 0; i < columns; i++) {
-                    total +=
-                        abacusColumns[i].childElementCount * Math.pow(10, i);
-                }
-                document.getElementById("total").innerText = "Valore: " + total;
+        function updateTotal() {
+            let total = 0;
+            for (let i = 0; i < columns; i++) {
+                total +=
+                    abacusColumns[i].childElementCount * Math.pow(10, i);
             }
+            document.getElementById("total").innerText = "Valore: " + total;
+        }
 
-            function addBall(index) {
-                if (index >= columns) return;
+        function addBall(index) {
+            if (index >= columns) return;
 
-                const column = abacusColumns[index];
-                if (column.childElementCount < 9) {
-                    const ball = document.createElement("div");
-                    ball.classList.add("ball");
-                    column.appendChild(ball);
-                } else {
-                    column.innerHTML = "";
-                    addBall(index + 1);
-                }
-                updateTotal();
+            const column = abacusColumns[index];
+            if (column.childElementCount < 9) {
+                const ball = document.createElement("div");
+                ball.classList.add("ball");
+                column.appendChild(ball);
+            } else {
+                column.innerHTML = "";
+                addBall(index + 1);
             }
-
-            function removeBall(index) {
-                if (index >= columns) return;
-
-                const column = abacusColumns[index];
-                if (column.childElementCount > 0) {
-                    column.removeChild(column.lastChild);
-                } else if (
-                    index < columns - 1 &&
-                    abacusColumns[index + 1].childElementCount > 0
-                ) {
-                    abacusColumns[index + 1].removeChild(
-                        abacusColumns[index + 1].lastChild,
-                    );
-                    for (let i = 0; i < 9; i++) {
-                        addBall(index);
-                    }
-                }
-                updateTotal();
-            }
-
-            function setAbacus() {
-                let number = parseInt(
-                    document.getElementById("inputNumber").value,
-                );
-                if (isNaN(number) || number < 0) return;
-
-                abacusColumns.forEach((column) => (column.innerHTML = ""));
-
-                for (let i = columns - 1; i >= 0; i--) {
-                    let digit = Math.floor(number / Math.pow(10, i));
-                    number %= Math.pow(10, i);
-                    for (let j = 0; j < digit; j++) {
-                        addBall(i);
-                    }
-                }
-                updateTotal();
-            }
-
-            createAbacus();
             updateTotal();
-        </script>
-    </body>
+        }
+
+        function removeBall(index) {
+            if (index >= columns) return;
+
+            const column = abacusColumns[index];
+            if (column.childElementCount > 0) {
+                column.removeChild(column.lastChild);
+            } else if (
+                index < columns - 1 &&
+                abacusColumns[index + 1].childElementCount > 0
+            ) {
+                abacusColumns[index + 1].removeChild(
+                    abacusColumns[index + 1].lastChild,
+                );
+                for (let i = 0; i < 9; i++) {
+                    addBall(index);
+                }
+            }
+            updateTotal();
+        }
+
+        function setAbacus() {
+            let number = parseInt(
+                document.getElementById("inputNumber").value,
+            );
+            if (isNaN(number) || number < 0) return;
+
+            abacusColumns.forEach((column) => (column.innerHTML = ""));
+
+            for (let i = columns - 1; i >= 0; i--) {
+                let digit = Math.floor(number / Math.pow(10, i));
+                number %= Math.pow(10, i);
+                for (let j = 0; j < digit; j++) {
+                    addBall(i);
+                }
+            }
+            updateTotal();
+        }
+
+        createAbacus();
+        updateTotal();
+    </script>
+</body>
 </html>
